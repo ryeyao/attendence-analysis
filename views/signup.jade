@@ -1,0 +1,21 @@
+//
+// Created with JetBrains WebStorm.
+// User: rye
+// Date: 9/16/13
+// Time: 9:34 AM
+// To change this template use File | Settings | File Templates.
+
+extend layout
+
+block navbar
+
+block content
+    include account
+    include modals/alert
+
+block footer
+
+block scripts
+    script(src='/js/views/signup.js')
+    script(src='/js/controllers/signupController.js')
+    script(src='js/form-validators/accountValidator.js')
