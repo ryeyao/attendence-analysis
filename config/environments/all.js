@@ -14,16 +14,16 @@ module.exports = function(app) {
     app.use(express.favicon());
     app.use(express.logger('dev'));
     app.use(express.bodyParser());
+    app.use(express.multipart());
     app.use(express.methodOverride());
     app.use(express.cookieParser('your secret here'));
     app.use(express.session());
 
+    app.use(require('stylus').middleware(app.__dirname + '/public'));
+    app.use(express.static(path.join(app.__dirname, 'public')));
+
     if (app.customer_config) {
         app.customer_config(app);
     }
-
-    app.use(app.router);
-    app.use(require('stylus').middleware(app.__dirname + '/public'));
-    app.use(express.static(path.join(app.__dirname, 'public')));
 
 }

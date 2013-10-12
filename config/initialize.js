@@ -17,10 +17,13 @@ module.exports = function(app) {
     initializersDir = configDir + '/initializers/';
     environmentsDir = configDir + '/environments/';
 
-    set_environments(app);
-    set_initializers(app);
-    set_router(app);
+    app.configure(function() {
 
+        set_environments(app);
+        set_initializers(app);
+        set_router(app);
+
+    })
 }
 
 function set_environments(app) {
@@ -32,10 +35,8 @@ function set_environments(app) {
 
     // Set all.js
     if (app.get('env') == 'production') {
-        console.log('PROD!');
         app.customer_config = environments.production;
     } else {
-        console.log('dev!');
         app.customer_config = environments.development;
     }
     environments.all(app);
@@ -60,6 +61,7 @@ function set_initializers(app) {
 }
 
 function set_router(app) {
+    app.use(app.router);
     router = require(app.__dirname + '/routes/router');
     router(app);
 }

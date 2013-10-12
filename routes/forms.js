@@ -7,6 +7,8 @@
 
 var AM = require('./modules/account-manager');
 var ED = require('./modules/email-dispatcher');
+var XP = require('./modules/xlsx-parser');
+var AS = require('./modules/attendence-statistics');
 
 exports.signup = function(req, res) {
 
@@ -40,4 +42,29 @@ exports.update_account = function(req, res) {
 
 exports.login = function(req, res) {
     // NOTE: No need to do anything. Passport.authenticate will handle this request.
+    console.log('Oh!');
+    if (req.param('remember-me') == 'true') {
+        console.log('Yes!');
+        res.cookie('email', req.param('email'), {maxAge: 900000});
+        res.cookie('pass', req.param('pass'), {maxAge: 900000});
+    }
+}
+
+exports.signout = function(req, res) {
+    req.logout();
+    res.redirect('/');
+}
+
+exports.upload_file = function(req, res) {
+    XP.parse(req.files.file.path, function(err, json_data) {
+        AS.calculate(json_data, function(err, json_result) {
+            if (err) {
+
+            }
+            else {
+                console.log(json_result);
+                res.send(json_result);
+            }
+        })
+    })
 }

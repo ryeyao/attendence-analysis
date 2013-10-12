@@ -13,7 +13,7 @@ module.exports = function(app, done) {
     enforce = orm.enforce;
 
     app.use(orm.express(app.mongodb.dbstring, {
-        define: function(db, models, next) {
+        define: function(db, models) {
             models.user = db.define("user", {
             	name	: String,
             	email	: String,

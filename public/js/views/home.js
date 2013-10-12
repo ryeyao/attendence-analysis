@@ -32,27 +32,13 @@ $(document).ready(function(){
 	
 	$('#account-form h1').text('Account Settings');
 	$('#account-form #sub1').text('Here are the current settings for your account.');
-//	$('#user-tf').attr('disabled', 'disabled');
+	$('#user-tf').attr('disabled', 'disabled');
 	$('#account-form-btn1').html('Delete');
 	$('#account-form-btn1').addClass('btn-danger');
 	$('#account-form-btn2').html('Update');
 
 // setup the confirm window that displays when the user chooses to delete their account //
 
-    $('#confirm-form').ajaxForm({
-        beforeSubmit : function(formData, jqForm, options){
-            // push the disabled username field onto the form data array //
-            formData.push({email:'email', value:$('#email-tf').val()})
-            return true;
-        },
-        success	: function(responseText, status, xhr, $form){
-            if (status == 'success') hc.deleteAccount();
-            alert('success');
-        },
-        error : function(e){
-            av.showInvalidPassword();
-        }
-    })
 	$('.modal-confirm').modal({ show : false, keyboard : true, backdrop : true });
 	$('.modal-confirm .modal-header h3').text('Delete Account');
 	$('.modal-confirm .modal-body p').html('Are you sure you want to delete your account?');

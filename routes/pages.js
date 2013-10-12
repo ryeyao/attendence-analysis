@@ -4,21 +4,29 @@
  */
 
 exports.index = function(req, res){
-    res.render('index', { title: 'Visual Pipes' });
+    res.render('index', { user: req.user, title: 'Visual Pipes' });
 };
 
 exports.login = function(req, res) {
-    res.render('login', {});
+    res.render('login', { user: req.user, title: 'Visual Pipes' });
 }
 
 exports.signup = function(req, res) {
-    res.render('signup', {});
+    res.render('signup', { user: req.user, title: 'SignUp'});
 }
 
-exports.home = function(req, res) {
-    res.render('home', {});
+exports.profile = function(req, res) {
+    res.render('profile', { user: req.user, title: 'Visual Pipes' });
+}
+
+exports.dashboard = function(req, res) {
+    res.render('dashboard', { user: req.user, title: 'Dashboard' });
 }
 
 exports.reset_password = function(req, res) {
-    res.render('reset', {});
+    res.render('reset', { user: req.user });
+}
+
+exports.attendence = function(req, res) {
+    res.render('attendence', { user: req.user, title: 'Attendence' });
 }

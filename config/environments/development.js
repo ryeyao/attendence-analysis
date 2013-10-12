@@ -9,6 +9,7 @@
 var express = require('express');
 module.exports = function(app) {
 
+    console.log('Initializing development environment...');
     app.mongodb = {
         host  : "localhost",
         database: "dev_vpipes",
