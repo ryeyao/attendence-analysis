@@ -15,7 +15,15 @@ module.exports = function(app) {
 
     auto_auth = passport.authenticate('local', {usernameField:'email', passwordField:'pass', failureRedirect: '#', successRedirect: '/'});
     function check_auth(req, res, next) {
+
         if (req.isAuthenticated()) {
+            if (req.path == '/attendence') {
+                if (req.user.authority == 'admin') {
+                    return next();
+                } else {
+                    res.redirect('/');
+                }
+            }
             return next();
         }
         res.redirect('/');
@@ -25,7 +33,7 @@ module.exports = function(app) {
 
     app.get('/login', pages.login);
     app.post('/login', auto_auth, forms.login);
-    app.post('/signout', forms.signout);
+    app.get('/signout', pages.signout);
 
     app.get('/signup', pages.signup);
     app.post('/signup', forms.signup);
@@ -36,9 +44,9 @@ module.exports = function(app) {
 
     app.get('/users', check_auth, user.list);
     app.get('/dashboard', check_auth, pages.dashboard);
-    app.get('/attendence', pages.attendence);
+    app.get('/attendence', check_auth, pages.attendence);
 
-    app.post('/upload-file', forms.upload_file);
+    app.post('/upload-file', check_auth, forms.upload_file);
 
     app.get('*', function(req, res, next) {
         res.render('404', {});

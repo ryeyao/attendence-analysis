@@ -30,3 +30,8 @@ exports.reset_password = function(req, res) {
 exports.attendence = function(req, res) {
     res.render('attendence', { user: req.user, title: 'Attendence' });
 }
+
+exports.signout = function(req, res) {
+    req.logout();
+    res.redirect('/');
+}

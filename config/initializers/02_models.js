@@ -18,7 +18,8 @@ module.exports = function(app, done) {
             	name	: String,
             	email	: String,
             	pass    : String,
-            	date    : Date
+            	date    : Date,
+                authority   : String
             }, {
             	validations : {
             		name     : [ enforce.required('Name cannot be null'), enforce.ranges.length(3, 14, 'missing')],

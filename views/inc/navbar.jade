@@ -11,6 +11,10 @@ nav(class='navbar navbar-default navbar-static-top', role='navigation')
         ul(class='nav navbar-nav')
             li.active
                 a(href='/dashboard') Dashboard
+            if user
+                if user.authority == 'admin'
+                    li
+                        a(href='/attendence') Attendence
             li
                 a(href='#about') About
             li.dropdown
@@ -32,6 +36,8 @@ nav(class='navbar navbar-default navbar-static-top', role='navigation')
                 if user
                     p.navbar-text.navbar-right Signed in as
                         a(href='/profile')  #{user.email}
+                        &nbsp;
+                        a(href='/signout') Sign out
                 else
                     form(method='post', action='/login', class='form-inline navbar-form navbar-right')#navbar-form
                         input(type='text', name='email', placeholder='Email').span2
@@ -39,6 +45,8 @@ nav(class='navbar navbar-default navbar-static-top', role='navigation')
                         input(type='password', name='pass', placeholder='Password').span2
                         &nbsp;&nbsp;
                         button(type='submit').btn Sign in
+                        &nbsp;
+                        button(type='button', onclick='window.location = "/signup"').btn Sign up
 script('/js/vendor/jquery-cookie/jquery.cookie.js')
 script('/js/views/navbar.js')
 script('/js/controllers/navbarController.js')

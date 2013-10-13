@@ -12,8 +12,8 @@ module.exports = function(app) {
     console.log('Initializing development environment...');
     app.mongodb = {
         host  : "localhost",
-        database: "dev_vpipes",
-        dbstring: "mongodb://localhost/dev_vpipes"
+        database: "dev_time2money",
+        dbstring: "mongodb://localhost/dev_time2money"
     };
 
     app.coocieSecret = 'visual pipes';

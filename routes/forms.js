@@ -50,10 +50,6 @@ exports.login = function(req, res) {
     }
 }
 
-exports.signout = function(req, res) {
-    req.logout();
-    res.redirect('/');
-}
 
 exports.upload_file = function(req, res) {
     XP.parse(req.files.file.path, function(err, json_data) {

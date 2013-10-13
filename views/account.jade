@@ -24,13 +24,5 @@ input(type='hidden', value=user._id)#userId
             .form-actions
                 button(type='button')#account-form-btn1.btn Cancel
                 button(type='submit')#account-form-btn2.btn.btn-primary Sign Up!
-//			hr
-            p#sub2.subheading
-//			#user-cg.control-group
-                label.control-label(for='user-tf') Username
-                .controls
-                    input#user-tf.input-xlarge.disabled(type='text', name='user', value= user.user)
-
-// display form errors in a custom modal window //
 
 include modals/form-errors
