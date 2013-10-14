@@ -4,19 +4,21 @@
     <list default="true" id="5115aa56-05a3-411b-9284-3402630ace2f" name="Default" comment="" />
     <ignored path="time2money.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/attendence.jade" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381666891837" ignored="false" />
+    <file path="/attendence.jade" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381743043998" ignored="false" />
     <file path="/pages.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381391022450" ignored="false" />
     <file path="/router.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381668959640" ignored="false" />
     <file path="/header.jade" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381389091751" ignored="false" />
-    <file path="/navbar.jade" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381669160759" ignored="false" />
+    <file path="/navbar.jade" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381742641073" ignored="false" />
     <file path="/all.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381393646105" ignored="false" />
-    <file path="/attendence.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381670656643" ignored="false" />
-    <file path="/forms.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381566125766" ignored="false" />
+    <file path="/attendence.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381742791590" ignored="false" />
+    <file path="/forms.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381718795711" ignored="false" />
     <file path="/xlsx-parser.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381660127958" ignored="false" />
-    <file path="/attendence-statistics.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381673693390" ignored="false" />
-    <file path="/attendenceController.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381665010686" ignored="false" />
+    <file path="/attendence-statistics.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381718512812" ignored="false" />
+    <file path="/attendenceController.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381740464610" ignored="false" />
     <file path="/02_models.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381667819204" ignored="false" />
     <file path="/signup.jade" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381669180537" ignored="false" />
+    <file path="/xlsx.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381740749395" ignored="false" />
+    <file path="/layout.jade" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381742601440" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,11 +47,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="attendenceController.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="attendenceController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/controllers/attendenceController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="34" selection-start="598" selection-end="598" vertical-scroll-proportion="0.7130282">
-              <folding />
+            <state line="17" column="70" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1381740897715" expanded="true" signature="127:1234" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,25 +61,52 @@
       <file leaf-file-name="navbar.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/inc/navbar.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="81" selection-start="2145" selection-end="2145" vertical-scroll-proportion="0.0">
+            <state line="0" column="33" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="attendence.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="attendence.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/views/attendence.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="47" selection-start="2907" selection-end="2907" vertical-scroll-proportion="0.0">
+            <state line="28" column="30" selection-start="970" selection-end="970" vertical-scroll-proportion="0.4864865">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/signup.jade">
+      <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/views/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="37" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
+            <state line="11" column="74" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="attendence.jade" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/attendence.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="59" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/forms.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="12" selection-start="1639" selection-end="1639" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.jade" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/layout.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="33" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,37 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/layout.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="20" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="attendence-statistics.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/modules/attendence-statistics.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="225" column="48" selection-start="7697" selection-end="7697" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/inc/header.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/inc/footer.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="226" column="44" selection-start="6405" selection-end="6405" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,22 +140,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/js/controllers/loginController.js" />
-        <option value="$PROJECT_DIR$/views/inc/header.jade" />
         <option value="$PROJECT_DIR$/config/environments/all.js" />
         <option value="$PROJECT_DIR$/routes/modules/xlsx-parser.js" />
-        <option value="$PROJECT_DIR$/public/js/controllers/attendenceController.js" />
-        <option value="$PROJECT_DIR$/views/attendence.jade" />
         <option value="$PROJECT_DIR$/config/initializers/02_models.js" />
         <option value="$PROJECT_DIR$/config/environments/development.js" />
-        <option value="$PROJECT_DIR$/routes/forms.js" />
         <option value="$PROJECT_DIR$/routes/pages.js" />
-        <option value="$PROJECT_DIR$/routes/router.js" />
-        <option value="$PROJECT_DIR$/views/inc/navbar.jade" />
         <option value="$PROJECT_DIR$/views/signup.jade" />
         <option value="$PROJECT_DIR$/views/account.jade" />
-        <option value="$PROJECT_DIR$/public/js/views/attendence.js" />
+        <option value="$PROJECT_DIR$/routes/router.js" />
         <option value="$PROJECT_DIR$/routes/modules/attendence-statistics.js" />
+        <option value="$PROJECT_DIR$/routes/forms.js" />
+        <option value="$PROJECT_DIR$/public/js/utils/excel/xlsx.js" />
+        <option value="$PROJECT_DIR$/public/js/controllers/attendenceController.js" />
+        <option value="$PROJECT_DIR$/views/layout.jade" />
+        <option value="$PROJECT_DIR$/views/inc/navbar.jade" />
+        <option value="$PROJECT_DIR$/public/js/views/attendence.js" />
+        <option value="$PROJECT_DIR$/views/attendence.jade" />
       </list>
     </option>
   </component>
@@ -187,6 +191,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -265,38 +270,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="time2money" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="time2money" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="time2money" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="time2money" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -338,6 +311,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="time2money" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="time2money" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="time2money" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="time2money" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="excel" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -437,16 +458,15 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="settings.xslt" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -562,7 +582,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/routes/modules/attendence-statistics.js</url>
-          <line>127</line>
+          <line>262</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
@@ -570,65 +590,14 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/environments/development.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/02_models.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="32" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/attendence.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="69" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/forms.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="1323" selection-end="1323" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/pages.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="16" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="38" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="34" column="16" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/signup.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="37" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/modals/alert.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="20" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -647,10 +616,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/inc/navbar.jade">
+    <entry file="file://$PROJECT_DIR$/routes/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="81" selection-start="2145" selection-end="2145" vertical-scroll-proportion="0.0">
+        <state line="45" column="54" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/modals/alert.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/modules/attendence-statistics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="226" column="44" selection-start="6405" selection-end="6405" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/forms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="12" selection-start="1639" selection-end="1639" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/utils/excel/xlsx.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="177" column="36" selection-start="15557" selection-end="15557" vertical-scroll-proportion="0.16756757">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/attendenceController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="70" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1381740897715" expanded="true" signature="127:1234" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -661,23 +669,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/modules/attendence-statistics.js">
+    <entry file="file://$PROJECT_DIR$/public/js/views/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="225" column="48" selection-start="7697" selection-end="7697" vertical-scroll-proportion="0.0">
+        <state line="11" column="74" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="33" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/inc/navbar.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="33" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/attendence.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="59" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/views/attendence.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="47" selection-start="2907" selection-end="2907" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers/attendenceController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="34" selection-start="598" selection-end="598" vertical-scroll-proportion="0.7130282">
+        <state line="28" column="30" selection-start="970" selection-end="970" vertical-scroll-proportion="0.4864865">
           <folding />
         </state>
       </provider>

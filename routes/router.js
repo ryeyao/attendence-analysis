@@ -44,9 +44,9 @@ module.exports = function(app) {
 
     app.get('/users', check_auth, user.list);
     app.get('/dashboard', check_auth, pages.dashboard);
-    app.get('/attendence', check_auth, pages.attendence);
+    app.get('/attendence', pages.attendence);
 
-    app.post('/upload-file', check_auth, forms.upload_file);
+    app.post('/upload-file', forms.upload_file);
 
     app.get('*', function(req, res, next) {
         res.render('404', {});
