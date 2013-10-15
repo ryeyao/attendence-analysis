@@ -53,7 +53,8 @@ exports.login = function(req, res) {
 
 exports.upload_file = function(req, res) {
     XP.parse(req.files.file.path, function(err, json_data) {
-        AS.calculate(json_data, function(err, json_result) {
+        console.log('holidays: ' + req.param.holidays);
+        AS.calculate(json_data, {holidays:req.param.holidays}, function(err, json_result) {
             if (err) {
 
             }
