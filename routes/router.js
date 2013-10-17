@@ -47,6 +47,7 @@ module.exports = function(app) {
     app.get('/attendence', pages.attendence);
 
     app.post('/upload-file', forms.upload_file);
+    app.post('/send-email', forms.send_email);
 
     app.get('*', function(req, res, next) {
         res.render('404', {});

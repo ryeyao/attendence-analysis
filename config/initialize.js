@@ -54,6 +54,9 @@ function set_initializers(app) {
                 console.log('Error:' + err + ' ' + msg);
                 app.exit();
             } else {
+                if (msg) {
+                    console.log('INFO: ' + msg);
+                }
                 next();
             }
         })

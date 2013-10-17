@@ -53,15 +53,24 @@ exports.login = function(req, res) {
 
 exports.upload_file = function(req, res) {
     XP.parse(req.files.file.path, function(err, json_data) {
-        console.log('holidays: ' + req.param.holidays);
-        AS.calculate(json_data, {holidays:req.param.holidays}, function(err, json_result) {
+        console.log('holidays: ' + req.param('holidays'));
+        AS.calculate(json_data, {holidays:req.param('holidays')}, function(err, json_result) {
             if (err) {
 
             }
             else {
-                console.log(json_result);
+//                console.log(json_result);
                 res.send(json_result);
             }
         })
     })
+}
+
+exports.send_email = function(req, res) {
+    console.log('Sending email');
+    ED.dispatchXLSXFile(req.param('emails'), req.param('file'), function(err, msg) {
+        console.log('WTF? ' + err || msg);
+    });
+    console.log('Send mail done!');
+    res.send('ok', 200);
 }

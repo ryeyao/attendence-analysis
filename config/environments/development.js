@@ -19,4 +19,9 @@ module.exports = function(app) {
     app.coocieSecret = 'visual pipes';
 
     app.use(express.errorHandler());
+    app.simplesmtp = {
+        SMTPBanner: 'Welcome to WSN Group Time2Money',
+        name: 'WSN Group',
+        port: 9876
+    }
 }
