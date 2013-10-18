@@ -1,0 +1,66 @@
+//
+// Created with JetBrains WebStorm.
+// User: rye
+// Date: 10/10/13
+// Time: 2:04 PM
+// 
+
+extends layout
+
+block content
+    div(class='container container-fluid', style='border:2px dashed #bbb; -moz-border-radius:5px;padding:10px;text-align:center;font:20pt bold,"Vollkorn";color:#bbb')#drop.span5
+        div(class='dz-default dz-message')
+            span Click or drop an XLSX file here to generate
+
+    div(class='panel-group')#accordion
+        div(class = "panel panel-default")
+            .panel-heading
+                h4.panel-title
+                    a(class='accordion-toggle', data-toggle='collapse', data-parent='#accordion', href='#choose-holidays').
+                        Choose Holidays
+            div(class='panel-collapse collapse in')#choose-holidays
+                .panel-body
+                    div#holidays
+                    form(method='post')
+                        input(type='text', class='form-control', style='display: none;')#holidays-text
+
+        div(class = "panel panel-default")
+            .panel-heading
+                h4.panel-title
+                    a(class='accordion-toggle', data-toggle='collapse', data-parent='#accordion', href='#add-recipients').
+                        Recipients
+            div(class='panel-collapse collapse in')#add-recipients
+                .panel-body
+                    .emails-tagsinput#send-email-div
+                        form(method='post')#emails-list
+                            input(type='text', data-role='tagsinput', class='form-control', style='display: none;')#emails-input
+                            button(type='submit', class='btn btn-default pull-right')#send-email-btn Send XLSX by E-mail
+                            button(type='button', class='btn btn-default pull-right')#save-btn Save As XLSX
+
+        div(class = "panel panel-default")#table-panel-div
+            .panel-heading#sheet-heading
+                h4.panel-title
+                    a(class='accordion-toggle', data-toggle='collapse', data-parent='#accordion', href='#statistics-view').
+                        Attendence Statistics
+            div(class='panel-collapse collapse in')#statistics-view
+                .panel-body
+                    div#sheet-tab
+                    div(class='table-responsive tab-content')#attendence-div
+
+block scripts
+    link(rel='stylesheet', href='/css/ui-lightness/jquery-ui-1.10.3.custom.min.css')
+    link(rel='stylesheet', href='/css/bootstrap-tagsinput.css')
+    script(src='/js/utils/file/dropzone.js')
+    script(src='/js/controllers/attendenceController.js')
+    script(src='/js/views/attendence.js')
+    script(src='/js/utils/jszip/jszip-load.js')
+    script(src='/js/utils/jszip/jszip-deflate.js')
+    script(src='/js/utils/jszip/jszip-inflate.js')
+    script(src='/js/utils/jszip/jszip.js')
+    script(src='/js/utils/excel/xlsx.js')
+    script(src='/js/jquery-ui-1.10.3.custom.min.js')
+    script(src='/js/views/multiDatesPicker/jquery-ui.multidatespicker.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js')
+    script(src='/js/utils/tags/bootstrap-tagsinput.js')
+
+//    div(style='border:2px dashed #bbb; -moz-border-radius:5px;padding:25px;text-align:center;font:20pt bold,"Vollkorn";color:#bbb')#drop Drop an XLSX file here to see sheet data.

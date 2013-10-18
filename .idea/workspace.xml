@@ -4,25 +4,25 @@
     <list default="true" id="5115aa56-05a3-411b-9284-3402630ace2f" name="Default" comment="" />
     <ignored path="time2money.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/attendence.jade" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381975977943" ignored="false" />
+    <file path="/attendence.jade" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1382060515176" ignored="false" />
     <file path="/pages.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381391022450" ignored="false" />
-    <file path="/router.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381910119219" ignored="false" />
+    <file path="/router.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1382063919365" ignored="false" />
     <file path="/header.jade" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381389091751" ignored="false" />
     <file path="/navbar.jade" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381742641073" ignored="false" />
     <file path="/all.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381393646105" ignored="false" />
     <file path="/attendence.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381911466037" ignored="false" />
-    <file path="/forms.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1382004667409" ignored="false" />
+    <file path="/forms.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1382076738057" ignored="false" />
     <file path="/xlsx-parser.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381822322205" ignored="false" />
     <file path="/attendence-statistics.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381718512812" ignored="false" />
-    <file path="/attendenceController.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381999654278" ignored="false" />
+    <file path="/attendenceController.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1382060823173" ignored="false" />
     <file path="/02_models.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381667819204" ignored="false" />
     <file path="/signup.jade" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381669180537" ignored="false" />
     <file path="/xlsx.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381740749395" ignored="false" />
     <file path="/layout.jade" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381742601440" ignored="false" />
-    <file path="/04_simplesmtp.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381995887158" ignored="false" />
+    <file path="/04_simplesmtp.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1382080006760" ignored="false" />
     <file path="/development.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381909676824" ignored="false" />
-    <file path="/email-dispatcher.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1382005246181" ignored="false" />
-    <file path="/email-settings.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1382005622978" ignored="false" />
+    <file path="/email-dispatcher.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1382079718860" ignored="false" />
+    <file path="/email-settings.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1382079093848" ignored="false" />
     <file path="/initialize.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381911288131" ignored="false" />
     <file path="/a.dummy" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381911747982" ignored="false" />
     <file path="/attendence.css" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381971514959" ignored="false" />
@@ -46,19 +46,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="attendenceController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/controllers/attendenceController.js">
+      <file leaf-file-name="forms.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/forms.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="56" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.0">
+            <state line="70" column="38" selection-start="1871" selection-end="1871" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/controllers/loginController.js">
+      <file leaf-file-name="email-dispatcher.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/modules/email-dispatcher.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="64" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
+            <state line="15" column="28" selection-start="353" selection-end="353" vertical-scroll-proportion="0.27272728">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="email-settings.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/modules/email-settings.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="25" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="development.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environments/development.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="53" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -67,52 +85,43 @@
       <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="45" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.0">
+            <state line="19" column="43" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/views/login.js">
+      <file leaf-file-name="04_simplesmtp.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/04_simplesmtp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="26" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.0">
+            <state line="11" column="32" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="attendence.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/views/attendence.js">
+      <file leaf-file-name="02_models.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/02_models.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="40" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+            <state line="11" column="0" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="email-settings.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/modules/email-settings.js">
+      <file leaf-file-name="03_passport.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/03_passport.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="323" selection-end="323" vertical-scroll-proportion="0.5463744">
+            <state line="11" column="0" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/forms.js">
+      <file leaf-file-name="initialize.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initialize.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="35" selection-start="1953" selection-end="1953" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="email-dispatcher.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/modules/email-dispatcher.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="19" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0">
+            <state line="20" column="0" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -128,22 +137,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/views/inc/navbar.jade" />
         <option value="$PROJECT_DIR$/routes/modules/xlsx-parser.js" />
         <option value="$PROJECT_DIR$/routes/modules/attendence-statistics.js" />
-        <option value="$PROJECT_DIR$/routes/router.js" />
         <option value="$PROJECT_DIR$/config/initialize.js" />
         <option value="$PROJECT_DIR$/public/css/attendence.css" />
         <option value="$PROJECT_DIR$/public/css/bootstrap-tagsinput.css" />
         <option value="$PROJECT_DIR$/public/js/views/attendence.js" />
-        <option value="$PROJECT_DIR$/views/attendence.jade" />
         <option value="$PROJECT_DIR$/config/environments/development.js" />
-        <option value="$PROJECT_DIR$/config/initializers/04_simplesmtp.js" />
+        <option value="$PROJECT_DIR$/views/attendence.jade" />
         <option value="$PROJECT_DIR$/public/js/controllers/attendenceController.js" />
-        <option value="$PROJECT_DIR$/routes/forms.js" />
-        <option value="$PROJECT_DIR$/routes/modules/email-dispatcher.js" />
+        <option value="$PROJECT_DIR$/routes/modules/simplesmtp.js" />
+        <option value="$PROJECT_DIR$/routes/router.js" />
         <option value="$PROJECT_DIR$/routes/modules/email-settings.js" />
+        <option value="$PROJECT_DIR$/routes/forms.js" />
+        <option value="$PROJECT_DIR$/config/initializers/04_simplesmtp.js" />
+        <option value="$PROJECT_DIR$/routes/modules/email-dispatcher.js" />
       </list>
     </option>
   </component>
@@ -348,60 +357,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="time2money" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="time2money" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="emailjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="time2money" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="time2money" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="emailjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smtp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="time2money" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="time2money" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -449,13 +404,15 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="JavaScript.Libraries" />
     <property name="recentsLimit" value="5" />
-    <property name="options.searchVisible" value="true" />
+    <property name="options.lastSelected" value="JavaScript.Libraries" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config/initializers" />
+      <recent name="$PROJECT_DIR$/routes/modules" />
       <recent name="$PROJECT_DIR$/public/js/utils/file" />
     </key>
   </component>
@@ -507,17 +464,17 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24972677" sideWeight="0.6706136" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24972677" sideWeight="0.67169" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39935413" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32938644" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="64" y="566" width="1830" height="306" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32831" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="64" y="566" width="1830" height="306" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -582,125 +539,104 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/forms.js</url>
-          <line>55</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/modules/xlsx-parser.js">
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/attendenceController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="38" column="13" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/pages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/00_generic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/01_mime.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/02_models.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initialize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/emailjs/smtp/error.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="30" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="18" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/04_simplesmtp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="30" selection-start="981" selection-end="981" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/inc/navbar.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="49" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/attendence.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="66" selection-start="1662" selection-end="1662" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/modules/attendence-statistics.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/attendence.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="40" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/views/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="26" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers/attendenceController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="56" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers/loginController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="64" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
+        <state line="22" column="53" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="45" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/emailjs/smtp/client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="27" selection-start="316" selection-end="316" vertical-scroll-proportion="-3.3274648">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/emailjs/smtp/response.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="99" selection-start="559" selection-end="559" vertical-scroll-proportion="0.9561551">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/forms.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="35" selection-start="1953" selection-end="1953" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/modules/email-dispatcher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="19" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0">
+        <state line="19" column="43" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/modules/email-settings.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="323" selection-end="323" vertical-scroll-proportion="0.5463744">
+        <state line="7" column="25" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/forms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="38" selection-start="1871" selection-end="1871" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/03_passport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/04_simplesmtp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="32" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/modules/email-dispatcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="28" selection-start="353" selection-end="353" vertical-scroll-proportion="0.27272728">
           <folding />
         </state>
       </provider>

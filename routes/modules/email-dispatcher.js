@@ -4,40 +4,51 @@ var EM = {};
 
 module.exports = EM;
 
-//EM.server = require("emailjs/email").server.connect({
-//
-//    host        : ES.host,
-//    port        : ES.port,
-//    user        : ES.user,
-//    password    : ES.password,
-//    tls         : ES.tls,
+EM.server = require("emailjs/email").server.connect({
+
+    host        : ES.host,
+    port        : ES.port,
+    user        : ES.user,
+    password    : ES.password,
+//    tls         : ES.tls
+    ssl         : ES.ssl
 //    domain      : ES.domain,
 //    email       : ES.email,
 //    sender      : ES.sender
-//});
+});
 
-EM.server = require('emailjs/email').server.connect(ES);
+//EM.server = require('emailjs/email').server.connect(ES);
 
 EM.dispatchXLSXFile = function(accounts, file, callback) {
     console.log('dispatchXLSXFile');
+
     EM.server.send({
-        from         : 'time2money <time2money@iiewsn>',
-        to           : 'Rye <rye.y.cn@gmail.com>, Rye Yao <fox2mail@foxmail.com>',
+        from         : 'rye.y.cn@iiewsn.com',
+        to           : 'rye.y.cn@gmail.com, fox2mail@foxmail.com',
         subject      : 'Attendence Statistics',
         text         : 'Hey!'
 //        attachment   : {data:file, alternative:true}
-    }, callback );
+    }, function(err, msg) {
+        console.log(err || msg);
+    });
+//    that.smtp.send({
+//        from         : 'Rye <rye.y.cn@iiewsn.com>',
+//        to           : 'Rye <rye.y.cn@gmail.com>, Rye Yao <fox2mail@foxmail.com>',
+//        subject      : 'Attendence Statistics',
+//        text         : 'Hey!'
+////        attachment   : {data:file, alternative:true}
+//    }, EM.server);
 }
 
 EM.dispatchResetPasswordLink = function(account, callback)
 {
-    EM.server.send({
+    that.smtp.send({
         from         : ES.sender,
         to           : account.email,
         subject      : 'Password Reset',
         text         : 'something went wrong... :(',
         attachment   : EM.composeEmail(account)
-    }, callback );
+    }, callback);
 }
 
 EM.composeEmail = function(o)
