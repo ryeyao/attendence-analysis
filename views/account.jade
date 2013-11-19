@@ -4,7 +4,7 @@
 input(type='hidden', value=user._id)#userId
 
 #account-form-container
-    form(method='post')#account-form.form-horizontal.well.span6
+    form(method='post')#account-form.form-horizontal.span6
         h1
         p#sub1.subheading Please tell us a little about yourself.
         hr
@@ -24,5 +24,4 @@ input(type='hidden', value=user._id)#userId
             .form-actions
                 button(type='button')#account-form-btn1.btn Cancel
                 button(type='submit')#account-form-btn2.btn.btn-primary Sign Up!
-
 include modals/form-errors

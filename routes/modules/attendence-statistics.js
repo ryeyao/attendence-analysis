@@ -20,13 +20,13 @@ exports.calculate = function(json_data, options, callback) {
     row_start   = options['row_start']  ?options['row_start']:0;
     row_end     = options['row_end']    ?options['row_end']:1071;
     col_start   = options['col_start']  ?options['col_start']:0;
-    col_end     = options['col_end']    ?options['col_end']:9;
+    col_end     = options['col_end']    ?options['col_end']:11;
 
     name_coln = options['name_coln']?options['name_coln']:'姓名';
     date_coln = options['date_coln']?options['date_coln']:'日期';
     week_coln = options['week_coln']?options['week_coln']:'星期';
-    noonperiod_coln = options['noonperiod_coln']?options['noonperiod_coln']:'时间段1';
-    afternoonperiod_coln = options['afternoonperiod_coln']?options['afternoonperiod_coln']:'时间段2';
+    noonperiod_coln = options['noonperiod_coln']?options['noonperiod_coln']:'签到时间';
+    afternoonperiod_coln = options['afternoonperiod_coln']?options['afternoonperiod_coln']:'签退时间';
     holidays    = options['holidays']?options['holidays']:[]; // Holidays [YYYY-MM-DD], use weekends as default
     members     = options['members']?options['members']: {
         "甘伟": {"leader": "石志强"},
@@ -154,11 +154,14 @@ exports.calculate = function(json_data, options, callback) {
     min_half_weekday_hours = options['min_half_weekday_hours'] ? options['min_half_weekday_hours'] : 4;
 
     // Patterns
-    time_format = '%H:%M:%S';
-    date_format = '%Y-%m-%d';
-    pattern_start   = /^([01]\d|2[0-3]):([0-5]\d):([0-5]\d)$/i;
-    pattern_end     = /^-([01]\d|2[0-3]):([0-5]\d):([0-5]\d)$/i;
-    pattern_period  = /^([01]\d|2[0-3]):([0-5]\d)-([01]\d|2[0-3]):([0-5]\d)$/i;
+    time_format = 'HH:mm:ss';
+    date_format = 'YYYY-MM-DD';
+//    pattern_start   = /^\d{4}-\d{2}-\d{2} ([01]\d|2[0-3]):([0-5]\d):([0-5]\d)toN\/A$/i;
+//    pattern_end     = /^N\/Ato\d{4}-\d{2}-\d{2} ([01]\d|2[0-3]):([0-5]\d):([0-5]\d)$/i;
+//    pattern_period  = /^\d{4}-\d{2}-\d{2} ([01]\d|2[0-3]):([0-5]\d):([0-5]\d)to\d{4}-\d{2}-\d{2} ([01]\d|2[0-3]):([0-5]\d):([0-5]\d)$/i;
+    pattern_start   = /^([01]\d|2[0-3]):([0-5]\d):([0-5]\d)toN\/A$/i;
+    pattern_end     = /^N\/Ato([01]\d|2[0-3]):([0-5]\d):([0-5]\d)$/i;
+    pattern_period  = /^([01]\d|2[0-3]):([0-5]\d):([0-5]\d)to([01]\d|2[0-3]):([0-5]\d):([0-5]\d)$/i;
 
     // Result record format
     result_row_name = ['姓名', '出勤（天）', '迟到/早退（次）', '病事假（天）', '出差（天）', '总加班（次）', '一般晚上加班(次)', '一般周末加班(小时)', '强制晚加班(次)', '强制周末加班(小时)', '加班效果评价', '补贴计算', '备注说明'];
@@ -175,12 +178,53 @@ exports.calculate = function(json_data, options, callback) {
     var result_map = {};
 
     var sheet = json_data[sheet_name];
-    for (var row in sheet) {
+
+    var last_row = null;
+//    console.log(sheet);
+//    for (var row in sheet) {
+    for (var row = 0; row < sheet.length; row++) {
         var name = sheet[row][result_row_name[0]];
+        console.log('=========================');
+        console.log('0weekday ' + sheet[row][date_coln] +  ': ' + moment(sheet[row][date_coln]).isoWeekday());
         if (typeof sheet[row] == 'undefined' || typeof name == 'undefined') {
+            console.log('*****************************************row undefined');
             continue;
         }
-        var res = judge(sheet[row]);
+
+//        console.log('===========' + row + '==============');
+//        console.log(last_row);
+//        console.log(sheet[row]);
+
+        var row_merged = null;
+        if (row != 0) {
+            var is_same_day = sheet[row][date_coln] == last_row[date_coln];
+            if (!is_same_day) {
+                var week_day = moment(sheet[row][date_coln], date_format).isoWeekday();
+//                console.log('week_day: ' + week_day);
+                if (week_day != 6 && week_day != 7) {
+                    last_row = sheet[row]
+                    continue;
+                }
+                row_merged = merge_rows_of_same_day(sheet[row], sheet[row]);
+            } else {
+                row_merged = merge_rows_of_same_day(last_row, sheet[row]);
+            }
+        } else {
+            last_row = sheet[row];
+            continue;
+        }
+
+        // Merge rows of the same day
+//        console.log(last_row);
+//        console.log(sheet[row]);
+        last_row = sheet[row]
+        if (row_merged[date_coln] == '2013-11-03') {
+            console.log(row_merged);
+        }
+
+        var res = judge(row_merged);
+        last_row = sheet[row]
+
         var target_row = {};
         if (typeof result_map[name] == 'undefined') {
             result_map[name] = {};
@@ -189,8 +233,11 @@ exports.calculate = function(json_data, options, callback) {
                 if (key == '姓名') {
                     result_map[name][key] = name;
                 }
-                else if (i == 1 || i == 2 || i == 3 || i == 5 || i == 6 || i == 7) {
+                else if (i == 1 || i == 2 || i == 3 || i == 4 || i == 5 || i == 6 || i == 7 || i == 8 || i == 9 || i == 10) {
                     result_map[name][key] = 0;
+                }
+                else if (i == 11) {
+
                 }
                 else {
                     result_map[name][key] = '';
@@ -203,9 +250,14 @@ exports.calculate = function(json_data, options, callback) {
     }
     // Generate xlsx json from result_map
     // Group students
+    var is_first = true;
     for (var k in result_map) {
         var target_row = result_map[k];
         target_row[result_row_name[0]] = k;
+        if (is_first) {
+            target_row[result_row_name[11]] = '=F4*15+I4*40+(J4/8)*100+(G4*40+(H4/8)*100)*K4+E4*100-D4*100-C4*40'
+            is_first = false;
+        }
 //        console.log(target_row);
 
         if (typeof members[k] == 'undefined') {
@@ -231,6 +283,29 @@ exports.calculate = function(json_data, options, callback) {
 
 }
 
+var merge_rows_of_same_day = function(row1, row2) {
+    var row_merged = row1
+    var noon_up = row1[noonperiod_coln]?row1[noonperiod_coln].split(' ')[1]:'N/A';
+    var noon_down = row1[afternoonperiod_coln]?row1[afternoonperiod_coln].split(' ')[1]:'N/A';
+    var after_up = row2!=undefined&&row2[noonperiod_coln]?row2[noonperiod_coln].split(' ')[1]:'N/A';
+    var after_down = row2!=undefined&&row2[afternoonperiod_coln]?row2[afternoonperiod_coln].split(' ')[1]:'N/A';
+//    console.log(row1);
+//    console.log(row2);
+//    console.log(noon_up + ' ' + noon_down + ' ' + after_up + ' ' + after_down );
+
+    row_merged[noonperiod_coln] = noon_up + 'to' + noon_down;
+
+    var week_day = moment(row1[date_coln]).isoWeekday();
+//    console.log(week_day);
+    if ( week_day == 6 || week_day == 7) {
+        row_merged[afternoonperiod_coln] = 'N/A' + 'to' + 'N/A';
+    } else {
+        row_merged[afternoonperiod_coln] = after_up + 'to' + after_down;
+    }
+
+    return row_merged;
+}
+
 var add_up_cells_of_row = function(target_row, row) {
     target_row[result_row_name[1]] += row[result_row_name[1]];
     target_row[result_row_name[2]] += row[result_row_name[2]];
@@ -238,6 +313,8 @@ var add_up_cells_of_row = function(target_row, row) {
     target_row[result_row_name[5]] += row[result_row_name[5]];
     target_row[result_row_name[6]] += row[result_row_name[6]];
     target_row[result_row_name[7]] += row[result_row_name[7]];
+
+    console.log('wo_hours' + target_row[result_row_name[7]]);
 }
 
 var get_endpoints = function(time_array) {
@@ -258,6 +335,7 @@ var get_endpoints = function(time_array) {
         }
     }
 
+//    console.log('start-end: ' + start + '-' + end);
     return [start, end];
 }
 
@@ -268,20 +346,21 @@ var get_time_array = function(row) {
 
     var noonper_array = [];
     var afterper_array = [];
-    if (!time_noonper_str) {
+    if (time_noonper_str == 'N/AtoN/A') {
         noonper_array = [0, 0];
     }
     else {
         noonper_array = parse_time(time_noonper_str);
     }
 
-    if (!time_afterper_str) {
+    if (time_afterper_str == 'N/AtoN/A') {
         afterper_array = [0, 0];
     }
     else {
         afterper_array = parse_time(time_afterper_str);
     }
     var time_array = [noonper_array[0], noonper_array[1], afterper_array[0], afterper_array[1]];
+//    console.log(time_array);
     return time_array;
 }
 
@@ -293,17 +372,22 @@ var parse_time = function(time_str) {
     var end = 0;
     var time_str_only = time_str;
 
+//    console.log(time_str);
     if (pattern_start.test(time_str_only)) {
-        start = moment(time_str, 'hh:mm:ss');
+//        start = moment(time_str, date_format + ' HH:mm:sstoN/A');
+        start = moment(time_str, 'HH:mm:sstoN/A');
     }
     else if (pattern_end.test(time_str_only)) {
-        end = moment(time_str, '-hh:mm:ss');
+//        end = moment(time_str, 'N/Ato' + date_format + ' HH:mm:ss');
+        end = moment(time_str, 'N/AtoHH:mm:ss');
     }
     else if (pattern_period.test(time_str_only)) {
-        var time_array  = time_str_only.split('-');
+        var time_array  = time_str_only.split('to');
 
-        start   = moment(time_array[0], 'hh:mm');
-        end     = moment(time_array[1], 'hh:mm');
+//        start   = moment(time_array[0], date_format + ' HH:mm:ss');
+//        end     = moment(time_array[1], date_format + ' HH:mm:ss');
+        start   = moment(time_array[0], 'HH:mm:ss');
+        end     = moment(time_array[1], 'HH:mm:ss');
     }
     return [start, end];
 }
@@ -343,28 +427,36 @@ var judge = function(row) {
     var end     = endpoints_array[1];
     var absence_count = calculate_absence_count(start, end);
 
-    var curr_date = moment(row[date_coln]);
+//    console.log(absence_count);
+    var curr_date = moment(row[date_coln], date_format);
     // Check if it is holiday
 
     if (holidays.indexOf(row[date_coln]) != -1) {
         if (start !== 0 && end !== 0) {
-            var wo_hours = (end - start).minutes() / 60.0;
+            var duration = (end - start) / 1000.0
+            var wo_hours = duration / 3600.0;
             result[result_row_name[7]]   = wo_hours;
             result[result_row_name[5]]   = 1;
-            result[result_row_name[1]]   = 1;
         }
     }
     else {
-        if (!holidays.length && (curr_date.weekday() == 5 || curr_date.weekday() == 6)) {
+        var week_day = curr_date.isoWeekday();
+        console.log('2week_day: ' + week_day);
+
+        if (!holidays.length && (curr_date.isoWeekday() == 6 || curr_date.isoWeekday() == 7)) {
             if (start !== 0 && end !== 0) {
-                var wo_hours = moment(end - start).minutes() / 60.0;
+                console.log('end: ' + end);
+                console.log('start: ' + start);
+                console.log('end - start= ' + moment(end-start).minutes());
+                var duration = (end - start) / 1000.0
+                var wo_hours = duration / 3600.0;
                 result[result_row_name[7]]   = wo_hours;
                 result[result_row_name[5]]   = 1;
-                result[result_row_name[1]]   = 1;
             }
         }
         else if (absence_count !== 0) {
             result[result_row_name[3]] = absence_count;
+            result[result_row_name[1]] = 1 - absence_count;
         }
         else {
             if (start.isAfter(moment(weekday_begin)) || end.isBefore(moment(weekday_end))) {
@@ -377,8 +469,9 @@ var judge = function(row) {
                     result[result_row_name[5]] = 1;
                 }
             }
+            result[result_row_name[1]]   = 1;
         }
-        result[result_row_name[1]] += 1 - absence_count;
+//        result[result_row_name[1]] += 1 - absence_count;
     }
     return result;
 }

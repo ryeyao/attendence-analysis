@@ -46,7 +46,7 @@ nav(class='navbar navbar-default navbar-static-top', role='navigation')
                         &nbsp;&nbsp;
                         button(type='submit').btn Sign in
                         &nbsp;
-                        button(type='button', onclick='window.location = "/signup"').btn Sign up
+                        button(type='button', data-toggle='modal', data-target='#signup-modal').btn Sign up
 script('/js/vendor/jquery-cookie/jquery.cookie.js')
 script('/js/views/navbar.js')
 script('/js/controllers/navbarController.js')
