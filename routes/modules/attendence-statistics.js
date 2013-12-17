@@ -16,7 +16,7 @@ exports.calculate = function(json_data, options, callback) {
         options = {};
     }
     // Default parameters
-    sheet_name  = options['sheet_name'] ?options['sheet_name']:'考勤统计';
+    sheet_name  = options['sheet_name'] ?options['sheet_name']:'考勤明细';
     row_start   = options['row_start']  ?options['row_start']:0;
     row_end     = options['row_end']    ?options['row_end']:1071;
     col_start   = options['col_start']  ?options['col_start']:0;
@@ -61,16 +61,16 @@ exports.calculate = function(json_data, options, callback) {
             "leader": "葛仕明"
         },
         "高山岩": {
-            "leader": "秦伟俊"
+            "leader": "朱红松"
         },
         "郑洋": {
-            "leader": "秦伟俊"
+            "leader": "朱红松"
         },
         "魏朝辉": {
-            "leader": "秦伟俊"
+            "leader": "朱红松"
         },
         "牟楠": {
-            "leader": "秦伟俊"
+            "leader": "朱红松"
         },
         "车东剑": {
             "leader": "李志"
@@ -275,6 +275,7 @@ exports.calculate = function(json_data, options, callback) {
         result_sheet[k] = target_row;
     }
 
+//    console.log(result_workbook);
     result_workbook['all'] = result_sheet;
     result_json_data['records'] = result_workbook;
     result_json_data['titles'] = result_row_name;
