@@ -28,6 +28,8 @@ exports.calculate = function(json_data, options, callback) {
     noonperiod_coln = options['noonperiod_coln']?options['noonperiod_coln']:'签到时间';
     afternoonperiod_coln = options['afternoonperiod_coln']?options['afternoonperiod_coln']:'签退时间';
     holidays    = options['holidays']?options['holidays']:[]; // Holidays [YYYY-MM-DD], use weekends as default
+
+    number_fixed = 2;
     members     = options['members']?options['members']: {
         "甘伟": {"leader": "石志强"},
         "李晓森": {
@@ -248,11 +250,26 @@ exports.calculate = function(json_data, options, callback) {
         target_row = result_map[name];
         add_up_cells_of_row(target_row, res);
     }
+
     // Generate xlsx json from result_map
     // Group students
     var is_first = true;
     for (var k in result_map) {
         var target_row = result_map[k];
+
+        // Calculate weekend workover days' count
+        var total_wo_count = target_row[result_row_name[5]];
+        var weekend_wo_count = target_row[result_row_name[7]] / 8;
+        total_wo_count += weekend_wo_count;
+        target_row[result_row_name[5]] = total_wo_count.toFixed(number_fixed);
+        target_row[result_row_name[7]] = target_row[result_row_name[7]].toFixed(number_fixed);
+
+        console.log('wocount: ' + total_wo_count);
+        console.log('wocount: ' + target_row[result_row_name[5]]);
+        console.log('target_row: ');
+        console.log(target_row);
+
+
         target_row[result_row_name[0]] = k;
         if (is_first) {
             target_row[result_row_name[11]] = '=F4*15+I4*40+(J4/8)*100+(G4*40+(H4/8)*100)*K4+E4*100-D4*100-C4*40'
@@ -315,7 +332,7 @@ var add_up_cells_of_row = function(target_row, row) {
     target_row[result_row_name[6]] += row[result_row_name[6]];
     target_row[result_row_name[7]] += row[result_row_name[7]];
 
-    console.log('wo_hours' + target_row[result_row_name[7]]);
+    console.log('wo_hours: ' + target_row[result_row_name[7]]);
 }
 
 var get_endpoints = function(time_array) {
@@ -426,6 +443,10 @@ var judge = function(row) {
     var endpoints_array = get_endpoints(time_array);
     var start   = endpoints_array[0];
     var end     = endpoints_array[1];
+    if (row[result_row_name[0]] == '高山岩') {
+        console.log('========start ' + start);
+        console.log('end ' + end + '========');
+    }
     var absence_count = calculate_absence_count(start, end);
 
 //    console.log(absence_count);
@@ -437,7 +458,7 @@ var judge = function(row) {
             var duration = (end - start) / 1000.0
             var wo_hours = duration / 3600.0;
             result[result_row_name[7]]   = wo_hours;
-            result[result_row_name[5]]   = 1;
+//            result[result_row_name[5]]   = 1;
         }
     }
     else {
@@ -452,7 +473,8 @@ var judge = function(row) {
                 var duration = (end - start) / 1000.0
                 var wo_hours = duration / 3600.0;
                 result[result_row_name[7]]   = wo_hours;
-                result[result_row_name[5]]   = 1;
+                console.log('wo_hours= ' + wo_hours);
+//                result[result_row_name[5]]   = 1;
             }
         }
         else if (absence_count !== 0) {

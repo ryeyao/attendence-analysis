@@ -13,7 +13,7 @@
     <file path="/attendence.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381911466037" ignored="false" />
     <file path="/forms.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1382076738057" ignored="false" />
     <file path="/xlsx-parser.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381822322205" ignored="false" />
-    <file path="/attendence-statistics.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1387265609448" ignored="false" />
+    <file path="/attendence-statistics.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1387439849841" ignored="false" />
     <file path="/attendenceController.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1382060823173" ignored="false" />
     <file path="/02_models.js" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381667819204" ignored="false" />
     <file path="/signup.jade" changelist="5115aa56-05a3-411b-9284-3402630ace2f" time="1381669180537" ignored="false" />
@@ -89,7 +89,7 @@
       <file leaf-file-name="attendence-statistics.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/modules/attendence-statistics.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="270" column="44" selection-start="8320" selection-end="8320" vertical-scroll-proportion="0.3548387">
+            <state line="280" column="68" selection-start="8634" selection-end="8634" vertical-scroll-proportion="-9.191489">
               <folding />
             </state>
           </provider>
@@ -172,8 +172,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="64" />
     <option name="y" value="-4" />
-    <option name="width" value="1217" />
-    <option name="height" value="1029" />
+    <option name="width" value="737" />
+    <option name="height" value="605" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -260,7 +260,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1217" height="1029" extended-state="6" />
+    <frame x="64" y="-4" width="737" height="605" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -270,7 +270,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39919892" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42497137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="64" y="566" width="1830" height="306" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.92650336" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="64" y="566" width="1830" height="306" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -343,7 +343,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/routes/modules/attendence-statistics.js</url>
-          <line>411</line>
+          <line>428</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
@@ -446,7 +446,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/modules/attendence-statistics.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="270" column="44" selection-start="8320" selection-end="8320" vertical-scroll-proportion="0.3548387">
+        <state line="280" column="68" selection-start="8634" selection-end="8634" vertical-scroll-proportion="-9.191489">
           <folding />
         </state>
       </provider>
