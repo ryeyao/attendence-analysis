@@ -443,17 +443,18 @@ var judge = function(row) {
     var endpoints_array = get_endpoints(time_array);
     var start   = endpoints_array[0];
     var end     = endpoints_array[1];
-    if (row[result_row_name[0]] == '高山岩') {
-        console.log('========start ' + start);
-        console.log('end ' + end + '========');
-    }
+//    if (row[result_row_name[0]] == '高山岩') {
+//        console.log('========start ' + start);
+//        console.log('end ' + end + '========');
+//    }
     var absence_count = calculate_absence_count(start, end);
 
 //    console.log(absence_count);
     var curr_date = moment(row[date_coln], date_format);
-    // Check if it is holiday
+    // Check if it is specified holiday
 
     if (holidays.indexOf(row[date_coln]) != -1) {
+        console.log(row[date_coln] + " is holiday.");
         if (start !== 0 && end !== 0) {
             var duration = (end - start) / 1000.0
             var wo_hours = duration / 3600.0;
@@ -465,7 +466,8 @@ var judge = function(row) {
         var week_day = curr_date.isoWeekday();
         console.log('2week_day: ' + week_day);
 
-        if (!holidays.length && (curr_date.isoWeekday() == 6 || curr_date.isoWeekday() == 7)) {
+        // Check if it is weekend
+        if (curr_date.isoWeekday() == 6 || curr_date.isoWeekday() == 7) {
             if (start !== 0 && end !== 0) {
                 console.log('end: ' + end);
                 console.log('start: ' + start);

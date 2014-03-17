@@ -29,7 +29,8 @@ module.exports = function(app) {
         res.redirect('/');
     }
 
-    app.get('/', pages.index);
+//    app.get('/', pages.index);
+    app.get('/', pages.attendence);
 
     app.get('/login', pages.login);
     app.post('/login', auto_auth, forms.login);
