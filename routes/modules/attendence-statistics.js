@@ -269,7 +269,7 @@ exports.calculate = function(json_data, options, callback) {
 
         target_row[result_row_name[0]] = k;
         if (is_first) {
-            target_row[result_row_name[11]] = '=F4*15+I4*40+(J4/8)*100+(G4*40+(H4/8)*100)*K4+E4*100-D4*80-C4*40'
+            target_row[result_row_name[10]] = '=F4*15+I4*40+(J4/8)*100+(G4*40+(H4/8)*100)*K4+E4*100-D4*80-C4*40'
             is_first = false;
         }
 //        console.log(target_row);
