@@ -98,7 +98,7 @@
       <file leaf-file-name="attendence-statistics.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/modules/attendence-statistics.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="401" column="68" selection-start="12721" selection-end="12721" vertical-scroll-proportion="1.7370204">
+            <state line="271" column="104" selection-start="8378" selection-end="8378" vertical-scroll-proportion="0.7088036">
               <folding />
             </state>
           </provider>
@@ -516,7 +516,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/modules/attendence-statistics.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="401" column="68" selection-start="12721" selection-end="12721" vertical-scroll-proportion="1.7370204">
+        <state line="271" column="104" selection-start="8378" selection-end="8378" vertical-scroll-proportion="0.7088036">
           <folding />
         </state>
       </provider>
