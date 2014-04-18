@@ -63,13 +63,13 @@ exports.calculate = function(json_data, options, callback) {
             "leader": "葛仕明"
         },
         "高山岩": {
-            "leader": "朱红松"
+            "leader": "葛仕明"
         },
         "郑洋": {
-            "leader": "朱红松"
+            "leader": "葛仕明"
         },
         "魏朝辉": {
-            "leader": "朱红松"
+            "leader": "葛仕明"
         },
         "牟楠": {
             "leader": "朱红松"
@@ -93,7 +93,7 @@ exports.calculate = function(json_data, options, callback) {
             "leader": "李志"
         },
         "阮书涵": {
-            "leader": "李志"
+            "leader": "朱红松"
         },
         "宋子龙": {
             "leader": "朱红松"
@@ -102,9 +102,6 @@ exports.calculate = function(json_data, options, callback) {
             "leader": "朱红松"
         },
         "姚睿尧": {
-            "leader": "朱红松"
-        },
-        "陈磊": {
             "leader": "朱红松"
         },
         "李宗枝": {
@@ -137,7 +134,7 @@ exports.calculate = function(json_data, options, callback) {
         "何云华": {
             "leader": "朱红松"
         },
-        "党项凛": {
+        "党相凛": {
             "leader": "黄文军"
         },
         "吴腾": {
