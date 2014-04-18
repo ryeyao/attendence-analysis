@@ -104,10 +104,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="attendence-statistics.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="attendence-statistics.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/modules/attendence-statistics.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="271" column="41" selection-start="8315" selection-end="8315" vertical-scroll-proportion="0.0">
+            <state line="267" column="0" selection-start="8204" selection-end="8204" vertical-scroll-proportion="0.33833334">
               <folding />
             </state>
           </provider>
@@ -122,7 +122,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="attendence.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="attendence.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/views/attendence.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="36" column="4" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.0">
@@ -164,8 +164,8 @@
         <option value="$PROJECT_DIR$/views/signup.jade" />
         <option value="$PROJECT_DIR$/config/initializers/02_models.js" />
         <option value="$PROJECT_DIR$/routes/router.js" />
-        <option value="$PROJECT_DIR$/routes/modules/attendence-statistics.js" />
         <option value="$PROJECT_DIR$/public/js/views/attendence.js" />
+        <option value="$PROJECT_DIR$/routes/modules/attendence-statistics.js" />
       </list>
     </option>
   </component>
@@ -406,7 +406,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39919892" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3078579" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="64" y="566" width="1830" height="306" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3078579" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="64" y="566" width="1830" height="306" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -550,13 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/modules/attendence-statistics.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="271" column="41" selection-start="8315" selection-end="8315" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/forms.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="0" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
@@ -595,6 +588,13 @@
     <entry file="file://$PROJECT_DIR$/public/js/views/attendence.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="4" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/modules/attendence-statistics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="267" column="0" selection-start="8204" selection-end="8204" vertical-scroll-proportion="0.33833334">
           <folding />
         </state>
       </provider>
