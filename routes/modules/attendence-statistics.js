@@ -72,7 +72,7 @@ exports.calculate = function(json_data, options, callback) {
             "leader": "葛仕明"
         },
         "牟楠": {
-            "leader": "朱红松"
+            "leader": "葛仕明"
         },
         "车东剑": {
             "leader": "李志"
