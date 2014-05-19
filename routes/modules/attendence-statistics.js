@@ -184,9 +184,9 @@ exports.calculate = function(json_data, options, callback) {
     for (var row = 0; row < sheet.length; row++) {
         var name = sheet[row][result_row_name[0]];
         console.log('=========================');
-        console.log('0weekday ' + sheet[row][date_coln] +  ': ' + moment(sheet[row][date_coln]).isoWeekday());
+//        console.log('0weekday ' + sheet[row][date_coln] +  ': ' + moment(sheet[row][date_coln]).isoWeekday());
         if (typeof sheet[row] == 'undefined' || typeof name == 'undefined') {
-            console.log('*****************************************row undefined');
+//            console.log('*****************************************row undefined');
             continue;
         }
 
@@ -217,9 +217,9 @@ exports.calculate = function(json_data, options, callback) {
 //        console.log(last_row);
 //        console.log(sheet[row]);
         last_row = sheet[row]
-        if (row_merged[date_coln] == '2013-11-03') {
-            console.log(row_merged);
-        }
+//        if (row_merged[date_coln] == '2013-11-03') {
+//            console.log(row_merged);
+//        }
 
         var res = judge(row_merged);
         last_row = sheet[row]
@@ -261,10 +261,10 @@ exports.calculate = function(json_data, options, callback) {
         target_row[result_row_name[5]] = total_wo_count.toFixed(number_fixed);
         target_row[result_row_name[7]] = target_row[result_row_name[7]].toFixed(number_fixed);
 
-        console.log('wocount: ' + total_wo_count);
-        console.log('wocount: ' + target_row[result_row_name[5]]);
-        console.log('target_row: ');
-        console.log(target_row);
+//        console.log('wocount: ' + total_wo_count);
+//        console.log('wocount: ' + target_row[result_row_name[5]]);
+//        console.log('target_row: ');
+//        console.log(target_row);
 
 
         target_row[result_row_name[0]] = k;
@@ -329,7 +329,7 @@ var add_up_cells_of_row = function(target_row, row) {
     target_row[result_row_name[6]] += row[result_row_name[6]];
     target_row[result_row_name[7]] += row[result_row_name[7]];
 
-    console.log('wo_hours: ' + target_row[result_row_name[7]]);
+//    console.log('work over hours: ' + target_row[result_row_name[7]]);
 }
 
 var get_endpoints = function(time_array) {
@@ -415,8 +415,10 @@ var calculate_absence_count = function(start, end) {
         return 1;
     }
 
-    var total = (moment(end).hours() + moment(end).minutes() / 60.0) - (moment(start).hours() + moment(start).minutes() / 60.0);
-//    console.log('total: ' + total);
+//    var total = (moment(end).hours() + moment(end).minutes() / 60.0) - (moment(start).hours() + moment(start).minutes() / 60.0);
+    var total = (end - start) / 3600000;
+    console.log('total work hours: ' + total);
+//    console.log((moment(end).hours() + moment(end).minutes() / 60.0) + ' : ' + (moment(start).hours() + moment(start).minutes() / 60.0));
     if (total >= min_half_weekday_hours && total < min_weekday_hours) {
         return 0.5;
     }
@@ -449,9 +451,13 @@ var judge = function(row) {
 //    console.log(absence_count);
     var curr_date = moment(row[date_coln], date_format);
     // Check if it is specified holiday
+    console.log('Date: ' + row[date_coln]);
+    console.log('begin: ' + end);
+    console.log('end: ' + start);
+    console.log('end - start: ' + moment(end-start).valueOf() / 60000 + ' minutes');
 
     if (holidays.indexOf(row[date_coln]) != -1) {
-        console.log(row[date_coln] + " is holiday.");
+        console.log(row[date_coln] + ": holiday.");
         if (start !== 0 && end !== 0) {
             var duration = (end - start) / 1000.0
             var wo_hours = duration / 3600.0;
@@ -461,34 +467,34 @@ var judge = function(row) {
     }
     else {
         var week_day = curr_date.isoWeekday();
-        console.log('2week_day: ' + week_day);
+//        console.log('2week_day: ' + week_day);
 
         // Check if it is weekend
         if (curr_date.isoWeekday() == 6 || curr_date.isoWeekday() == 7) {
             if (start !== 0 && end !== 0) {
-                console.log('end: ' + end);
-                console.log('start: ' + start);
-                console.log('end - start= ' + moment(end-start).minutes());
                 var duration = (end - start) / 1000.0
                 var wo_hours = duration / 3600.0;
                 result[result_row_name[7]]   = wo_hours;
-                console.log('wo_hours= ' + wo_hours);
+                console.log('work over: ' + wo_hours + ' hours');
 //                result[result_row_name[5]]   = 1;
             }
         }
         else if (absence_count !== 0) {
             result[result_row_name[3]] = absence_count;
             result[result_row_name[1]] = 1 - absence_count;
+            console.log('Absence: ' + absence_count);
         }
         else {
             if (start.isAfter(moment(weekday_begin)) || end.isBefore(moment(weekday_end))) {
 //                console.log('start: ' + moment(start).format() + ' end: ' + moment(end).format());
                 result[result_row_name[2]] = 1;
+                console.log('Late/Early: 1');
             }
             else {
                 if (end.isAfter(moment(weekday_workover))) {
                     result[result_row_name[6]] = 1;
                     result[result_row_name[5]] = 1;
+                    console.log('Normal work over: 1');
                 }
             }
             result[result_row_name[1]]   = 1;
