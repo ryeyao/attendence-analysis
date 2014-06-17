@@ -146,11 +146,11 @@ exports.calculate = function(json_data, options, callback) {
     }
 
     // Conditions
-    weekday_begin   = options['weekday_begin']  ?   options['weekday_begin']    :{hour: 9, minute: 30};
-    weekday_end     = options['weekday_end']    ?   options['weekday_end']  :{hour:17};
+    weekday_begin   = options['weekday_begin']  ?   options['weekday_begin']    :{hour: 9, minute: 40};
+    weekday_end     = options['weekday_end']    ?   options['weekday_end']  :{hour:16, minute: 50};
     weekday_workover= options['weekday_workover']?  options['weekday_workover'] :{hour:21};
-    min_weekday_hours = options['min_weekday_hours'] ? options['min_weekday_hours'] : 8;
-    min_half_weekday_hours = options['min_half_weekday_hours'] ? options['min_half_weekday_hours'] : 4;
+    min_weekday_hours = options['min_weekday_hours'] ? options['min_weekday_hours'] : 7.83;
+    min_half_weekday_hours = options['min_half_weekday_hours'] ? options['min_half_weekday_hours'] : 3.83;
 
     // Patterns
     time_format = 'HH:mm:ss';
