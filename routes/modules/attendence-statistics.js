@@ -27,122 +27,156 @@ exports.calculate = function(json_data, options, callback) {
     week_coln = options['week_coln']?options['week_coln']:'星期';
     noonperiod_coln = options['noonperiod_coln']?options['noonperiod_coln']:'签到时间';
     afternoonperiod_coln = options['afternoonperiod_coln']?options['afternoonperiod_coln']:'签退时间';
+    employee_num_coln = options['employee_num_coln']?options['employee_num_colon']:'员工编号';
     holidays    = options['holidays']?options['holidays']:[]; // Holidays [YYYY-MM-DD], use weekends as default
 
     number_fixed = 2;
     members     = options['members']?options['members']: {
-        "甘伟": {"leader": "石志强"},
+        /* "甘伟": {
+            num: ,"leader": "石志强"
+        },
         "李晓森": {
-            "leader": "石志强"
+            num: ,"leader": "石志强"
         },
         "尚传人": {
-            "leader": "石志强"
-        },
+            num: ,"leader": "石志强"
+        }, */
         "杨安": {
+            num: 203,
             "leader": "石志强"
         },
         "王小山": {
+            num: 205,
             "leader": "石志强"
         },
         "王洪涛": {
+            num: 202,
             "leader": "石志强"
         },
+        /*
         "许宝东": {
-            "leader": "葛仕明"
-        },
+            num: ,"leader": "葛仕明"
+        }, */
         "杨睿": {
+            num: 73,
             "leader": "葛仕明"
         },
+        /*
         "秦沛熙": {
-            "leader": "葛仕明"
-        },
+            num: ,"leader": "葛仕明"
+        }, */
         "文辉": {
+            num: 68,
             "leader": "葛仕明"
         },
         "易锋": {
+            num: 204,
             "leader": "葛仕明"
         },
+        /*
         "高山岩": {
-            "leader": "葛仕明"
+            num: ,"leader": "葛仕明"
         },
         "郑洋": {
-            "leader": "葛仕明"
+            num: ,"leader": "葛仕明"
         },
         "魏朝辉": {
-            "leader": "葛仕明"
+            num: ,"leader": "葛仕明"
         },
         "牟楠": {
-            "leader": "葛仕明"
+            num: ,"leader": "葛仕明"
         },
         "车东剑": {
-            "leader": "李志"
+            num: ,"leader": "李志"
         },
         "娄学政": {
-            "leader": "李志"
+            num: ,"leader": "李志"
         },
         "王振戌": {
-            "leader": "李志"
+            num: ,"leader": "李志"
         },
         "张鹤": {
-            "leader": "李志"
+            num: ,"leader": "李志"
         },
         "刘华舟": {
-            "leader": "李志"
+            num: ,"leader": "李志"
         },
+        */
         "任春林": {
+            num: 94,
             "leader": "李志"
         },
+        /*
         "阮书涵": {
-            "leader": "朱红松"
+            num: ,"leader": "朱红松"
         },
         "宋子龙": {
-            "leader": "朱红松"
+            num: ,"leader": "朱红松"
         },
         "郝轶": {
-            "leader": "朱红松"
+            num: ,"leader": "朱红松"
         },
+        */
         "姚睿尧": {
+            num: 96,
             "leader": "朱红松"
         },
+        /*
         "李宗枝": {
-            "leader": "朱红松"
+            num: ,"leader": "朱红松"
         },
+        */
         "陈祠": {
+            num: 71,
             "leader": "朱红松"
         },
+        /*
         "张萌": {
-            "leader": "朱红松"
+            num: ,"leader": "朱红松"
         },
+        */
         "肖松": {
+            num: 85,
             "leader": "朱红松"
         },
         "陈磊": {
+            num: 72,
             "leader": "朱红松"
         },
         "刘玉红": {
+            num: 87,
             "leader": "朱红松"
         },
+        /*
         "刘伟": {
-            "leader": "朱红松"
+            num: ,"leader": "朱红松"
         },
+        */
         "李强": {
+            num: 83,
             "leader": "朱红松"
         },
         "李红": {
+            num: 82,
             "leader": "朱红松"
         },
         "何云华": {
+            num: 77,
             "leader": "朱红松"
         },
         "党相凛": {
+            num: 70,
             "leader": "黄文军"
         },
         "吴腾": {
+            num: 91,
             "leader": "黄文军"
         },
+        /*
         "蔡小伟": {
-            "leader": "黄文军"
+            num: ,"leader": "黄文军"
         }
+        */
     }
 
     // Conditions
