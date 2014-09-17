@@ -56,11 +56,12 @@ exports.calculate = function(json_data, options, callback) {
          91: { "name":   "吴腾", "leader": "黄文军" },
     }
 
-    fs.readFile('./groupinfo.json',
-            function(err, data) {
-                members = JSON.parse(data);
-            }
-    );
+   // fs.readFile('./groupinfo.json',
+   //         function(err, data) {
+   //             members = JSON.parse(data);
+   //         }
+   // );
+    members = require('../../groupinfo.json');
 
     members     = options['members']?options['members']:members;
 
