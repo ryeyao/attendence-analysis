@@ -215,6 +215,48 @@ exports.calculate = function(json_data, options, callback) {
         result_sheet[k] = target_row;
     }
 
+    // Add the rest in groupinfo
+    var rest_map = {}
+    for(var employee_num in members) {
+        var name = members[employee_num]['name'];
+        var leader = members[employee_num]['leader'];
+
+        if(typeof result_sheet[employee_num] == 'undefined') {
+
+            rest_map[employee_num] = {};
+            for (var i = 0; i < result_row_name.length; i++) {
+                var key = result_row_name[i];
+                if (key == '姓名') {
+                    rest_map[employee_num][key] = name;
+                }
+                //else if (i == 1 || i == 2 || i == 3 || i == 4 || i == 5 || i == 6 || i == 7 || i == 8 || i == 9 || i == 10) {
+                else if (i >= 1 && i <=10) {
+                    rest_map[employee_num][key] = 0;
+                }
+                else if (i == 11) {
+
+                }
+                else if (key == '员工编号') {
+                    rest_map[employee_num][key] = employee_num;
+                }
+                else {
+                    rest_map[employee_num][key] = '';
+                }
+            }
+            target_row = rest_map[employee_num];
+
+            // add to sheet
+                
+            if (typeof result_workbook[leader] == 'undefined') {
+                    result_workbook[leader] = {};
+            }
+            result_workbook[leader][employee_num] = target_row;
+            result_sheet[employee_num] = target_row;
+//            result_map[name] = row;
+        }
+    }
+//}
+
 //    console.log(result_workbook);
     result_workbook['all'] = result_sheet;
     result_json_data['records'] = result_workbook;
