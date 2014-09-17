@@ -6,6 +6,7 @@
  */
 
 var moment = require('moment');
+var fs = require('fs');
 
 exports.calculate = function(json_data, options, callback) {
     if (typeof callback == 'undefined') {
@@ -31,153 +32,37 @@ exports.calculate = function(json_data, options, callback) {
     holidays    = options['holidays']?options['holidays']:[]; // Holidays [YYYY-MM-DD], use weekends as default
 
     number_fixed = 2;
-    members     = options['members']?options['members']: {
-        /* "甘伟": {
-            num: ,"leader": "石志强"
-        },
-        "李晓森": {
-            num: ,"leader": "石志强"
-        },
-        "尚传人": {
-            num: ,"leader": "石志强"
-        }, */
-        "杨安": {
-            num: 203,
-            "leader": "石志强"
-        },
-        "王小山": {
-            num: 205,
-            "leader": "石志强"
-        },
-        "王洪涛": {
-            num: 202,
-            "leader": "石志强"
-        },
-        /*
-        "许宝东": {
-            num: ,"leader": "葛仕明"
-        }, */
-        "杨睿": {
-            num: 73,
-            "leader": "葛仕明"
-        },
-        /*
-        "秦沛熙": {
-            num: ,"leader": "葛仕明"
-        }, */
-        "文辉": {
-            num: 68,
-            "leader": "葛仕明"
-        },
-        "易锋": {
-            num: 204,
-            "leader": "葛仕明"
-        },
-        /*
-        "高山岩": {
-            num: ,"leader": "葛仕明"
-        },
-        "郑洋": {
-            num: ,"leader": "葛仕明"
-        },
-        "魏朝辉": {
-            num: ,"leader": "葛仕明"
-        },
-        "牟楠": {
-            num: ,"leader": "葛仕明"
-        },
-        "车东剑": {
-            num: ,"leader": "李志"
-        },
-        "娄学政": {
-            num: ,"leader": "李志"
-        },
-        "王振戌": {
-            num: ,"leader": "李志"
-        },
-        "张鹤": {
-            num: ,"leader": "李志"
-        },
-        "刘华舟": {
-            num: ,"leader": "李志"
-        },
-        */
-        "任春林": {
-            num: 94,
-            "leader": "李志"
-        },
-        /*
-        "阮书涵": {
-            num: ,"leader": "朱红松"
-        },
-        "宋子龙": {
-            num: ,"leader": "朱红松"
-        },
-        "郝轶": {
-            num: ,"leader": "朱红松"
-        },
-        */
-        "姚睿尧": {
-            num: 96,
-            "leader": "朱红松"
-        },
-        /*
-        "李宗枝": {
-            num: ,"leader": "朱红松"
-        },
-        */
-        "陈祠": {
-            num: 71,
-            "leader": "朱红松"
-        },
-        /*
-        "张萌": {
-            num: ,"leader": "朱红松"
-        },
-        */
-        "肖松": {
-            num: 85,
-            "leader": "朱红松"
-        },
-        "陈磊": {
-            num: 72,
-            "leader": "朱红松"
-        },
-        "刘玉红": {
-            num: 87,
-            "leader": "朱红松"
-        },
-        /*
-        "刘伟": {
-            num: ,"leader": "朱红松"
-        },
-        */
-        "李强": {
-            num: 83,
-            "leader": "朱红松"
-        },
-        "李红": {
-            num: 82,
-            "leader": "朱红松"
-        },
-        "何云华": {
-            num: 77,
-            "leader": "朱红松"
-        },
-        "党相凛": {
-            num: 70,
-            "leader": "黄文军"
-        },
-        "吴腾": {
-            num: 91,
-            "leader": "黄文军"
-        },
-        /*
-        "蔡小伟": {
-            num: ,"leader": "黄文军"
-        }
-        */
+
+    // read groupinfo from file groupinfo.json
+    members     =  
+    {
+        203: { "name":   "杨安", "leader": "石志强" },
+        205: { "name": "王小山", "leader": "石志强" },
+        202: { "name": "王洪涛", "leader": "石志强" },
+         73: { "name":   "杨睿", "leader": "葛仕明" },
+         68: { "name":   "文辉", "leader": "葛仕明" },
+        204: { "name":   "易锋", "leader": "葛仕明" },
+         94: { "name": "任春林", "leader":   "李志" },
+         96: { "name": "姚睿尧", "leader": "朱红松" },
+         71: { "name":   "陈祠", "leader": "朱红松" },
+         85: { "name":   "肖松", "leader": "朱红松" },
+         72: { "name":   "陈磊", "leader": "朱红松" },
+         87: { "name": "刘玉红", "leader": "朱红松" },
+         83: { "name":   "李强", "leader": "朱红松" },
+         80: { "name":   "李强", "leader": "朱红松" },
+         82: { "name":   "李红", "leader": "朱红松" },
+         77: { "name": "何云华", "leader": "朱红松" },
+         70: { "name": "党相凛", "leader": "黄文军" },
+         91: { "name":   "吴腾", "leader": "黄文军" },
     }
+
+    fs.readFile('./groupinfo.json',
+            function(err, data) {
+                members = JSON.parse(data);
+            }
+    );
+
+    members     = options['members']?options['members']:members;
 
     // Conditions
     weekday_begin   = options['weekday_begin']  ?   options['weekday_begin']    :{hour: 9, minute: 40};
@@ -197,7 +82,7 @@ exports.calculate = function(json_data, options, callback) {
     pattern_period  = /^([01]\d|2[0-3]):([0-5]\d):([0-5]\d)to([01]\d|2[0-3]):([0-5]\d):([0-5]\d)$/i;
 
     // Result record format
-    result_row_name = ['姓名', '出勤（天）', '迟到/早退（次）', '病事假（天）', '出差（天）', '总加班（次）', '一般晚上加班(次)', '一般周末加班(小时)', '强制晚加班(次)', '强制周末加班(小时)', '加班效果评价', '补贴计算', '备注说明'];
+    result_row_name = ['姓名', '出勤（天）', '迟到/早退（次）', '病事假（天）', '出差（天）', '总加班（次）', '一般晚上加班(次)', '一般周末加班(小时)', '强制晚加班(次)', '强制周末加班(小时)', '加班效果评价', '补贴计算', '备注说明', '员工编号'];
 
     // TODO format sheet, remove unrelated rows
     // Group
@@ -217,6 +102,7 @@ exports.calculate = function(json_data, options, callback) {
 //    for (var row in sheet) {
     for (var row = 0; row < sheet.length; row++) {
         var name = sheet[row][result_row_name[0]];
+        var employee_num = sheet[row][result_row_name[13]];
         console.log('=========================');
 //        console.log('0weekday ' + sheet[row][date_coln] +  ': ' + moment(sheet[row][date_coln]).isoWeekday());
         if (typeof sheet[row] == 'undefined' || typeof name == 'undefined') {
@@ -259,26 +145,30 @@ exports.calculate = function(json_data, options, callback) {
         last_row = sheet[row]
 
         var target_row = {};
-        if (typeof result_map[name] == 'undefined') {
-            result_map[name] = {};
+        if (typeof result_map[employee_num] == 'undefined') {
+            result_map[employee_num] = {};
             for (var i = 0; i < result_row_name.length; i++) {
                 var key = result_row_name[i];
                 if (key == '姓名') {
-                    result_map[name][key] = name;
+                    result_map[employee_num][key] = name;
                 }
-                else if (i == 1 || i == 2 || i == 3 || i == 4 || i == 5 || i == 6 || i == 7 || i == 8 || i == 9 || i == 10) {
-                    result_map[name][key] = 0;
+                //else if (i == 1 || i == 2 || i == 3 || i == 4 || i == 5 || i == 6 || i == 7 || i == 8 || i == 9 || i == 10) {
+                else if (i >= 1 && i <=10) {
+                    result_map[employee_num][key] = 0;
                 }
                 else if (i == 11) {
 
                 }
+                else if (key == '员工编号') {
+                    result_map[employee_num][key] = employee_num;
+                }
                 else {
-                    result_map[name][key] = '';
+                    result_map[employee_num][key] = '';
                 }
             }
 //            result_map[name] = row;
         }
-        target_row = result_map[name];
+        target_row = result_map[employee_num];
         add_up_cells_of_row(target_row, res);
     }
 
@@ -301,7 +191,8 @@ exports.calculate = function(json_data, options, callback) {
 //        console.log(target_row);
 
 
-        target_row[result_row_name[0]] = k;
+        //target_row[result_row_name[0]] = k;
+        //target_row[result_row_name[13]] = k;
         if (is_first) {
             target_row[result_row_name[11]] = '=F4*15+I4*40+(J4/8)*100+(G4*40+(H4/8)*100)*K4+E4*100-D4*80-C4*40'
             is_first = false;

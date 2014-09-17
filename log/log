@@ -1,0 +1,5014 @@
+Initializing development environment...
+Initializating 00_generic...
+Initializating 01_mime...
+Initializating 02_models...
+Initializating 03_passport...
+Initializating 04_simplesmtp...
+INFO: SimpleSMTP server is listening on port 9876
+undefined
+Express server listening on port 3000
+[90mGET / [32m200 [90m328ms - 7.82kb[0m
+[90mGET /js/vendor/jquery.form.js [32m200 [90m14ms - 36.46kb[0m
+[90mGET /js/controllers/signupController.js [32m200 [90m13ms - 363b[0m
+[90mGET /js/views/signup.js [32m200 [90m15ms - 1.22kb[0m
+[90mGET /css/bootstrap-tagsinput.css [32m200 [90m19ms - 1.08kb[0m
+[90mGET /css/ui-lightness/jquery-ui-1.10.3.custom.min.css [32m200 [90m32ms - 26.52kb[0m
+[90mGET /js/form-validators/accountValidator.js [32m200 [90m3ms - 2.33kb[0m
+[90mGET /js/controllers/attendenceController.js [32m200 [90m2ms - 2.42kb[0m
+[90mGET /js/views/attendence.js [32m200 [90m2ms - 5.48kb[0m
+[90mGET /js/utils/file/dropzone.js [32m200 [90m27ms - 54.55kb[0m
+[90mGET /js/utils/jszip/jszip-inflate.js [32m200 [90m5ms - 15.13kb[0m
+[90mGET /js/utils/jszip/jszip.js [32m200 [90m7ms - 48.47kb[0m
+[90mGET /js/utils/excel/xlsx.js [32m200 [90m7ms - 30.59kb[0m
+[90mGET /js/utils/jszip/jszip-deflate.js [32m200 [90m15ms - 26.01kb[0m
+[90mGET /js/utils/jszip/jszip-load.js [32m200 [90m24ms - 26.6kb[0m
+[90mGET /js/jquery-ui-1.10.3.custom.min.js [32m200 [90m11ms - 222.79kb[0m
+[90mGET /js/views/multiDatesPicker/jquery-ui.multidatespicker.js [32m200 [90m9ms - 15.58kb[0m
+[90mGET /js/utils/tags/bootstrap-tagsinput.js [32m200 [90m6ms - 15.22kb[0m
+[90mGET /css/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png [32m200 [90m12ms - 278b[0m
+[90mGET /css/ui-lightness/images/ui-icons_ffffff_256x240.png [32m200 [90m3ms - 6.15kb[0m
+[90mGET /css/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png [32m200 [90m6ms - 5.68kb[0m
+[90mGET /css/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png [32m200 [90m5ms - 262b[0m
+[90mGET /css/ui-lightness/images/ui-bg_highlight-soft_75_ffe45c_1x100.png [32m200 [90m4ms - 328b[0m
+[90mGET /dashboard [36m302 [90m4ms - 58b[0m
+[90mGET / [32m200 [90m167ms - 7.82kb[0m
+[90mGET /css/style.css [36m304 [90m3ms[0m
+[90mGET /js/vendor/jquery.form.js [36m304 [90m1ms[0m
+[90mGET /js/views/signup.js [36m304 [90m1ms[0m
+[90mGET /js/controllers/signupController.js [36m304 [90m2ms[0m
+[90mGET /js/form-validators/accountValidator.js [36m304 [90m1ms[0m
+[90mGET /css/ui-lightness/jquery-ui-1.10.3.custom.min.css [36m304 [90m1ms[0m
+[90mGET /css/bootstrap-tagsinput.css [36m304 [90m1ms[0m
+[90mGET /js/controllers/attendenceController.js [36m304 [90m2ms[0m
+[90mGET /js/utils/file/dropzone.js [36m304 [90m1ms[0m
+[90mGET /js/views/attendence.js [36m304 [90m0ms[0m
+[90mGET /js/utils/jszip/jszip-load.js [36m304 [90m0ms[0m
+[90mGET /js/utils/jszip/jszip-deflate.js [36m304 [90m1ms[0m
+[90mGET /js/jquery-ui-1.10.3.custom.min.js [36m304 [90m2ms[0m
+[90mGET /js/utils/jszip/jszip.js [36m304 [90m3ms[0m
+[90mGET /js/utils/excel/xlsx.js [36m304 [90m2ms[0m
+[90mGET /js/utils/jszip/jszip-inflate.js [36m304 [90m3ms[0m
+[90mGET /js/views/multiDatesPicker/jquery-ui.multidatespicker.js [36m304 [90m1ms[0m
+[90mGET /js/utils/tags/bootstrap-tagsinput.js [36m304 [90m1ms[0m
+[90mGET /js/utils/tags/bootstrap-tagsinput.js [36m304 [90m2ms[0m
+[90mGET / [32m200 [90m142ms - 7.82kb[0m
+[90mGET /css/style.css [36m304 [90m2ms[0m
+[90mGET /js/vendor/jquery.form.js [36m304 [90m0ms[0m
+[90mGET /js/views/signup.js [36m304 [90m1ms[0m
+[90mGET /js/controllers/signupController.js [36m304 [90m0ms[0m
+[90mGET /js/form-validators/accountValidator.js [36m304 [90m0ms[0m
+[90mGET /css/ui-lightness/jquery-ui-1.10.3.custom.min.css [36m304 [90m0ms[0m
+[90mGET /css/bootstrap-tagsinput.css [36m304 [90m1ms[0m
+[90mGET /js/controllers/attendenceController.js [36m304 [90m1ms[0m
+[90mGET /js/utils/file/dropzone.js [36m304 [90m1ms[0m
+[90mGET /js/views/attendence.js [36m304 [90m1ms[0m
+[90mGET /js/utils/jszip/jszip-load.js [36m304 [90m1ms[0m
+[90mGET /js/utils/jszip/jszip-deflate.js [36m304 [90m1ms[0m
+[90mGET /js/utils/jszip/jszip-inflate.js [36m304 [90m2ms[0m
+[90mGET /js/utils/jszip/jszip.js [36m304 [90m1ms[0m
+[90mGET /js/utils/excel/xlsx.js [36m304 [90m1ms[0m
+[90mGET /js/jquery-ui-1.10.3.custom.min.js [36m304 [90m0ms[0m
+[90mGET /js/views/multiDatesPicker/jquery-ui.multidatespicker.js [36m304 [90m1ms[0m
+[90mGET /js/utils/tags/bootstrap-tagsinput.js [36m304 [90m1ms[0m
+[90mGET /js/utils/tags/bootstrap-tagsinput.js [36m304 [90m1ms[0m
+[90mGET /dashboard [36m302 [90m2ms - 58b[0m
+[90mGET / [32m200 [90m112ms - 7.82kb[0m
+[90mGET /css/style.css [36m304 [90m2ms[0m
+[90mGET /js/vendor/jquery.form.js [36m304 [90m1ms[0m
+[90mGET /js/views/signup.js [36m304 [90m1ms[0m
+[90mGET /js/controllers/signupController.js [36m304 [90m1ms[0m
+[90mGET /js/form-validators/accountValidator.js [36m304 [90m0ms[0m
+[90mGET /css/ui-lightness/jquery-ui-1.10.3.custom.min.css [36m304 [90m1ms[0m
+[90mGET /css/bootstrap-tagsinput.css [36m304 [90m1ms[0m
+[90mGET /js/utils/file/dropzone.js [36m304 [90m1ms[0m
+[90mGET /js/utils/jszip/jszip-load.js [36m304 [90m1ms[0m
+[90mGET /js/views/attendence.js [36m304 [90m2ms[0m
+[90mGET /js/controllers/attendenceController.js [36m304 [90m2ms[0m
+[90mGET /js/utils/jszip/jszip-deflate.js [36m304 [90m1ms[0m
+[90mGET /js/utils/jszip/jszip-inflate.js [36m304 [90m1ms[0m
+[90mGET /js/utils/jszip/jszip.js [36m304 [90m1ms[0m
+[90mGET /js/utils/excel/xlsx.js [36m304 [90m0ms[0m
+[90mGET /js/jquery-ui-1.10.3.custom.min.js [36m304 [90m1ms[0m
+[90mGET /js/utils/tags/bootstrap-tagsinput.js [36m304 [90m1ms[0m
+[90mGET /js/views/multiDatesPicker/jquery-ui.multidatespicker.js [36m304 [90m1ms[0m
+[90mGET / [32m200 [90m152ms - 7.82kb[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/vendor/jquery.form.js [36m304 [90m1ms[0m
+[90mGET /js/views/signup.js [36m304 [90m1ms[0m
+[90mGET /js/controllers/signupController.js [36m304 [90m1ms[0m
+[90mGET /js/form-validators/accountValidator.js [36m304 [90m1ms[0m
+[90mGET /css/ui-lightness/jquery-ui-1.10.3.custom.min.css [36m304 [90m1ms[0m
+[90mGET /css/bootstrap-tagsinput.css [36m304 [90m1ms[0m
+[90mGET /js/utils/file/dropzone.js [36m304 [90m1ms[0m
+[90mGET /js/controllers/attendenceController.js [36m304 [90m1ms[0m
+[90mGET /js/views/attendence.js [36m304 [90m1ms[0m
+[90mGET /js/utils/jszip/jszip-load.js [36m304 [90m1ms[0m
+[90mGET /js/utils/jszip/jszip-deflate.js [36m304 [90m1ms[0m
+[90mGET /js/utils/jszip/jszip-inflate.js [36m304 [90m1ms[0m
+[90mGET /js/utils/jszip/jszip.js [36m304 [90m1ms[0m
+[90mGET /js/utils/excel/xlsx.js [36m304 [90m0ms[0m
+[90mGET /js/jquery-ui-1.10.3.custom.min.js [36m304 [90m0ms[0m
+[90mGET /js/views/multiDatesPicker/jquery-ui.multidatespicker.js [36m304 [90m1ms[0m
+[90mGET /js/utils/tags/bootstrap-tagsinput.js [36m304 [90m1ms[0m
+[90mGET / [32m200 [90m152ms - 7.82kb[0m
+[90mGET /css/style.css [32m200 [90m4ms - 110b[0m
+[90mGET /js/vendor/jquery.form.js [36m304 [90m1ms[0m
+[90mGET /js/views/signup.js [36m304 [90m2ms[0m
+[90mGET /js/controllers/signupController.js [36m304 [90m2ms[0m
+[90mGET /js/form-validators/accountValidator.js [36m304 [90m1ms[0m
+[90mGET /css/ui-lightness/jquery-ui-1.10.3.custom.min.css [36m304 [90m1ms[0m
+[90mGET /css/bootstrap-tagsinput.css [36m304 [90m0ms[0m
+[90mGET /js/utils/file/dropzone.js [36m304 [90m0ms[0m
+[90mGET /js/controllers/attendenceController.js [36m304 [90m1ms[0m
+[90mGET /js/views/attendence.js [36m304 [90m1ms[0m
+[90mGET /js/utils/jszip/jszip-load.js [36m304 [90m0ms[0m
+[90mGET /js/utils/jszip/jszip-deflate.js [36m304 [90m0ms[0m
+[90mGET /js/utils/jszip/jszip-inflate.js [36m304 [90m0ms[0m
+[90mGET /js/utils/jszip/jszip.js [36m304 [90m0ms[0m
+[90mGET /js/utils/excel/xlsx.js [36m304 [90m1ms[0m
+[90mGET /js/jquery-ui-1.10.3.custom.min.js [36m304 [90m1ms[0m
+[90mGET /js/views/multiDatesPicker/jquery-ui.multidatespicker.js [36m304 [90m1ms[0m
+[90mGET /js/utils/tags/bootstrap-tagsinput.js [36m304 [90m0ms[0m
+[90mGET /css/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png [36m304 [90m1ms[0m
+[90mGET /css/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png [36m304 [90m1ms[0m
+[90mGET /css/ui-lightness/images/ui-icons_ffffff_256x240.png [36m304 [90m1ms[0m
+[90mGET /css/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png [36m304 [90m0ms[0m
+[90mGET /css/ui-lightness/images/ui-bg_highlight-soft_75_ffe45c_1x100.png [36m304 [90m1ms[0m
+Parsing /tmp/920-1yux3ir.xlsx
+Unrecognized key in Heading Pairs: å·¥ä½è¡¨
+holidays: 
+=========================
+=========================
+Date: 2014-08-17
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 8.766944444444444
+Date: 2014-08-18
+begin: 1410944988000
+end: 1410913427000
+end - start: 526.0166666666667 minutes
+=========================
+=========================
+total work hours: 13.709722222222222
+Date: 2014-08-19
+begin: 1410962830000
+end: 1410913475000
+end - start: 822.5833333333334 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 13.546666666666667
+Date: 2014-08-20
+begin: 1410962565000
+end: 1410913797000
+end - start: 812.8 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 13.531666666666666
+Date: 2014-08-21
+begin: 1410962858000
+end: 1410914144000
+end - start: 811.9 minutes
+Normal work over: 1
+=========================
+=========================
+Date: 2014-08-22
+begin: 0
+end: 1410913902000
+end - start: -23515231.7 minutes
+Absence: 1
+=========================
+Date: 2014-08-23
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-24
+begin: 0
+end: 1410935277000
+end - start: -23515587.95 minutes
+=========================
+=========================
+total work hours: 13.67
+Date: 2014-08-25
+begin: 1410962580000
+end: 1410913368000
+end - start: 820.2 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.474444444444444
+Date: 2014-08-26
+begin: 1410944818000
+end: 1410914310000
+end - start: 508.46666666666664 minutes
+=========================
+=========================
+total work hours: 8.42361111111111
+Date: 2014-08-27
+begin: 1410944455000
+end: 1410914130000
+end - start: 505.4166666666667 minutes
+=========================
+=========================
+total work hours: 12.326666666666666
+Date: 2014-08-28
+begin: 1410959058000
+end: 1410914682000
+end - start: 739.6 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 5.375555555555556
+Date: 2014-08-29
+begin: 1410944443000
+end: 1410925091000
+end - start: 322.53333333333336 minutes
+Absence: 0.5
+=========================
+Date: 2014-08-30
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-31
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 13.885
+Date: 2014-09-01
+begin: 1410963431000
+end: 1410913445000
+end - start: 833.1 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 5.610833333333333
+Date: 2014-09-02
+begin: 1410946388000
+end: 1410926189000
+end - start: 336.65 minutes
+Absence: 0.5
+=========================
+=========================
+total work hours: 9.321666666666667
+Date: 2014-09-03
+begin: 1410946633000
+end: 1410913075000
+end - start: 559.3 minutes
+=========================
+=========================
+total work hours: 8.421388888888888
+Date: 2014-09-04
+begin: 1410944979000
+end: 1410914662000
+end - start: 505.28333333333336 minutes
+=========================
+=========================
+total work hours: 13.1225
+Date: 2014-09-05
+begin: 1410960126000
+end: 1410912885000
+end - start: 787.35 minutes
+Normal work over: 1
+=========================
+Date: 2014-09-06
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+total work hours: 1.8708333333333333
+Date: 2014-09-07
+begin: 1410941841000
+end: 1410935106000
+end - start: 112.25 minutes
+work over: 1.8708333333333333 hours
+=========================
+=========================
+total work hours: 11.604722222222222
+Date: 2014-09-09
+begin: 1410955432000
+end: 1410913655000
+end - start: 696.2833333333333 minutes
+=========================
+=========================
+total work hours: 2.95
+Date: 2014-09-10
+begin: 1410924897000
+end: 1410914277000
+end - start: 177 minutes
+Absence: 1
+=========================
+=========================
+total work hours: 10.179444444444444
+Date: 2014-09-11
+begin: 1410950169000
+end: 1410913523000
+end - start: 610.7666666666667 minutes
+=========================
+=========================
+total work hours: 8.369444444444444
+Date: 2014-09-12
+begin: 1410945147000
+end: 1410915017000
+end - start: 502.1666666666667 minutes
+=========================
+Date: 2014-09-13
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-14
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.501944444444444
+Date: 2014-09-15
+begin: 1410958940000
+end: 1410913933000
+end - start: 750.1166666666667 minutes
+Normal work over: 1
+=========================
+Date: 2014-08-16
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-17
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.927222222222222
+Date: 2014-08-18
+begin: 1410960100000
+end: 1410913562000
+end - start: 775.6333333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.62
+Date: 2014-08-19
+begin: 1410944505000
+end: 1410913473000
+end - start: 517.2 minutes
+=========================
+=========================
+total work hours: 11.025
+Date: 2014-08-20
+begin: 1410952934000
+end: 1410913244000
+end - start: 661.5 minutes
+=========================
+=========================
+total work hours: 12.997222222222222
+Date: 2014-08-21
+begin: 1410960043000
+end: 1410913253000
+end - start: 779.8333333333334 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.664166666666667
+Date: 2014-08-22
+begin: 1410944421000
+end: 1410913230000
+end - start: 519.85 minutes
+=========================
+Date: 2014-08-23
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-24
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.9625
+Date: 2014-08-25
+begin: 1410960000000
+end: 1410913335000
+end - start: 777.75 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.679722222222223
+Date: 2014-08-26
+begin: 1410944464000
+end: 1410913217000
+end - start: 520.7833333333333 minutes
+=========================
+=========================
+total work hours: 12.79861111111111
+Date: 2014-08-27
+begin: 1410960026000
+end: 1410913951000
+end - start: 767.9166666666666 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.910833333333333
+Date: 2014-08-28
+begin: 1410960139000
+end: 1410913660000
+end - start: 774.65 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.690555555555555
+Date: 2014-08-29
+begin: 1410944415000
+end: 1410913129000
+end - start: 521.4333333333333 minutes
+=========================
+Date: 2014-08-30
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-31
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+Date: 2014-09-01
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+total work hours: 7.181111111111111
+Date: 2014-09-02
+begin: 1410944458000
+end: 1410918606000
+end - start: 430.8666666666667 minutes
+Absence: 0.5
+=========================
+=========================
+total work hours: 12.849722222222223
+Date: 2014-09-03
+begin: 1410960050000
+end: 1410913791000
+end - start: 770.9833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.946666666666667
+Date: 2014-09-04
+begin: 1410960109000
+end: 1410913501000
+end - start: 776.8 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.685
+Date: 2014-09-05
+begin: 1410944531000
+end: 1410913265000
+end - start: 521.1 minutes
+=========================
+Date: 2014-09-06
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-07
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 7.306388888888889
+Date: 2014-09-09
+begin: 1410944481000
+end: 1410918178000
+end - start: 438.3833333333333 minutes
+Absence: 0.5
+=========================
+=========================
+total work hours: 12.778611111111111
+Date: 2014-09-10
+begin: 1410960069000
+end: 1410914066000
+end - start: 766.7166666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.704444444444444
+Date: 2014-09-11
+begin: 1410960081000
+end: 1410914345000
+end - start: 762.2666666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.877222222222223
+Date: 2014-09-12
+begin: 1410959942000
+end: 1410913584000
+end - start: 772.6333333333333 minutes
+Normal work over: 1
+=========================
+total work hours: 3.0280555555555555
+Date: 2014-09-13
+begin: 1410926609000
+end: 1410915708000
+end - start: 181.68333333333334 minutes
+work over: 3.0280555555555555 hours
+=========================
+total work hours: 2.6983333333333333
+Date: 2014-09-14
+begin: 1410928249000
+end: 1410918535000
+end - start: 161.9 minutes
+work over: 2.6983333333333333 hours
+=========================
+=========================
+total work hours: 12.837222222222222
+Date: 2014-09-15
+begin: 1410960029000
+end: 1410913815000
+end - start: 770.2333333333333 minutes
+Normal work over: 1
+=========================
+Date: 2014-08-16
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-17
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.789722222222222
+Date: 2014-08-18
+begin: 1410960133000
+end: 1410914090000
+end - start: 767.3833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 13.011111111111111
+Date: 2014-08-19
+begin: 1410960116000
+end: 1410913276000
+end - start: 780.6666666666666 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 13.036111111111111
+Date: 2014-08-20
+begin: 1410960148000
+end: 1410913218000
+end - start: 782.1666666666666 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 13.096388888888889
+Date: 2014-08-21
+begin: 1410960061000
+end: 1410912914000
+end - start: 785.7833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 3.7130555555555556
+Date: 2014-08-22
+begin: 1410926505000
+end: 1410913138000
+end - start: 222.78333333333333 minutes
+Absence: 1
+=========================
+Date: 2014-08-23
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-24
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 8.32638888888889
+Date: 2014-08-25
+begin: 1410944643000
+end: 1410914668000
+end - start: 499.5833333333333 minutes
+=========================
+=========================
+total work hours: 12.960833333333333
+Date: 2014-08-26
+begin: 1410960171000
+end: 1410913512000
+end - start: 777.65 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 13.013333333333334
+Date: 2014-08-27
+begin: 1410960138000
+end: 1410913290000
+end - start: 780.8 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.906944444444445
+Date: 2014-08-28
+begin: 1410960095000
+end: 1410913630000
+end - start: 774.4166666666666 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.752222222222223
+Date: 2014-08-29
+begin: 1410944598000
+end: 1410913090000
+end - start: 525.1333333333333 minutes
+=========================
+Date: 2014-08-30
+begin: 0
+end: 1410886568000
+end - start: -23514776.133333333 minutes
+=========================
+Date: 2014-08-31
+begin: 0
+end: 1410934688000
+end - start: -23515578.133333333 minutes
+=========================
+=========================
+total work hours: 12.330277777777777
+Date: 2014-09-01
+begin: 1410960160000
+end: 1410915771000
+end - start: 739.8166666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.88111111111111
+Date: 2014-09-02
+begin: 1410960150000
+end: 1410913778000
+end - start: 772.8666666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.721388888888889
+Date: 2014-09-03
+begin: 1410960056000
+end: 1410914259000
+end - start: 763.2833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.963888888888889
+Date: 2014-09-04
+begin: 1410960163000
+end: 1410913493000
+end - start: 777.8333333333334 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.934166666666666
+Date: 2014-09-05
+begin: 1410957576000
+end: 1410925413000
+end - start: 536.05 minutes
+Late/Early: 1
+=========================
+Date: 2014-09-06
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-07
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.878055555555555
+Date: 2014-09-09
+begin: 1410960192000
+end: 1410913831000
+end - start: 772.6833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.780555555555555
+Date: 2014-09-10
+begin: 1410960072000
+end: 1410914062000
+end - start: 766.8333333333334 minutes
+Normal work over: 1
+=========================
+=========================
+Date: 2014-09-11
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+total work hours: 8.609166666666667
+Date: 2014-09-12
+begin: 1410944638000
+end: 1410913645000
+end - start: 516.55 minutes
+=========================
+Date: 2014-09-13
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-14
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+Date: 2014-09-15
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+Date: 2014-08-16
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-17
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+Date: 2014-08-18
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-08-19
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-08-20
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-08-21
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-08-22
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+Date: 2014-08-23
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-24
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 10.889166666666666
+Date: 2014-08-25
+begin: 1410952626000
+end: 1410913425000
+end - start: 653.35 minutes
+=========================
+=========================
+total work hours: 13.0225
+Date: 2014-08-26
+begin: 1410960095000
+end: 1410913214000
+end - start: 781.35 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 3.1780555555555554
+Date: 2014-08-27
+begin: 1410924655000
+end: 1410913214000
+end - start: 190.68333333333334 minutes
+Absence: 1
+=========================
+=========================
+total work hours: 12.903888888888888
+Date: 2014-08-28
+begin: 1410960086000
+end: 1410913632000
+end - start: 774.2333333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 11.073333333333334
+Date: 2014-08-29
+begin: 1410952952000
+end: 1410913088000
+end - start: 664.4 minutes
+=========================
+Date: 2014-08-30
+begin: 0
+end: 1410886565000
+end - start: -23514776.083333332 minutes
+=========================
+Date: 2014-08-31
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.9175
+Date: 2014-09-01
+begin: 1410960121000
+end: 1410913618000
+end - start: 775.05 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 10.853333333333333
+Date: 2014-09-02
+begin: 1410952828000
+end: 1410913756000
+end - start: 651.2 minutes
+=========================
+=========================
+total work hours: 12.655
+Date: 2014-09-03
+begin: 1410959815000
+end: 1410914257000
+end - start: 759.3 minutes
+Normal work over: 1
+=========================
+=========================
+Date: 2014-09-04
+begin: 0
+end: 1410913495000
+end - start: -23515224.916666668 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-09-05
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+Date: 2014-09-06
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-07
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 10.728333333333333
+Date: 2014-09-09
+begin: 1410952952000
+end: 1410914330000
+end - start: 643.7 minutes
+=========================
+=========================
+total work hours: 12.889166666666666
+Date: 2014-09-10
+begin: 1410960174000
+end: 1410913773000
+end - start: 773.35 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.699722222222222
+Date: 2014-09-11
+begin: 1410960090000
+end: 1410914371000
+end - start: 761.9833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.867222222222223
+Date: 2014-09-12
+begin: 1410959901000
+end: 1410913579000
+end - start: 772.0333333333333 minutes
+Normal work over: 1
+=========================
+total work hours: 2.6719444444444442
+Date: 2014-09-13
+begin: 1410925257000
+end: 1410915638000
+end - start: 160.31666666666666 minutes
+work over: 2.6719444444444442 hours
+=========================
+total work hours: 1.7302777777777778
+Date: 2014-09-14
+begin: 1410928253000
+end: 1410922024000
+end - start: 103.81666666666666 minutes
+work over: 1.7302777777777778 hours
+=========================
+=========================
+total work hours: 12.876666666666667
+Date: 2014-09-15
+begin: 1410960064000
+end: 1410913708000
+end - start: 772.6 minutes
+Normal work over: 1
+=========================
+Date: 2014-08-16
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-17
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.615555555555556
+Date: 2014-08-18
+begin: 1410957038000
+end: 1410911622000
+end - start: 756.9333333333333 minutes
+=========================
+=========================
+total work hours: 12.025277777777777
+Date: 2014-08-19
+begin: 1410955548000
+end: 1410912257000
+end - start: 721.5166666666667 minutes
+=========================
+=========================
+total work hours: 11.739722222222222
+Date: 2014-08-20
+begin: 1410953698000
+end: 1410911435000
+end - start: 704.3833333333333 minutes
+=========================
+=========================
+total work hours: 12.158333333333333
+Date: 2014-08-21
+begin: 1410956411000
+end: 1410912641000
+end - start: 729.5 minutes
+=========================
+=========================
+total work hours: 4.075833333333334
+Date: 2014-08-22
+begin: 1410926584000
+end: 1410911911000
+end - start: 244.55 minutes
+Absence: 0.5
+=========================
+Date: 2014-08-23
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-24
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.366666666666667
+Date: 2014-08-25
+begin: 1410957537000
+end: 1410913017000
+end - start: 742 minutes
+=========================
+=========================
+total work hours: 8.838888888888889
+Date: 2014-08-26
+begin: 1410944459000
+end: 1410912639000
+end - start: 530.3333333333334 minutes
+=========================
+=========================
+total work hours: 12.643333333333333
+Date: 2014-08-27
+begin: 1410956235000
+end: 1410910719000
+end - start: 758.6 minutes
+=========================
+=========================
+total work hours: 12.393055555555556
+Date: 2014-08-28
+begin: 1410957354000
+end: 1410912739000
+end - start: 743.5833333333334 minutes
+=========================
+=========================
+total work hours: 10.488055555555556
+Date: 2014-08-29
+begin: 1410952949000
+end: 1410915192000
+end - start: 629.2833333333333 minutes
+=========================
+Date: 2014-08-30
+begin: 0
+end: 1410926140000
+end - start: -23515435.666666668 minutes
+=========================
+Date: 2014-08-31
+begin: 0
+end: 1410885333000
+end - start: -23514755.55 minutes
+=========================
+=========================
+total work hours: 11.243611111111111
+Date: 2014-09-01
+begin: 1410956216000
+end: 1410915739000
+end - start: 674.6166666666667 minutes
+=========================
+=========================
+total work hours: 11.930833333333334
+Date: 2014-09-02
+begin: 1410957710000
+end: 1410914759000
+end - start: 715.85 minutes
+=========================
+=========================
+total work hours: 9.831666666666667
+Date: 2014-09-03
+begin: 1410948708000
+end: 1410913314000
+end - start: 589.9 minutes
+=========================
+=========================
+total work hours: 11.642222222222221
+Date: 2014-09-04
+begin: 1410954994000
+end: 1410913082000
+end - start: 698.5333333333333 minutes
+=========================
+=========================
+total work hours: 10.585277777777778
+Date: 2014-09-05
+begin: 1410946671000
+end: 1410908564000
+end - start: 635.1166666666667 minutes
+=========================
+Date: 2014-09-06
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-07
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 7.648333333333333
+Date: 2014-09-09
+begin: 1410944479000
+end: 1410916945000
+end - start: 458.9 minutes
+Absence: 0.5
+=========================
+=========================
+total work hours: 9.33388888888889
+Date: 2014-09-10
+begin: 1410947809000
+end: 1410914207000
+end - start: 560.0333333333333 minutes
+=========================
+=========================
+total work hours: 11.501944444444444
+Date: 2014-09-11
+begin: 1410956873000
+end: 1410915466000
+end - start: 690.1166666666667 minutes
+=========================
+=========================
+total work hours: 9.776666666666667
+Date: 2014-09-12
+begin: 1410959936000
+end: 1410924740000
+end - start: 586.6 minutes
+Late/Early: 1
+=========================
+Date: 2014-09-13
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-14
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 10.903611111111111
+Date: 2014-09-15
+begin: 1410957903000
+end: 1410918650000
+end - start: 654.2166666666667 minutes
+Late/Early: 1
+=========================
+Date: 2014-08-16
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-17
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 8.20888888888889
+Date: 2014-08-18
+begin: 1410944800000
+end: 1410915248000
+end - start: 492.53333333333336 minutes
+=========================
+=========================
+total work hours: 10.01
+Date: 2014-08-19
+begin: 1410949641000
+end: 1410913605000
+end - start: 600.6 minutes
+=========================
+=========================
+total work hours: 8.586944444444445
+Date: 2014-08-20
+begin: 1410944493000
+end: 1410913580000
+end - start: 515.2166666666667 minutes
+=========================
+=========================
+total work hours: 8.912222222222223
+Date: 2014-08-21
+begin: 1410945262000
+end: 1410913178000
+end - start: 534.7333333333333 minutes
+=========================
+=========================
+total work hours: 8.578333333333333
+Date: 2014-08-22
+begin: 1410944504000
+end: 1410913622000
+end - start: 514.7 minutes
+=========================
+Date: 2014-08-23
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-24
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 8.194166666666666
+Date: 2014-08-25
+begin: 1410944681000
+end: 1410915182000
+end - start: 491.65 minutes
+=========================
+=========================
+total work hours: 8.771944444444445
+Date: 2014-08-26
+begin: 1410944580000
+end: 1410913001000
+end - start: 526.3166666666667 minutes
+=========================
+=========================
+total work hours: 8.701666666666666
+Date: 2014-08-27
+begin: 1410944964000
+end: 1410913638000
+end - start: 522.1 minutes
+=========================
+=========================
+total work hours: 9.326666666666666
+Date: 2014-08-28
+begin: 1410947141000
+end: 1410913565000
+end - start: 559.6 minutes
+=========================
+=========================
+total work hours: 9.366388888888888
+Date: 2014-08-29
+begin: 1410945442000
+end: 1410911723000
+end - start: 561.9833333333333 minutes
+=========================
+Date: 2014-08-30
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-31
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 8.627222222222223
+Date: 2014-09-01
+begin: 1410944972000
+end: 1410913914000
+end - start: 517.6333333333333 minutes
+=========================
+=========================
+total work hours: 9.460277777777778
+Date: 2014-09-02
+begin: 1410945180000
+end: 1410911123000
+end - start: 567.6166666666667 minutes
+=========================
+=========================
+total work hours: 8.71861111111111
+Date: 2014-09-03
+begin: 1410944636000
+end: 1410913249000
+end - start: 523.1166666666667 minutes
+=========================
+=========================
+total work hours: 9.004444444444445
+Date: 2014-09-04
+begin: 1410944867000
+end: 1410912451000
+end - start: 540.2666666666667 minutes
+=========================
+=========================
+total work hours: 8.575277777777778
+Date: 2014-09-05
+begin: 1410944458000
+end: 1410913587000
+end - start: 514.5166666666667 minutes
+=========================
+Date: 2014-09-06
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-07
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 8.573055555555555
+Date: 2014-09-09
+begin: 1410944562000
+end: 1410913699000
+end - start: 514.3833333333333 minutes
+=========================
+=========================
+total work hours: 8.811666666666667
+Date: 2014-09-10
+begin: 1410945404000
+end: 1410913682000
+end - start: 528.7 minutes
+=========================
+=========================
+total work hours: 8.524444444444445
+Date: 2014-09-11
+begin: 1410944611000
+end: 1410913923000
+end - start: 511.46666666666664 minutes
+=========================
+=========================
+total work hours: 8.48
+Date: 2014-09-12
+begin: 1410944531000
+end: 1410914003000
+end - start: 508.8 minutes
+=========================
+Date: 2014-09-13
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-14
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 8.480833333333333
+Date: 2014-09-15
+begin: 1410944466000
+end: 1410913935000
+end - start: 508.85 minutes
+=========================
+Date: 2014-08-16
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-17
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+Date: 2014-08-18
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-08-19
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-08-20
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-08-21
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-08-22
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+total work hours: 3.872777777777778
+Date: 2014-08-23
+begin: 1410930465000
+end: 1410916523000
+end - start: 232.36666666666667 minutes
+work over: 3.872777777777778 hours
+=========================
+Date: 2014-08-24
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 10.62
+Date: 2014-08-25
+begin: 1410952420000
+end: 1410914188000
+end - start: 637.2 minutes
+=========================
+=========================
+total work hours: 8.4775
+Date: 2014-08-26
+begin: 1410944623000
+end: 1410914104000
+end - start: 508.65 minutes
+=========================
+=========================
+total work hours: 8.381666666666666
+Date: 2014-08-27
+begin: 1410944604000
+end: 1410914430000
+end - start: 502.9 minutes
+=========================
+=========================
+total work hours: 8.372777777777777
+Date: 2014-08-28
+begin: 1410944511000
+end: 1410914369000
+end - start: 502.3666666666667 minutes
+=========================
+=========================
+total work hours: 8.475833333333334
+Date: 2014-08-29
+begin: 1410944612000
+end: 1410914099000
+end - start: 508.55 minutes
+=========================
+Date: 2014-08-30
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-31
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.454166666666667
+Date: 2014-09-01
+begin: 1410960096000
+end: 1410915261000
+end - start: 747.25 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.254444444444445
+Date: 2014-09-02
+begin: 1410944467000
+end: 1410914751000
+end - start: 495.26666666666665 minutes
+=========================
+=========================
+total work hours: 10.748055555555556
+Date: 2014-09-03
+begin: 1410953203000
+end: 1410914510000
+end - start: 644.8833333333333 minutes
+=========================
+=========================
+total work hours: 12.5975
+Date: 2014-09-04
+begin: 1410959987000
+end: 1410914636000
+end - start: 755.85 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 3.8516666666666666
+Date: 2014-09-05
+begin: 1410927238000
+end: 1410913372000
+end - start: 231.1 minutes
+Absence: 0.5
+=========================
+Date: 2014-09-06
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-07
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 10.442777777777778
+Date: 2014-09-09
+begin: 1410952758000
+end: 1410915164000
+end - start: 626.5666666666667 minutes
+=========================
+=========================
+total work hours: 12.58388888888889
+Date: 2014-09-10
+begin: 1410960066000
+end: 1410914764000
+end - start: 755.0333333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.250833333333333
+Date: 2014-09-11
+begin: 1410959694000
+end: 1410915591000
+end - start: 735.05 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.281944444444445
+Date: 2014-09-12
+begin: 1410944614000
+end: 1410914799000
+end - start: 496.9166666666667 minutes
+=========================
+Date: 2014-09-13
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-14
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.731944444444444
+Date: 2014-09-15
+begin: 1410959966000
+end: 1410914131000
+end - start: 763.9166666666666 minutes
+Normal work over: 1
+=========================
+Date: 2014-08-16
+begin: 0
+end: 1410924941000
+end - start: -23515415.683333334 minutes
+=========================
+total work hours: 1.4780555555555555
+Date: 2014-08-17
+begin: 1410927652000
+end: 1410922331000
+end - start: 88.68333333333334 minutes
+work over: 1.4780555555555555 hours
+=========================
+=========================
+total work hours: 12.334444444444445
+Date: 2014-08-18
+begin: 1410959055000
+end: 1410914651000
+end - start: 740.0666666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.510833333333334
+Date: 2014-08-19
+begin: 1410959706000
+end: 1410914667000
+end - start: 750.65 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.613611111111112
+Date: 2014-08-20
+begin: 1410959846000
+end: 1410914437000
+end - start: 756.8166666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.524722222222222
+Date: 2014-08-21
+begin: 1410959814000
+end: 1410914725000
+end - start: 751.4833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.52361111111111
+Date: 2014-08-22
+begin: 1410959779000
+end: 1410914694000
+end - start: 751.4166666666666 minutes
+Normal work over: 1
+=========================
+total work hours: 1.791388888888889
+Date: 2014-08-23
+begin: 1410925910000
+end: 1410919461000
+end - start: 107.48333333333333 minutes
+work over: 1.791388888888889 hours
+=========================
+Date: 2014-08-24
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.507222222222222
+Date: 2014-08-25
+begin: 1410959701000
+end: 1410914675000
+end - start: 750.4333333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.450555555555555
+Date: 2014-08-26
+begin: 1410959632000
+end: 1410914810000
+end - start: 747.0333333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.613611111111112
+Date: 2014-08-27
+begin: 1410960021000
+end: 1410914612000
+end - start: 756.8166666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.395
+Date: 2014-08-28
+begin: 1410959534000
+end: 1410914912000
+end - start: 743.7 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 10.532222222222222
+Date: 2014-08-29
+begin: 1410952665000
+end: 1410914749000
+end - start: 631.9333333333333 minutes
+=========================
+total work hours: 3.4844444444444442
+Date: 2014-08-30
+begin: 1410929774000
+end: 1410917230000
+end - start: 209.06666666666666 minutes
+work over: 3.4844444444444442 hours
+=========================
+total work hours: 2.8730555555555557
+Date: 2014-08-31
+begin: 1410932482000
+end: 1410922139000
+end - start: 172.38333333333333 minutes
+work over: 2.8730555555555557 hours
+=========================
+=========================
+total work hours: 14.278055555555556
+Date: 2014-09-01
+begin: 1410966053000
+end: 1410914652000
+end - start: 856.6833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 14.377222222222223
+Date: 2014-09-02
+begin: 1410965585000
+end: 1410913827000
+end - start: 862.6333333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 13.749444444444444
+Date: 2014-09-03
+begin: 1410964637000
+end: 1410915139000
+end - start: 824.9666666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 14.87861111111111
+Date: 2014-09-04
+begin: 1410968855000
+end: 1410915292000
+end - start: 892.7166666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.819444444444445
+Date: 2014-09-05
+begin: 1410946730000
+end: 1410914980000
+end - start: 529.1666666666666 minutes
+=========================
+total work hours: 1.5669444444444445
+Date: 2014-09-06
+begin: 1410925270000
+end: 1410919629000
+end - start: 94.01666666666667 minutes
+work over: 1.5669444444444445 hours
+=========================
+total work hours: 1.8380555555555556
+Date: 2014-09-07
+begin: 1410931428000
+end: 1410924811000
+end - start: 110.28333333333333 minutes
+work over: 1.8380555555555556 hours
+=========================
+=========================
+total work hours: 14.766666666666667
+Date: 2014-09-09
+begin: 1410968177000
+end: 1410915017000
+end - start: 886 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 14.849444444444444
+Date: 2014-09-10
+begin: 1410968372000
+end: 1410914914000
+end - start: 890.9666666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.725555555555555
+Date: 2014-09-11
+begin: 1410946218000
+end: 1410914806000
+end - start: 523.5333333333333 minutes
+=========================
+=========================
+total work hours: 12.631944444444445
+Date: 2014-09-12
+begin: 1410959264000
+end: 1410913789000
+end - start: 757.9166666666666 minutes
+Normal work over: 1
+=========================
+Date: 2014-09-13
+begin: 0
+end: 1410925139000
+end - start: -23515418.983333334 minutes
+=========================
+total work hours: 2.3644444444444446
+Date: 2014-09-14
+begin: 1410927501000
+end: 1410918989000
+end - start: 141.86666666666667 minutes
+work over: 2.3644444444444446 hours
+=========================
+=========================
+total work hours: 12.372222222222222
+Date: 2014-09-15
+begin: 1410958910000
+end: 1410914370000
+end - start: 742.3333333333334 minutes
+Normal work over: 1
+=========================
+Date: 2014-08-16
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-17
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 15.631944444444445
+Date: 2014-08-18
+begin: 1410966749000
+end: 1410910474000
+end - start: 937.9166666666666 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 13.257777777777777
+Date: 2014-08-19
+begin: 1410964087000
+end: 1410916359000
+end - start: 795.4666666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 14.654444444444444
+Date: 2014-08-20
+begin: 1410968862000
+end: 1410916106000
+end - start: 879.2666666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 13.53111111111111
+Date: 2014-08-21
+begin: 1410964175000
+end: 1410915463000
+end - start: 811.8666666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.875555555555556
+Date: 2014-08-22
+begin: 1410963278000
+end: 1410916926000
+end - start: 772.5333333333333 minutes
+Normal work over: 1
+=========================
+total work hours: 0.17916666666666667
+Date: 2014-08-23
+begin: 1410928986000
+end: 1410928341000
+end - start: 10.75 minutes
+work over: 0.17916666666666667 hours
+=========================
+Date: 2014-08-24
+begin: 0
+end: 1410940034000
+end - start: -23515667.233333334 minutes
+=========================
+=========================
+total work hours: 13.800833333333333
+Date: 2014-08-25
+begin: 1410965440000
+end: 1410915757000
+end - start: 828.05 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 10.165
+Date: 2014-08-26
+begin: 1410951713000
+end: 1410915119000
+end - start: 609.9 minutes
+=========================
+=========================
+total work hours: 9.679444444444444
+Date: 2014-08-27
+begin: 1410948949000
+end: 1410914103000
+end - start: 580.7666666666667 minutes
+=========================
+=========================
+total work hours: 13.669722222222223
+Date: 2014-08-28
+begin: 1410966758000
+end: 1410917547000
+end - start: 820.1833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 13.1675
+Date: 2014-08-29
+begin: 1410963311000
+end: 1410915908000
+end - start: 790.05 minutes
+Normal work over: 1
+=========================
+Date: 2014-08-30
+begin: 0
+end: 1410940256000
+end - start: -23515670.933333334 minutes
+=========================
+Date: 2014-08-31
+begin: 0
+end: 1410884414000
+end - start: -23514740.233333334 minutes
+=========================
+=========================
+total work hours: 14.563888888888888
+Date: 2014-09-01
+begin: 1410968496000
+end: 1410916066000
+end - start: 873.8333333333334 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 14.49
+Date: 2014-09-02
+begin: 1410968071000
+end: 1410915907000
+end - start: 869.4 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 9.199166666666667
+Date: 2014-09-03
+begin: 1410950300000
+end: 1410917183000
+end - start: 551.95 minutes
+=========================
+=========================
+total work hours: 13.480555555555556
+Date: 2014-09-04
+begin: 1410964402000
+end: 1410915872000
+end - start: 808.8333333333334 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.144722222222223
+Date: 2014-09-05
+begin: 1410944662000
+end: 1410915341000
+end - start: 488.68333333333334 minutes
+=========================
+Date: 2014-09-06
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-07
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 10.603333333333333
+Date: 2014-09-09
+begin: 1410965990000
+end: 1410927818000
+end - start: 636.2 minutes
+Late/Early: 1
+=========================
+=========================
+total work hours: 9.252777777777778
+Date: 2014-09-10
+begin: 1410948948000
+end: 1410915638000
+end - start: 555.1666666666666 minutes
+=========================
+=========================
+total work hours: 12.920277777777779
+Date: 2014-09-11
+begin: 1410962236000
+end: 1410915723000
+end - start: 775.2166666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 10.078333333333333
+Date: 2014-09-12
+begin: 1410948889000
+end: 1410912607000
+end - start: 604.7 minutes
+=========================
+Date: 2014-09-13
+begin: 0
+end: 1410885769000
+end - start: -23514762.816666666 minutes
+=========================
+Date: 2014-09-14
+begin: 0
+end: 1410919699000
+end - start: -23515328.316666666 minutes
+=========================
+=========================
+total work hours: 13.392222222222221
+Date: 2014-09-15
+begin: 1410963670000
+end: 1410915458000
+end - start: 803.5333333333333 minutes
+Normal work over: 1
+=========================
+Date: 2014-08-16
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-17
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+Date: 2014-08-18
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-08-19
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-08-20
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-08-21
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-08-22
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+Date: 2014-08-23
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-24
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+Date: 2014-08-25
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-08-26
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-08-27
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-08-28
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-08-29
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+Date: 2014-08-30
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-31
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+Date: 2014-09-01
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-09-02
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-09-03
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-09-04
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-09-05
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+Date: 2014-09-06
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-07
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+Date: 2014-09-09
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-09-10
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-09-11
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-09-12
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+Date: 2014-09-13
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-14
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+Date: 2014-09-15
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+Date: 2014-08-16
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-17
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.895555555555555
+Date: 2014-08-18
+begin: 1410960114000
+end: 1410913690000
+end - start: 773.7333333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.681111111111111
+Date: 2014-08-19
+begin: 1410944524000
+end: 1410913272000
+end - start: 520.8666666666667 minutes
+=========================
+=========================
+total work hours: 8.599722222222223
+Date: 2014-08-20
+begin: 1410944542000
+end: 1410913583000
+end - start: 515.9833333333333 minutes
+=========================
+=========================
+total work hours: 8.699722222222222
+Date: 2014-08-21
+begin: 1410944559000
+end: 1410913240000
+end - start: 521.9833333333333 minutes
+=========================
+=========================
+total work hours: 10.934722222222222
+Date: 2014-08-22
+begin: 1410952912000
+end: 1410913547000
+end - start: 656.0833333333334 minutes
+=========================
+total work hours: 6.589166666666666
+Date: 2014-08-23
+begin: 1410939697000
+end: 1410915976000
+end - start: 395.35 minutes
+work over: 6.589166666666666 hours
+=========================
+Date: 2014-08-24
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 10.870277777777778
+Date: 2014-08-25
+begin: 1410952863000
+end: 1410913730000
+end - start: 652.2166666666667 minutes
+=========================
+=========================
+total work hours: 8.700833333333334
+Date: 2014-08-26
+begin: 1410944533000
+end: 1410913210000
+end - start: 522.05 minutes
+=========================
+=========================
+total work hours: 11.015
+Date: 2014-08-27
+begin: 1410952918000
+end: 1410913264000
+end - start: 660.9 minutes
+=========================
+=========================
+total work hours: 8.452222222222222
+Date: 2014-08-28
+begin: 1410944509000
+end: 1410914081000
+end - start: 507.1333333333333 minutes
+=========================
+=========================
+total work hours: 8.733888888888888
+Date: 2014-08-29
+begin: 1410944579000
+end: 1410913137000
+end - start: 524.0333333333333 minutes
+=========================
+total work hours: 7.038611111111111
+Date: 2014-08-30
+begin: 1410941507000
+end: 1410916168000
+end - start: 422.31666666666666 minutes
+work over: 7.038611111111111 hours
+=========================
+Date: 2014-08-31
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 10.889166666666666
+Date: 2014-09-01
+begin: 1410952912000
+end: 1410913711000
+end - start: 653.35 minutes
+=========================
+=========================
+total work hours: 8.365
+Date: 2014-09-02
+begin: 1410944534000
+end: 1410914420000
+end - start: 501.9 minutes
+=========================
+=========================
+total work hours: 12.760277777777778
+Date: 2014-09-03
+begin: 1410960154000
+end: 1410914217000
+end - start: 765.6166666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 3.485
+Date: 2014-09-04
+begin: 1410944557000
+end: 1410932011000
+end - start: 209.1 minutes
+Absence: 1
+=========================
+=========================
+total work hours: 8.209166666666667
+Date: 2014-09-05
+begin: 1410944559000
+end: 1410915006000
+end - start: 492.55 minutes
+=========================
+Date: 2014-09-06
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-07
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.72638888888889
+Date: 2014-09-09
+begin: 1410960143000
+end: 1410914328000
+end - start: 763.5833333333334 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 10.817222222222222
+Date: 2014-09-10
+begin: 1410953030000
+end: 1410914088000
+end - start: 649.0333333333333 minutes
+=========================
+=========================
+total work hours: 12.715833333333334
+Date: 2014-09-11
+begin: 1410960117000
+end: 1410914340000
+end - start: 762.95 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 11.088611111111112
+Date: 2014-09-12
+begin: 1410953069000
+end: 1410913150000
+end - start: 665.3166666666667 minutes
+=========================
+total work hours: 3.6544444444444446
+Date: 2014-09-13
+begin: 1410929966000
+end: 1410916810000
+end - start: 219.26666666666668 minutes
+work over: 3.6544444444444446 hours
+=========================
+Date: 2014-09-14
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+Date: 2014-09-15
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+Date: 2014-08-16
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-17
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 11.05
+Date: 2014-08-18
+begin: 1410953057000
+end: 1410913277000
+end - start: 663 minutes
+=========================
+=========================
+total work hours: 8.719722222222222
+Date: 2014-08-19
+begin: 1410944661000
+end: 1410913270000
+end - start: 523.1833333333333 minutes
+=========================
+=========================
+total work hours: 8.662222222222223
+Date: 2014-08-20
+begin: 1410944499000
+end: 1410913315000
+end - start: 519.7333333333333 minutes
+=========================
+=========================
+total work hours: 8.766666666666667
+Date: 2014-08-21
+begin: 1410944535000
+end: 1410912975000
+end - start: 526 minutes
+=========================
+=========================
+total work hours: 8.675
+Date: 2014-08-22
+begin: 1410944487000
+end: 1410913257000
+end - start: 520.5 minutes
+=========================
+Date: 2014-08-23
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-24
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 8.6625
+Date: 2014-08-25
+begin: 1410944548000
+end: 1410913363000
+end - start: 519.75 minutes
+=========================
+=========================
+total work hours: 8.666666666666666
+Date: 2014-08-26
+begin: 1410944481000
+end: 1410913281000
+end - start: 520 minutes
+=========================
+=========================
+total work hours: 8.652777777777779
+Date: 2014-08-27
+begin: 1410944511000
+end: 1410913361000
+end - start: 519.1666666666666 minutes
+=========================
+=========================
+total work hours: 8.557777777777778
+Date: 2014-08-28
+begin: 1410944527000
+end: 1410913719000
+end - start: 513.4666666666667 minutes
+=========================
+=========================
+total work hours: 8.73638888888889
+Date: 2014-08-29
+begin: 1410944590000
+end: 1410913139000
+end - start: 524.1833333333333 minutes
+=========================
+Date: 2014-08-30
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-31
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 10.8775
+Date: 2014-09-01
+begin: 1410952931000
+end: 1410913772000
+end - start: 652.65 minutes
+=========================
+=========================
+total work hours: 12.859166666666667
+Date: 2014-09-02
+begin: 1410960095000
+end: 1410913802000
+end - start: 771.55 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.873333333333333
+Date: 2014-09-03
+begin: 1410960201000
+end: 1410913857000
+end - start: 772.4 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.879722222222222
+Date: 2014-09-04
+begin: 1410959990000
+end: 1410913623000
+end - start: 772.7833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 11.005277777777778
+Date: 2014-09-05
+begin: 1410953015000
+end: 1410913396000
+end - start: 660.3166666666667 minutes
+=========================
+Date: 2014-09-06
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-07
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 8.470277777777778
+Date: 2014-09-09
+begin: 1410944544000
+end: 1410914051000
+end - start: 508.21666666666664 minutes
+=========================
+=========================
+total work hours: 4.875
+Date: 2014-09-10
+begin: 1410944528000
+end: 1410926978000
+end - start: 292.5 minutes
+Absence: 0.5
+=========================
+=========================
+total work hours: 10.863611111111112
+Date: 2014-09-11
+begin: 1410952978000
+end: 1410913869000
+end - start: 651.8166666666667 minutes
+=========================
+=========================
+total work hours: 8.583055555555555
+Date: 2014-09-12
+begin: 1410944541000
+end: 1410913642000
+end - start: 514.9833333333333 minutes
+=========================
+Date: 2014-09-13
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-14
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 8.542777777777777
+Date: 2014-09-15
+begin: 1410944555000
+end: 1410913801000
+end - start: 512.5666666666667 minutes
+=========================
+Date: 2014-08-16
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-17
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 11.470833333333333
+Date: 2014-08-18
+begin: 1410956772000
+end: 1410915477000
+end - start: 688.25 minutes
+=========================
+=========================
+total work hours: 12.516944444444444
+Date: 2014-08-19
+begin: 1410960185000
+end: 1410915124000
+end - start: 751.0166666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.0875
+Date: 2014-08-20
+begin: 1410958865000
+end: 1410915350000
+end - start: 725.25 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 11.239722222222222
+Date: 2014-08-21
+begin: 1410954780000
+end: 1410914317000
+end - start: 674.3833333333333 minutes
+=========================
+=========================
+total work hours: 11.227777777777778
+Date: 2014-08-22
+begin: 1410955536000
+end: 1410915116000
+end - start: 673.6666666666666 minutes
+=========================
+Date: 2014-08-23
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-24
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 11.242777777777778
+Date: 2014-08-25
+begin: 1410955399000
+end: 1410914925000
+end - start: 674.5666666666667 minutes
+=========================
+=========================
+total work hours: 12.610277777777778
+Date: 2014-08-26
+begin: 1410959788000
+end: 1410914391000
+end - start: 756.6166666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 10.836666666666666
+Date: 2014-08-27
+begin: 1410953993000
+end: 1410914981000
+end - start: 650.2 minutes
+=========================
+=========================
+total work hours: 10.63111111111111
+Date: 2014-08-28
+begin: 1410953207000
+end: 1410914935000
+end - start: 637.8666666666667 minutes
+=========================
+=========================
+total work hours: 12.155555555555555
+Date: 2014-08-29
+begin: 1410958334000
+end: 1410914574000
+end - start: 729.3333333333334 minutes
+=========================
+total work hours: 2.1433333333333335
+Date: 2014-08-30
+begin: 1410926531000
+end: 1410918815000
+end - start: 128.6 minutes
+work over: 2.1433333333333335 hours
+=========================
+Date: 2014-08-31
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 11.81611111111111
+Date: 2014-09-01
+begin: 1410957184000
+end: 1410914646000
+end - start: 708.9666666666667 minutes
+=========================
+=========================
+total work hours: 11.776666666666667
+Date: 2014-09-02
+begin: 1410956518000
+end: 1410914122000
+end - start: 706.6 minutes
+=========================
+=========================
+total work hours: 12.490555555555556
+Date: 2014-09-03
+begin: 1410959809000
+end: 1410914843000
+end - start: 749.4333333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 11.03
+Date: 2014-09-04
+begin: 1410954902000
+end: 1410915194000
+end - start: 661.8 minutes
+=========================
+=========================
+total work hours: 12.470833333333333
+Date: 2014-09-05
+begin: 1410959733000
+end: 1410914838000
+end - start: 748.25 minutes
+Normal work over: 1
+=========================
+Date: 2014-09-06
+begin: 0
+end: 1410925278000
+end - start: -23515421.3 minutes
+=========================
+Date: 2014-09-07
+begin: 0
+end: 1410933575000
+end - start: -23515559.583333332 minutes
+=========================
+=========================
+total work hours: 12.420555555555556
+Date: 2014-09-09
+begin: 1410959678000
+end: 1410914964000
+end - start: 745.2333333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 11.540277777777778
+Date: 2014-09-10
+begin: 1410956782000
+end: 1410915237000
+end - start: 692.4166666666666 minutes
+=========================
+=========================
+total work hours: 11.15
+Date: 2014-09-11
+begin: 1410955067000
+end: 1410914927000
+end - start: 669 minutes
+=========================
+=========================
+total work hours: 12.348888888888888
+Date: 2014-09-12
+begin: 1410959312000
+end: 1410914856000
+end - start: 740.9333333333333 minutes
+Normal work over: 1
+=========================
+Date: 2014-09-13
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-14
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.375833333333333
+Date: 2014-09-15
+begin: 1410958917000
+end: 1410914364000
+end - start: 742.55 minutes
+Normal work over: 1
+=========================
+Date: 2014-08-16
+begin: 0
+end: 1410884140000
+end - start: -23514735.666666668 minutes
+=========================
+Date: 2014-08-17
+begin: 0
+end: 1410917874000
+end - start: -23515297.9 minutes
+=========================
+=========================
+total work hours: 10.318333333333333
+Date: 2014-08-18
+begin: 1410948404000
+end: 1410911258000
+end - start: 619.1 minutes
+=========================
+=========================
+total work hours: 13.928611111111111
+Date: 2014-08-19
+begin: 1410962828000
+end: 1410912685000
+end - start: 835.7166666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 13.9375
+Date: 2014-08-20
+begin: 1410962563000
+end: 1410912388000
+end - start: 836.25 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 14.015833333333333
+Date: 2014-08-21
+begin: 1410962857000
+end: 1410912400000
+end - start: 840.95 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 15.264166666666666
+Date: 2014-08-22
+begin: 1410966601000
+end: 1410911650000
+end - start: 915.85 minutes
+Normal work over: 1
+=========================
+Date: 2014-08-23
+begin: 0
+end: 1410916742000
+end - start: -23515279.033333335 minutes
+=========================
+total work hours: 2.0430555555555556
+Date: 2014-08-24
+begin: 1410931189000
+end: 1410923834000
+end - start: 122.58333333333333 minutes
+work over: 2.0430555555555556 hours
+=========================
+=========================
+total work hours: 14.039166666666667
+Date: 2014-08-25
+begin: 1410962583000
+end: 1410912042000
+end - start: 842.35 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 9.576944444444445
+Date: 2014-08-26
+begin: 1410947048000
+end: 1410912571000
+end - start: 574.6166666666667 minutes
+=========================
+=========================
+total work hours: 14.391111111111112
+Date: 2014-08-27
+begin: 1410964505000
+end: 1410912697000
+end - start: 863.4666666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 9.67361111111111
+Date: 2014-08-28
+begin: 1410947839000
+end: 1410913014000
+end - start: 580.4166666666666 minutes
+=========================
+=========================
+total work hours: 9.636111111111111
+Date: 2014-08-29
+begin: 1410947700000
+end: 1410913010000
+end - start: 578.1666666666666 minutes
+=========================
+Date: 2014-08-30
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-31
+begin: 0
+end: 1410884510000
+end - start: -23514741.833333332 minutes
+=========================
+=========================
+total work hours: 14.074722222222222
+Date: 2014-09-01
+begin: 1410963429000
+end: 1410912760000
+end - start: 844.4833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 6.987777777777778
+Date: 2014-09-02
+begin: 1410952025000
+end: 1410926869000
+end - start: 419.26666666666665 minutes
+Absence: 0.5
+=========================
+=========================
+total work hours: 10.091111111111111
+Date: 2014-09-03
+begin: 1410949796000
+end: 1410913468000
+end - start: 605.4666666666667 minutes
+=========================
+=========================
+total work hours: 9.537777777777778
+Date: 2014-09-04
+begin: 1410948209000
+end: 1410913873000
+end - start: 572.2666666666667 minutes
+=========================
+=========================
+total work hours: 14.796111111111111
+Date: 2014-09-05
+begin: 1410966659000
+end: 1410913393000
+end - start: 887.7666666666667 minutes
+Normal work over: 1
+=========================
+Date: 2014-09-06
+begin: 0
+end: 1410884845000
+end - start: -23514747.416666668 minutes
+=========================
+Date: 2014-09-07
+begin: 0
+end: 1410918300000
+end - start: -23515305 minutes
+=========================
+=========================
+total work hours: 9.661666666666667
+Date: 2014-09-09
+begin: 1410948080000
+end: 1410913298000
+end - start: 579.7 minutes
+=========================
+=========================
+total work hours: 9.155555555555555
+Date: 2014-09-10
+begin: 1410946730000
+end: 1410913770000
+end - start: 549.3333333333334 minutes
+=========================
+=========================
+total work hours: 9.168333333333333
+Date: 2014-09-11
+begin: 1410946531000
+end: 1410913525000
+end - start: 550.1 minutes
+=========================
+=========================
+total work hours: 9.21111111111111
+Date: 2014-09-12
+begin: 1410947134000
+end: 1410913974000
+end - start: 552.6666666666666 minutes
+=========================
+Date: 2014-09-13
+begin: 0
+end: 1410918548000
+end - start: -23515309.133333333 minutes
+=========================
+total work hours: 2.0458333333333334
+Date: 2014-09-14
+begin: 1410928823000
+end: 1410921458000
+end - start: 122.75 minutes
+work over: 2.0458333333333334 hours
+=========================
+=========================
+total work hours: 15.825555555555555
+Date: 2014-09-15
+begin: 1410967769000
+end: 1410910797000
+end - start: 949.5333333333333 minutes
+Normal work over: 1
+=========================
+total work hours: 0.9175
+Date: 2014-08-16
+begin: 1410920314000
+end: 1410917011000
+end - start: 55.05 minutes
+work over: 0.9175 hours
+=========================
+Date: 2014-08-17
+begin: 0
+end: 1410924830000
+end - start: -23515413.833333332 minutes
+=========================
+=========================
+total work hours: 9.74638888888889
+Date: 2014-08-18
+begin: 1410951145000
+end: 1410916058000
+end - start: 584.7833333333333 minutes
+=========================
+=========================
+total work hours: 9.141944444444444
+Date: 2014-08-19
+begin: 1410944905000
+end: 1410911994000
+end - start: 548.5166666666667 minutes
+=========================
+=========================
+total work hours: 14.926944444444445
+Date: 2014-08-20
+begin: 1410967914000
+end: 1410914177000
+end - start: 895.6166666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 14.93138888888889
+Date: 2014-08-21
+begin: 1410969240000
+end: 1410915487000
+end - start: 895.8833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 13.240555555555556
+Date: 2014-08-22
+begin: 1410962588000
+end: 1410914922000
+end - start: 794.4333333333333 minutes
+Normal work over: 1
+=========================
+total work hours: 4.7508333333333335
+Date: 2014-08-23
+begin: 1410937739000
+end: 1410920636000
+end - start: 285.05 minutes
+work over: 4.7508333333333335 hours
+=========================
+Date: 2014-08-24
+begin: 0
+end: 1410886086000
+end - start: -23514768.1 minutes
+=========================
+=========================
+total work hours: 14.362222222222222
+Date: 2014-08-25
+begin: 1410967015000
+end: 1410915311000
+end - start: 861.7333333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 9.065555555555555
+Date: 2014-08-26
+begin: 1410944778000
+end: 1410912142000
+end - start: 543.9333333333333 minutes
+=========================
+=========================
+total work hours: 10.805833333333334
+Date: 2014-08-27
+begin: 1410950101000
+end: 1410911200000
+end - start: 648.35 minutes
+=========================
+=========================
+total work hours: 9.794166666666667
+Date: 2014-08-28
+begin: 1410950573000
+end: 1410915314000
+end - start: 587.65 minutes
+=========================
+=========================
+total work hours: 8.253055555555555
+Date: 2014-08-29
+begin: 1410944908000
+end: 1410915197000
+end - start: 495.18333333333334 minutes
+=========================
+Date: 2014-08-30
+begin: 0
+end: 1410885830000
+end - start: -23514763.833333332 minutes
+=========================
+Date: 2014-08-31
+begin: 0
+end: 1410883678000
+end - start: -23514727.966666665 minutes
+=========================
+=========================
+total work hours: 14.8475
+Date: 2014-09-01
+begin: 1410965368000
+end: 1410911917000
+end - start: 890.85 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 13.609444444444444
+Date: 2014-09-02
+begin: 1410962937000
+end: 1410913943000
+end - start: 816.5666666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 13.436111111111112
+Date: 2014-09-03
+begin: 1410963271000
+end: 1410914901000
+end - start: 806.1666666666666 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 10.653055555555556
+Date: 2014-09-04
+begin: 1410952756000
+end: 1410914405000
+end - start: 639.1833333333333 minutes
+=========================
+=========================
+total work hours: 8.837222222222222
+Date: 2014-09-05
+begin: 1410945059000
+end: 1410913245000
+end - start: 530.2333333333333 minutes
+=========================
+total work hours: 5.577222222222222
+Date: 2014-09-06
+begin: 1410942409000
+end: 1410922331000
+end - start: 334.6333333333333 minutes
+work over: 5.577222222222222 hours
+=========================
+Date: 2014-09-07
+begin: 0
+end: 1410923936000
+end - start: -23515398.933333334 minutes
+=========================
+=========================
+total work hours: 9.094444444444445
+Date: 2014-09-09
+begin: 1410944870000
+end: 1410912130000
+end - start: 545.6666666666666 minutes
+=========================
+=========================
+total work hours: 9.840555555555556
+Date: 2014-09-10
+begin: 1410960963000
+end: 1410925537000
+end - start: 590.4333333333333 minutes
+Late/Early: 1
+=========================
+=========================
+total work hours: 15.13888888888889
+Date: 2014-09-11
+begin: 1410968050000
+end: 1410913550000
+end - start: 908.3333333333334 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 15.097222222222221
+Date: 2014-09-12
+begin: 1410969130000
+end: 1410914780000
+end - start: 905.8333333333334 minutes
+Normal work over: 1
+=========================
+Date: 2014-09-13
+begin: 0
+end: 1410935824000
+end - start: -23515597.066666666 minutes
+=========================
+Date: 2014-09-14
+begin: 0
+end: 1410885565000
+end - start: -23514759.416666668 minutes
+=========================
+=========================
+total work hours: 14.070833333333333
+Date: 2014-09-15
+begin: 1410963405000
+end: 1410912750000
+end - start: 844.25 minutes
+Normal work over: 1
+=========================
+Date: 2014-08-16
+begin: 0
+end: 1410924244000
+end - start: -23515404.066666666 minutes
+=========================
+Date: 2014-08-17
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.3375
+Date: 2014-08-18
+begin: 1410959069000
+end: 1410914654000
+end - start: 740.25 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.508611111111112
+Date: 2014-08-19
+begin: 1410959700000
+end: 1410914669000
+end - start: 750.5166666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.620555555555555
+Date: 2014-08-20
+begin: 1410959868000
+end: 1410914434000
+end - start: 757.2333333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.523055555555555
+Date: 2014-08-21
+begin: 1410959811000
+end: 1410914728000
+end - start: 751.3833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.501666666666667
+Date: 2014-08-22
+begin: 1410959702000
+end: 1410914696000
+end - start: 750.1 minutes
+Normal work over: 1
+=========================
+total work hours: 1.7947222222222223
+Date: 2014-08-23
+begin: 1410925919000
+end: 1410919458000
+end - start: 107.68333333333334 minutes
+work over: 1.7947222222222223 hours
+=========================
+Date: 2014-08-24
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.503333333333334
+Date: 2014-08-25
+begin: 1410959689000
+end: 1410914677000
+end - start: 750.2 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.450277777777778
+Date: 2014-08-26
+begin: 1410959628000
+end: 1410914807000
+end - start: 747.0166666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.268333333333333
+Date: 2014-08-27
+begin: 1410944374000
+end: 1410914608000
+end - start: 496.1 minutes
+=========================
+=========================
+total work hours: 12.395277777777778
+Date: 2014-08-28
+begin: 1410959541000
+end: 1410914918000
+end - start: 743.7166666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 10.53
+Date: 2014-08-29
+begin: 1410952659000
+end: 1410914751000
+end - start: 631.8 minutes
+=========================
+Date: 2014-08-30
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-31
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 3.076111111111111
+Date: 2014-09-01
+begin: 1410926363000
+end: 1410915289000
+end - start: 184.56666666666666 minutes
+Absence: 1
+=========================
+=========================
+total work hours: 8.154722222222222
+Date: 2014-09-02
+begin: 1410944420000
+end: 1410915063000
+end - start: 489.28333333333336 minutes
+=========================
+=========================
+total work hours: 7.9719444444444445
+Date: 2014-09-03
+begin: 1410944437000
+end: 1410915738000
+end - start: 478.31666666666666 minutes
+=========================
+=========================
+total work hours: 8.954722222222221
+Date: 2014-09-04
+begin: 1410946974000
+end: 1410914737000
+end - start: 537.2833333333333 minutes
+=========================
+=========================
+total work hours: 8.075277777777778
+Date: 2014-09-05
+begin: 1410944318000
+end: 1410915247000
+end - start: 484.51666666666665 minutes
+=========================
+Date: 2014-09-06
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-07
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 7.950277777777778
+Date: 2014-09-09
+begin: 1410944506000
+end: 1410915885000
+end - start: 477.01666666666665 minutes
+=========================
+=========================
+total work hours: 8.052777777777777
+Date: 2014-09-10
+begin: 1410944359000
+end: 1410915369000
+end - start: 483.1666666666667 minutes
+=========================
+=========================
+total work hours: 8.400555555555556
+Date: 2014-09-11
+begin: 1410945512000
+end: 1410915270000
+end - start: 504.03333333333336 minutes
+=========================
+=========================
+total work hours: 10.20861111111111
+Date: 2014-09-12
+begin: 1410950150000
+end: 1410913399000
+end - start: 612.5166666666667 minutes
+=========================
+Date: 2014-09-13
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+total work hours: 6.555
+Date: 2014-09-14
+begin: 1410941455000
+end: 1410917857000
+end - start: 393.3 minutes
+work over: 6.555 hours
+=========================
+=========================
+total work hours: 12.3625
+Date: 2014-09-15
+begin: 1410958872000
+end: 1410914367000
+end - start: 741.75 minutes
+Normal work over: 1
+=========================
+Date: 2014-08-16
+begin: 0
+end: 1410883417000
+end - start: -23514723.616666667 minutes
+=========================
+total work hours: 3.3875
+Date: 2014-08-17
+begin: 1410928470000
+end: 1410916275000
+end - start: 203.25 minutes
+work over: 3.3875 hours
+=========================
+=========================
+total work hours: 13.629722222222222
+Date: 2014-08-18
+begin: 1410962036000
+end: 1410912969000
+end - start: 817.7833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 13.9
+Date: 2014-08-19
+begin: 1410962700000
+end: 1410912660000
+end - start: 834 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 13.965833333333334
+Date: 2014-08-20
+begin: 1410963459000
+end: 1410913182000
+end - start: 837.95 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 14.205833333333333
+Date: 2014-08-21
+begin: 1410964211000
+end: 1410913070000
+end - start: 852.35 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 14.031666666666666
+Date: 2014-08-22
+begin: 1410962861000
+end: 1410912347000
+end - start: 841.9 minutes
+Normal work over: 1
+=========================
+Date: 2014-08-23
+begin: 0
+end: 1410925689000
+end - start: -23515428.15 minutes
+=========================
+Date: 2014-08-24
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 14.306666666666667
+Date: 2014-08-25
+begin: 1410964688000
+end: 1410913184000
+end - start: 858.4 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 14.710555555555555
+Date: 2014-08-26
+begin: 1410966010000
+end: 1410913052000
+end - start: 882.6333333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 14.736666666666666
+Date: 2014-08-27
+begin: 1410965100000
+end: 1410912048000
+end - start: 884.2 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 14.158055555555556
+Date: 2014-08-28
+begin: 1410964350000
+end: 1410913381000
+end - start: 849.4833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 15.026111111111112
+Date: 2014-08-29
+begin: 1410966679000
+end: 1410912585000
+end - start: 901.5666666666667 minutes
+Normal work over: 1
+=========================
+Date: 2014-08-30
+begin: 0
+end: 1410925543000
+end - start: -23515425.716666665 minutes
+=========================
+Date: 2014-08-31
+begin: 0
+end: 1410926147000
+end - start: -23515435.783333335 minutes
+=========================
+=========================
+total work hours: 15.071111111111112
+Date: 2014-09-01
+begin: 1410967044000
+end: 1410912788000
+end - start: 904.2666666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 14.840833333333334
+Date: 2014-09-02
+begin: 1410966743000
+end: 1410913316000
+end - start: 890.45 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 14.588611111111112
+Date: 2014-09-03
+begin: 1410965927000
+end: 1410913408000
+end - start: 875.3166666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 14.153888888888888
+Date: 2014-09-04
+begin: 1410964465000
+end: 1410913511000
+end - start: 849.2333333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 14.508888888888889
+Date: 2014-09-05
+begin: 1410965744000
+end: 1410913512000
+end - start: 870.5333333333333 minutes
+Normal work over: 1
+=========================
+Date: 2014-09-06
+begin: 0
+end: 1410924217000
+end - start: -23515403.616666667 minutes
+=========================
+Date: 2014-09-07
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 14.432222222222222
+Date: 2014-09-09
+begin: 1410964748000
+end: 1410912792000
+end - start: 865.9333333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 14.424166666666666
+Date: 2014-09-10
+begin: 1410965015000
+end: 1410913088000
+end - start: 865.45 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 14.2725
+Date: 2014-09-11
+begin: 1410964460000
+end: 1410913079000
+end - start: 856.35 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 14.384722222222223
+Date: 2014-09-12
+begin: 1410965039000
+end: 1410913254000
+end - start: 863.0833333333334 minutes
+Normal work over: 1
+=========================
+Date: 2014-09-13
+begin: 0
+end: 1410883270000
+end - start: -23514721.166666668 minutes
+=========================
+Date: 2014-09-14
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 14.272222222222222
+Date: 2014-09-15
+begin: 1410965132000
+end: 1410913752000
+end - start: 856.3333333333334 minutes
+Normal work over: 1
+=========================
+Date: 2014-08-16
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-17
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.42
+Date: 2014-08-18
+begin: 1410960136000
+end: 1410915424000
+end - start: 745.2 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.431111111111111
+Date: 2014-08-19
+begin: 1410960068000
+end: 1410915316000
+end - start: 745.8666666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.532222222222222
+Date: 2014-08-20
+begin: 1410960402000
+end: 1410915286000
+end - start: 751.9333333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.634722222222223
+Date: 2014-08-21
+begin: 1410960208000
+end: 1410914723000
+end - start: 758.0833333333334 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.599444444444444
+Date: 2014-08-22
+begin: 1410960048000
+end: 1410914690000
+end - start: 755.9666666666667 minutes
+Normal work over: 1
+=========================
+Date: 2014-08-23
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-24
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.617777777777778
+Date: 2014-08-25
+begin: 1410960104000
+end: 1410914680000
+end - start: 757.0666666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.555833333333334
+Date: 2014-08-26
+begin: 1410959997000
+end: 1410914796000
+end - start: 753.35 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.6225
+Date: 2014-08-27
+begin: 1410960037000
+end: 1410914596000
+end - start: 757.35 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 5.581111111111111
+Date: 2014-08-28
+begin: 1410947834000
+end: 1410927742000
+end - start: 334.8666666666667 minutes
+Absence: 0.5
+=========================
+=========================
+total work hours: 8.290555555555555
+Date: 2014-08-29
+begin: 1410944577000
+end: 1410914731000
+end - start: 497.43333333333334 minutes
+=========================
+Date: 2014-08-30
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-31
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.508611111111112
+Date: 2014-09-01
+begin: 1410960079000
+end: 1410915048000
+end - start: 750.5166666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.486944444444445
+Date: 2014-09-02
+begin: 1410959980000
+end: 1410915027000
+end - start: 749.2166666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 7.718055555555556
+Date: 2014-09-03
+begin: 1410944451000
+end: 1410916666000
+end - start: 463.0833333333333 minutes
+Absence: 0.5
+=========================
+=========================
+total work hours: 12.6175
+Date: 2014-09-04
+begin: 1410960116000
+end: 1410914693000
+end - start: 757.05 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.481944444444444
+Date: 2014-09-05
+begin: 1410960063000
+end: 1410915128000
+end - start: 748.9166666666666 minutes
+Normal work over: 1
+=========================
+Date: 2014-09-06
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-07
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.331111111111111
+Date: 2014-09-09
+begin: 1410960140000
+end: 1410915748000
+end - start: 739.8666666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 21.329722222222223
+Date: 2014-09-10
+begin: 1410960176000
+end: 1410883389000
+end - start: 1279.7833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.460833333333333
+Date: 2014-09-11
+begin: 1410960125000
+end: 1410915266000
+end - start: 747.65 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.188888888888888
+Date: 2014-09-12
+begin: 1410944530000
+end: 1410915050000
+end - start: 491.3333333333333 minutes
+=========================
+Date: 2014-09-13
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-14
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 3.035833333333333
+Date: 2014-09-15
+begin: 1410925998000
+end: 1410915069000
+end - start: 182.15 minutes
+Absence: 1
+=========================
+Date: 2014-08-16
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-17
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+Date: 2014-08-18
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+total work hours: 9.8225
+Date: 2014-08-19
+begin: 1410960070000
+end: 1410924709000
+end - start: 589.35 minutes
+Late/Early: 1
+=========================
+=========================
+Date: 2014-08-20
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+total work hours: 9.879722222222222
+Date: 2014-08-21
+begin: 1410960258000
+end: 1410924691000
+end - start: 592.7833333333333 minutes
+Late/Early: 1
+=========================
+=========================
+total work hours: 12.3975
+Date: 2014-08-22
+begin: 1410960143000
+end: 1410915512000
+end - start: 743.85 minutes
+Normal work over: 1
+=========================
+Date: 2014-08-23
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-24
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.456111111111111
+Date: 2014-08-25
+begin: 1410960102000
+end: 1410915260000
+end - start: 747.3666666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.310833333333333
+Date: 2014-08-26
+begin: 1410960004000
+end: 1410915685000
+end - start: 738.65 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 5.5275
+Date: 2014-08-27
+begin: 1410944559000
+end: 1410924660000
+end - start: 331.65 minutes
+Absence: 0.5
+=========================
+=========================
+total work hours: 8.067777777777778
+Date: 2014-08-28
+begin: 1410944448000
+end: 1410915404000
+end - start: 484.06666666666666 minutes
+=========================
+=========================
+Date: 2014-08-29
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+Date: 2014-08-30
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-31
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 10.590277777777779
+Date: 2014-09-01
+begin: 1410953149000
+end: 1410915024000
+end - start: 635.4166666666666 minutes
+=========================
+=========================
+Date: 2014-09-02
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-09-03
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+total work hours: 9.415277777777778
+Date: 2014-09-04
+begin: 1410960119000
+end: 1410926224000
+end - start: 564.9166666666666 minutes
+Late/Early: 1
+=========================
+=========================
+total work hours: 9.120555555555555
+Date: 2014-09-05
+begin: 1410960070000
+end: 1410927236000
+end - start: 547.2333333333333 minutes
+Late/Early: 1
+=========================
+Date: 2014-09-06
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-07
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 9.858333333333333
+Date: 2014-09-09
+begin: 1410960162000
+end: 1410924672000
+end - start: 591.5 minutes
+Late/Early: 1
+=========================
+=========================
+total work hours: 9.86
+Date: 2014-09-10
+begin: 1410960124000
+end: 1410924628000
+end - start: 591.6 minutes
+Late/Early: 1
+=========================
+=========================
+total work hours: 9.536111111111111
+Date: 2014-09-11
+begin: 1410960127000
+end: 1410925797000
+end - start: 572.1666666666666 minutes
+Late/Early: 1
+=========================
+=========================
+total work hours: 8.961944444444445
+Date: 2014-09-12
+begin: 1410960009000
+end: 1410927746000
+end - start: 537.7166666666667 minutes
+Late/Early: 1
+=========================
+Date: 2014-09-13
+begin: 0
+end: 1410883990000
+end - start: -23514733.166666668 minutes
+=========================
+Date: 2014-09-14
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 9.891388888888889
+Date: 2014-09-15
+begin: 1410960159000
+end: 1410924550000
+end - start: 593.4833333333333 minutes
+Late/Early: 1
+=========================
+Date: 2014-08-16
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-17
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 6.3933333333333335
+Date: 2014-08-18
+begin: 1410950880000
+end: 1410927864000
+end - start: 383.6 minutes
+Absence: 0.5
+=========================
+=========================
+total work hours: 8.224444444444444
+Date: 2014-08-19
+begin: 1410946087000
+end: 1410916479000
+end - start: 493.46666666666664 minutes
+=========================
+=========================
+total work hours: 8.834166666666667
+Date: 2014-08-20
+begin: 1410944653000
+end: 1410912850000
+end - start: 530.05 minutes
+=========================
+=========================
+Date: 2014-08-21
+begin: 0
+end: 1410915955000
+end - start: -23515265.916666668 minutes
+Absence: 1
+=========================
+=========================
+total work hours: 10.475277777777778
+Date: 2014-08-22
+begin: 1410953889000
+end: 1410916178000
+end - start: 628.5166666666667 minutes
+=========================
+Date: 2014-08-23
+begin: 0
+end: 1410938037000
+end - start: -23515633.95 minutes
+=========================
+Date: 2014-08-24
+begin: 0
+end: 1410937146000
+end - start: -23515619.1 minutes
+=========================
+=========================
+total work hours: 13.856944444444444
+Date: 2014-08-25
+begin: 1410964593000
+end: 1410914708000
+end - start: 831.4166666666666 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.1725
+Date: 2014-08-26
+begin: 1410961543000
+end: 1410917722000
+end - start: 730.35 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.765277777777778
+Date: 2014-08-27
+begin: 1410944597000
+end: 1410913042000
+end - start: 525.9166666666666 minutes
+=========================
+=========================
+total work hours: 9.566944444444445
+Date: 2014-08-28
+begin: 1410949117000
+end: 1410914676000
+end - start: 574.0166666666667 minutes
+=========================
+=========================
+total work hours: 13.241944444444444
+Date: 2014-08-29
+begin: 1410960413000
+end: 1410912742000
+end - start: 794.5166666666667 minutes
+Normal work over: 1
+=========================
+Date: 2014-08-30
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-31
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+Date: 2014-09-01
+begin: 0
+end: 1410914341000
+end - start: -23515239.016666666 minutes
+Absence: 1
+=========================
+=========================
+total work hours: 8.394444444444444
+Date: 2014-09-02
+begin: 1410944597000
+end: 1410914377000
+end - start: 503.6666666666667 minutes
+=========================
+=========================
+total work hours: 14.99638888888889
+Date: 2014-09-03
+begin: 1410968165000
+end: 1410914178000
+end - start: 899.7833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.735277777777778
+Date: 2014-09-04
+begin: 1410958815000
+end: 1410912968000
+end - start: 764.1166666666667 minutes
+Normal work over: 1
+=========================
+=========================
+Date: 2014-09-05
+begin: 0
+end: 1410915135000
+end - start: -23515252.25 minutes
+Absence: 1
+=========================
+total work hours: 2.831111111111111
+Date: 2014-09-06
+begin: 1410927419000
+end: 1410917227000
+end - start: 169.86666666666667 minutes
+work over: 2.831111111111111 hours
+=========================
+Date: 2014-09-07
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+Date: 2014-09-09
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-09-10
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-09-11
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-09-12
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+Date: 2014-09-13
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-14
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+Date: 2014-09-15
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+Date: 2014-08-16
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-17
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 13.023333333333333
+Date: 2014-08-18
+begin: 1410960116000
+end: 1410913232000
+end - start: 781.4 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.367777777777778
+Date: 2014-08-19
+begin: 1410944550000
+end: 1410914426000
+end - start: 502.06666666666666 minutes
+=========================
+=========================
+total work hours: 12.730555555555556
+Date: 2014-08-20
+begin: 1410960083000
+end: 1410914253000
+end - start: 763.8333333333334 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.873611111111112
+Date: 2014-08-21
+begin: 1410960053000
+end: 1410913708000
+end - start: 772.4166666666666 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.653055555555556
+Date: 2014-08-22
+begin: 1410960036000
+end: 1410914485000
+end - start: 759.1833333333333 minutes
+Normal work over: 1
+=========================
+total work hours: 3.38
+Date: 2014-08-23
+begin: 1410928336000
+end: 1410916168000
+end - start: 202.8 minutes
+work over: 3.38 hours
+=========================
+Date: 2014-08-24
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.817222222222222
+Date: 2014-08-25
+begin: 1410960096000
+end: 1410913954000
+end - start: 769.0333333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.790833333333333
+Date: 2014-08-26
+begin: 1410960153000
+end: 1410914106000
+end - start: 767.45 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.778055555555556
+Date: 2014-08-27
+begin: 1410960097000
+end: 1410914096000
+end - start: 766.6833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 10.709166666666667
+Date: 2014-08-28
+begin: 1410952952000
+end: 1410914399000
+end - start: 642.55 minutes
+=========================
+=========================
+total work hours: 8.536388888888888
+Date: 2014-08-29
+begin: 1410944588000
+end: 1410913857000
+end - start: 512.1833333333333 minutes
+=========================
+total work hours: 4.144444444444445
+Date: 2014-08-30
+begin: 1410931759000
+end: 1410916839000
+end - start: 248.66666666666666 minutes
+work over: 4.144444444444445 hours
+=========================
+Date: 2014-08-31
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.67388888888889
+Date: 2014-09-01
+begin: 1410960080000
+end: 1410914454000
+end - start: 760.4333333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.303888888888888
+Date: 2014-09-02
+begin: 1410944440000
+end: 1410914546000
+end - start: 498.23333333333335 minutes
+=========================
+=========================
+total work hours: 12.712777777777777
+Date: 2014-09-03
+begin: 1410960145000
+end: 1410914379000
+end - start: 762.7666666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 3.5708333333333333
+Date: 2014-09-04
+begin: 1410927132000
+end: 1410914277000
+end - start: 214.25 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-09-05
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+Date: 2014-09-06
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-07
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 8.390833333333333
+Date: 2014-09-09
+begin: 1410944586000
+end: 1410914379000
+end - start: 503.45 minutes
+=========================
+=========================
+total work hours: 12.796944444444444
+Date: 2014-09-10
+begin: 1410960101000
+end: 1410914032000
+end - start: 767.8166666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.698055555555555
+Date: 2014-09-11
+begin: 1410960113000
+end: 1410914400000
+end - start: 761.8833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 10.7175
+Date: 2014-09-12
+begin: 1410953128000
+end: 1410914545000
+end - start: 643.05 minutes
+=========================
+Date: 2014-09-13
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-14
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 3.987222222222222
+Date: 2014-09-15
+begin: 1410928248000
+end: 1410913894000
+end - start: 239.23333333333332 minutes
+Absence: 0.5
+=========================
+Date: 2014-08-16
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-17
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 10.455833333333333
+Date: 2014-08-18
+begin: 1410946794000
+end: 1410909153000
+end - start: 627.35 minutes
+=========================
+=========================
+total work hours: 8.742222222222223
+Date: 2014-08-19
+begin: 1410944906000
+end: 1410913434000
+end - start: 524.5333333333333 minutes
+=========================
+=========================
+total work hours: 8.721666666666666
+Date: 2014-08-20
+begin: 1410944986000
+end: 1410913588000
+end - start: 523.3 minutes
+=========================
+=========================
+total work hours: 9.193055555555556
+Date: 2014-08-21
+begin: 1410946371000
+end: 1410913276000
+end - start: 551.5833333333334 minutes
+=========================
+=========================
+total work hours: 9.963333333333333
+Date: 2014-08-22
+begin: 1410945032000
+end: 1410909164000
+end - start: 597.8 minutes
+=========================
+Date: 2014-08-23
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-24
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 8.379444444444445
+Date: 2014-08-25
+begin: 1410945050000
+end: 1410914884000
+end - start: 502.76666666666665 minutes
+=========================
+=========================
+total work hours: 8.4175
+Date: 2014-08-26
+begin: 1410944673000
+end: 1410914370000
+end - start: 505.05 minutes
+=========================
+=========================
+total work hours: 11.600555555555555
+Date: 2014-08-27
+begin: 1410954156000
+end: 1410912394000
+end - start: 696.0333333333333 minutes
+=========================
+=========================
+total work hours: 8.273055555555555
+Date: 2014-08-28
+begin: 1410945189000
+end: 1410915406000
+end - start: 496.3833333333333 minutes
+=========================
+=========================
+total work hours: 6.216944444444445
+Date: 2014-08-29
+begin: 1410947200000
+end: 1410924819000
+end - start: 373.01666666666665 minutes
+Absence: 0.5
+=========================
+Date: 2014-08-30
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-31
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 13.106388888888889
+Date: 2014-09-01
+begin: 1410961050000
+end: 1410913867000
+end - start: 786.3833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 10.996666666666666
+Date: 2014-09-02
+begin: 1410951968000
+end: 1410912380000
+end - start: 659.8 minutes
+=========================
+=========================
+total work hours: 10.528611111111111
+Date: 2014-09-03
+begin: 1410945499000
+end: 1410907596000
+end - start: 631.7166666666667 minutes
+=========================
+=========================
+total work hours: 12.94138888888889
+Date: 2014-09-04
+begin: 1410960390000
+end: 1410913801000
+end - start: 776.4833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 10.1975
+Date: 2014-09-05
+begin: 1410950666000
+end: 1410913955000
+end - start: 611.85 minutes
+=========================
+Date: 2014-09-06
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+total work hours: 0.7847222222222222
+Date: 2014-09-07
+begin: 1410919765000
+end: 1410916940000
+end - start: 47.083333333333336 minutes
+work over: 0.7847222222222222 hours
+=========================
+=========================
+total work hours: 13.785833333333333
+Date: 2014-09-09
+begin: 1410963622000
+end: 1410913993000
+end - start: 827.15 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 10.198611111111111
+Date: 2014-09-10
+begin: 1410946399000
+end: 1410909684000
+end - start: 611.9166666666666 minutes
+=========================
+=========================
+total work hours: 8.581111111111111
+Date: 2014-09-11
+begin: 1410944776000
+end: 1410913884000
+end - start: 514.8666666666667 minutes
+=========================
+=========================
+total work hours: 9.228333333333333
+Date: 2014-09-12
+begin: 1410947106000
+end: 1410913884000
+end - start: 553.7 minutes
+=========================
+Date: 2014-09-13
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-14
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 13.446111111111112
+Date: 2014-09-15
+begin: 1410961562000
+end: 1410913156000
+end - start: 806.7666666666667 minutes
+Normal work over: 1
+=========================
+Date: 2014-08-16
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-17
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 13.182777777777778
+Date: 2014-08-18
+begin: 1410963585000
+end: 1410916127000
+end - start: 790.9666666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.863888888888889
+Date: 2014-08-19
+begin: 1410962222000
+end: 1410915912000
+end - start: 771.8333333333334 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 9.088611111111112
+Date: 2014-08-20
+begin: 1410947663000
+end: 1410914944000
+end - start: 545.3166666666667 minutes
+=========================
+=========================
+total work hours: 14.57
+Date: 2014-08-21
+begin: 1410969079000
+end: 1410916627000
+end - start: 874.2 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 14.731944444444444
+Date: 2014-08-22
+begin: 1410968269000
+end: 1410915234000
+end - start: 883.9166666666666 minutes
+Normal work over: 1
+=========================
+Date: 2014-08-23
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-24
+begin: 0
+end: 1410921359000
+end - start: -23515355.983333334 minutes
+=========================
+=========================
+total work hours: 14.602222222222222
+Date: 2014-08-25
+begin: 1410968170000
+end: 1410915602000
+end - start: 876.1333333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 14.035277777777777
+Date: 2014-08-26
+begin: 1410966014000
+end: 1410915487000
+end - start: 842.1166666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 13.350833333333334
+Date: 2014-08-27
+begin: 1410963623000
+end: 1410915560000
+end - start: 801.05 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.863055555555556
+Date: 2014-08-28
+begin: 1410948469000
+end: 1410916562000
+end - start: 531.7833333333333 minutes
+=========================
+=========================
+Date: 2014-08-29
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+Date: 2014-08-30
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-31
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+Date: 2014-09-01
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-09-02
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-09-03
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-09-04
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-09-05
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+Date: 2014-09-06
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-07
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+Date: 2014-09-09
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-09-10
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-09-11
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-09-12
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+Date: 2014-09-13
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-14
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+Date: 2014-09-15
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+total work hours: 0.105
+Date: 2014-08-16
+begin: 1410927247000
+end: 1410926869000
+end - start: 6.3 minutes
+work over: 0.105 hours
+=========================
+Date: 2014-08-17
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.479444444444445
+Date: 2014-08-18
+begin: 1410960327000
+end: 1410915401000
+end - start: 748.7666666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.854722222222222
+Date: 2014-08-19
+begin: 1410961947000
+end: 1410915670000
+end - start: 771.2833333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 13.192222222222222
+Date: 2014-08-20
+begin: 1410960339000
+end: 1410912847000
+end - start: 791.5333333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.518888888888888
+Date: 2014-08-21
+begin: 1410946961000
+end: 1410916293000
+end - start: 511.1333333333333 minutes
+=========================
+=========================
+total work hours: 12.294166666666667
+Date: 2014-08-22
+begin: 1410960428000
+end: 1410916169000
+end - start: 737.65 minutes
+Normal work over: 1
+=========================
+Date: 2014-08-23
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-08-24
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 13.832777777777778
+Date: 2014-08-25
+begin: 1410964501000
+end: 1410914703000
+end - start: 829.9666666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 12.035555555555556
+Date: 2014-08-26
+begin: 1410961046000
+end: 1410917718000
+end - start: 722.1333333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 8.776111111111112
+Date: 2014-08-27
+begin: 1410944631000
+end: 1410913037000
+end - start: 526.5666666666667 minutes
+=========================
+=========================
+total work hours: 3.078888888888889
+Date: 2014-08-28
+begin: 1410924776000
+end: 1410913692000
+end - start: 184.73333333333332 minutes
+Absence: 1
+=========================
+=========================
+total work hours: 13.2125
+Date: 2014-08-29
+begin: 1410960289000
+end: 1410912724000
+end - start: 792.75 minutes
+Normal work over: 1
+=========================
+Date: 2014-08-30
+begin: 0
+end: 1410923120000
+end - start: -23515385.333333332 minutes
+=========================
+Date: 2014-08-31
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 12.851111111111111
+Date: 2014-09-01
+begin: 1410960608000
+end: 1410914344000
+end - start: 771.0666666666667 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 7.824722222222222
+Date: 2014-09-02
+begin: 1410944544000
+end: 1410916375000
+end - start: 469.48333333333335 minutes
+Absence: 0.5
+=========================
+=========================
+total work hours: 8.793888888888889
+Date: 2014-09-03
+begin: 1410945832000
+end: 1410914174000
+end - start: 527.6333333333333 minutes
+=========================
+=========================
+Date: 2014-09-04
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+=========================
+Date: 2014-09-05
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+=========================
+Date: 2014-09-06
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+Date: 2014-09-07
+begin: 0
+end: 0
+end - start: 0 minutes
+=========================
+=========================
+total work hours: 8.0225
+Date: 2014-09-09
+begin: 1410945534000
+end: 1410916653000
+end - start: 481.35 minutes
+=========================
+=========================
+total work hours: 8.586666666666666
+Date: 2014-09-10
+begin: 1410944576000
+end: 1410913664000
+end - start: 515.2 minutes
+=========================
+=========================
+total work hours: 13.420555555555556
+Date: 2014-09-11
+begin: 1410963826000
+end: 1410915512000
+end - start: 805.2333333333333 minutes
+Normal work over: 1
+=========================
+=========================
+total work hours: 9.812777777777777
+Date: 2014-09-12
+begin: 1410947108000
+end: 1410911782000
+end - start: 588.7666666666667 minutes
+=========================
+total work hours: 6.808611111111111
+Date: 2014-09-13
+begin: 1410943003000
+end: 1410918492000
+end - start: 408.51666666666665 minutes
+work over: 6.808611111111111 hours
+=========================
+total work hours: 6.939444444444445
+Date: 2014-09-14
+begin: 1410944084000
+end: 1410919102000
+end - start: 416.3666666666667 minutes
+work over: 6.939444444444445 hours
+=========================
+=========================
+Date: 2014-09-15
+begin: 0
+end: 0
+end - start: 0 minutes
+Absence: 1
+[90mPOST /upload-file [32m200 [90m939ms - 20.91kb[0m
+[90mGET /css/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png [36m304 [90m3ms[0m
+[90mGET /css/ui-lightness/images/ui-icons_ef8c08_256x240.png [32m200 [90m14ms - 4.44kb[0m
+[90mGET /css/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png [32m200 [90m7ms - 207b[0m
+[90mGET / [32m200 [90m171ms - 7.82kb[0m
+[90mGET /css/style.css [32m200 [90m2ms - 110b[0m
+[90mGET /js/vendor/jquery.form.js [32m200 [90m8ms - 36.46kb[0m
+[90mGET /js/form-validators/accountValidator.js [32m200 [90m7ms - 2.33kb[0m
+[90mGET /js/controllers/signupController.js [32m200 [90m13ms - 363b[0m
+[90mGET /js/views/signup.js [32m200 [90m12ms - 1.22kb[0m
+[90mGET /css/ui-lightness/jquery-ui-1.10.3.custom.min.css [32m200 [90m17ms - 26.52kb[0m
+[90mGET /css/bootstrap-tagsinput.css [32m200 [90m16ms - 1.08kb[0m
+[90mGET /js/utils/file/dropzone.js [32m200 [90m11ms - 54.55kb[0m
+[90mGET /js/controllers/attendenceController.js [32m200 [90m9ms - 2.42kb[0m
+[90mGET /js/views/attendence.js [32m200 [90m9ms - 5.48kb[0m
+[90mGET /js/utils/jszip/jszip-load.js [32m200 [90m7ms - 26.6kb[0m
+[90mGET /js/utils/jszip/jszip-deflate.js [32m200 [90m6ms - 26.01kb[0m
+[90mGET /js/utils/jszip/jszip-inflate.js [32m200 [90m6ms - 15.13kb[0m
+[90mGET /js/utils/jszip/jszip.js [32m200 [90m3ms - 48.47kb[0m
+[90mGET /js/utils/excel/xlsx.js [32m200 [90m2ms - 30.59kb[0m
+[90mGET /js/jquery-ui-1.10.3.custom.min.js [32m200 [90m2ms - 222.79kb[0m
+[90mGET /js/utils/tags/bootstrap-tagsinput.js [32m200 [90m4ms - 15.22kb[0m
+[90mGET /js/views/multiDatesPicker/jquery-ui.multidatespicker.js [32m200 [90m3ms - 15.58kb[0m
