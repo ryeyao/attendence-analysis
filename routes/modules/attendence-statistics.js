@@ -20,11 +20,11 @@ exports.calculate = function(json_data, options, callback) {
 
     var params = {};
     // Default parameters
-    sheet_name              = prop.get_property(options['sheet_name']               ,   '考勤明细');
-    row_start               = prop.get_property(options['row_start']                ,   0        );
-    row_end                 = prop.get_property(options['row_end']                  ,   1071     );
-    col_start               = prop.get_property(options['col_start']                ,   0        );
-    col_end                 = prop.get_property(options['col_end']                  ,   11       );
+    sheet_name              = prop.get_property(options['sheet_name']               ,   '考勤明细'                      );
+    row_start               = prop.get_property(options['row_start']                ,   0                              );
+    row_end                 = prop.get_property(options['row_end']                  ,   1071                           );
+    col_start               = prop.get_property(options['col_start']                ,   0                              );
+    col_end                 = prop.get_property(options['col_end']                  ,   11                             );
 
     name_coln               = prop.get_property(options['name_coln']                ,   '姓名'    );
     date_coln               = prop.get_property(options['date_coln']                ,   '日期'    );
@@ -34,6 +34,20 @@ exports.calculate = function(json_data, options, callback) {
     employee_num_coln       = prop.get_property(options['employee_num_coln']        ,   '员工编号');
     holidays                = prop.get_property(options['holidays']                 ,   []       ); // Holidays [YYYY-MM-DD], use weekends as default
 
+    // Conditions
+    weekday_begin           = prop.get_property(options['weekday_begin']            , {hour:  9, minute: 40});
+    weekday_end             = prop.get_property(options['weekday_end']              , {hour: 16, minute: 50});
+    weekday_workover        = prop.get_property(options['weekday_workover']         , {hour: 21            });
+
+    min_weekday_hrs       = options['min_weekday_hrs']      ? options['min_weekday_hrs']      : 7;
+    min_half_weekday_hours  = options['min_half_weekday_hours'] ? options['min_half_weekday_hours'] : 0;
+
+    lunch_hours             = prop.get_property(options['lunch_hours']              , 1.5         );
+    diner_hours             = prop.get_property(options['diner_hours']              , 1           );
+    time_point_1            = prop.get_property(options['time_point_1']             , {hour: 18}  );
+    time_point_2            = prop.get_property(options['time_point_2']             , {hour: 19}  );
+
+    // Time Precision
     number_fixed = 2;
 
     // read groupinfo from file groupinfo.json
@@ -46,24 +60,12 @@ exports.calculate = function(json_data, options, callback) {
    // );
     members = require('../../groupinfo.json');
 
-    members     = options['members']?options['members']:members;
-
-    // Conditions
-    weekday_begin           = options['weekday_begin']          ? options['weekday_begin']          : {hour:  9, minute: 40};
-    weekday_end             = options['weekday_end']            ? options['weekday_end']            : {hour: 16, minute: 50};
-    weekday_workover        = options['weekday_workover']       ? options['weekday_workover']       : {hour: 21            };
-
-    min_weekday_hours       = options['min_weekday_hours']      ? options['min_weekday_hours']      : 0;
-    min_half_weekday_hours  = options['min_half_weekday_hours'] ? options['min_half_weekday_hours'] : 0;
-
-    lunch_hours             = prop.get_property(options['lunch_hours'], 1.5);
-    diner_hours             = prop.get_property(options['diner_hours'], 1);
-    time_point_1            = prop.get_property(options['time_point_1'], {hour: 18});
-    time_point_2            = prop.get_property(options['time_point_2'], {hour: 19});
+    members     = prop.get_property(options['members'], members);
 
     // Patterns
     time_format = 'HH:mm:ss';
     date_format = 'YYYY-MM-DD';
+
 //    pattern_start   = /^\d{4}-\d{2}-\d{2} ([01]\d|2[0-3]):([0-5]\d):([0-5]\d)toN\/A$/i;
 //    pattern_end     = /^N\/Ato\d{4}-\d{2}-\d{2} ([01]\d|2[0-3]):([0-5]\d):([0-5]\d)$/i;
 //    pattern_period  = /^\d{4}-\d{2}-\d{2} ([01]\d|2[0-3]):([0-5]\d):([0-5]\d)to\d{4}-\d{2}-\d{2} ([01]\d|2[0-3]):([0-5]\d):([0-5]\d)$/i;
@@ -74,20 +76,21 @@ exports.calculate = function(json_data, options, callback) {
     // Result record format
     result_row_name = {
         name                            : '姓名', //0
-        present_dys                     : '出勤（天）',//1
+        //present_dys                     : '出勤（天）',//1
+        present_hrs                     : '出勤（小时）',
         late_early_tms                  : '迟到/早退（次）', //2
-        leave_days                      : '病事假（天）', //3
+        //leave_dys                       : '病事假（天）', //3
         leave_hrs                       : '病事假（小时）',
-        business_trip_dys               : '出差（天）', //4
+        //business_trip_dys               : '出差（天）', //4
         business_trip_hrs               : '出差（小时）',
-        extra_work_tms                  : '总加班（次）', //5
-        extra_work_hrs                  : '总加班时长（小时）',
+        //extra_work_tms                  : '总加班（次）', //5
+        extra_work_hrs                  : '总加班（小时）',
         force_extra_work_hrs            : '总强制加班时长（小时）',
         average_valid_work_hrs          : '日均有效工作（小时）',
-        regular_extra_work_tms          : '一般晚上加班（次）', //6
-        regular_weekend_extra_work_hrs  : '一般周末加班（小时）', //7
-        force_extra_work_tms            : '强制晚加班（次）', //8
-        force_weekend_extra_work_hrs    : '强制周末加班（小时）', //9
+        //regular_extra_work_tms          : '一般晚上加班（次）', //6
+        //regular_weekend_extra_work_hrs  : '一般周末加班（小时）', //7
+        //force_extra_work_tms            : '强制晚加班（次）', //8
+        //force_weekend_extra_work_hrs    : '强制周末加班（小时）', //9
         extra_work_rate                 : '加班效果评价', //10
         subsidy                         : '补贴计算', //11
         comment                         : '备注说明', //12
@@ -95,9 +98,10 @@ exports.calculate = function(json_data, options, callback) {
 
     };
 
+    total_work_dys = 0;
+
     // TODO format sheet, remove unrelated rows
     // Group
-
 
 
     // Do calculate
@@ -129,9 +133,7 @@ exports.calculate = function(json_data, options, callback) {
         if (row != 0) {
             var is_same_day = sheet[row][date_coln] == last_row[date_coln];
             if (!is_same_day) {
-                var week_day = moment(sheet[row][date_coln], date_format).isoWeekday();
-//                console.log('week_day: ' + week_day);
-                if (week_day != 6 && week_day != 7) {
+                if (!_is_weekend(moment(sheet[row][date_coln], date_format))) {
                     last_row = sheet[row]
                     continue;
                 }
@@ -158,26 +160,22 @@ exports.calculate = function(json_data, options, callback) {
         var target_row = {};
         if (typeof result_map[employee_num] == 'undefined') {
             result_map[employee_num] = {};
-            for (var i = 0; i < result_row_name.length; i++) {
-                var key = result_row_name[i];
-                if (key == '姓名') {
-                    result_map[employee_num][key] = name;
-                }
-                //else if (i == 1 || i == 2 || i == 3 || i == 4 || i == 5 || i == 6 || i == 7 || i == 8 || i == 9 || i == 10) {
-                else if (i >= 1 && i <=10) {
-                    result_map[employee_num][key] = 0;
-                }
-                else if (i == 11) {
+            //for (var i = 0; i < result_row_name.length; i++) {
+            //    var key = result_row_name[i];
 
-                }
-                else if (key == '员工编号') {
-                    result_map[employee_num][key] = employee_num;
-                }
-                else {
-                    result_map[employee_num][key] = '';
-                }
-            }
-//            result_map[name] = row;
+            result_map[employee_num][result_row_name.name] = name;
+            result_map[employee_num][result_row_name.present_hrs] = 0;
+            result_map[employee_num][result_row_name.late_early_tms] = 0;
+            result_map[employee_num][result_row_name.leave_hrs] = 0;
+            result_map[employee_num][result_row_name.business_trip_hrs] = 0;
+            result_map[employee_num][result_row_name.extra_work_hrs] = 0;
+            result_map[employee_num][result_row_name.force_extra_work_hrs] = 0;
+            result_map[employee_num][result_row_name.average_valid_work_hrs] = 0;
+            result_map[employee_num][result_row_name.extra_work_rate] = 0;
+            result_map[employee_num][result_row_name.subsidy] = 0;
+            result_map[employee_num][result_row_name.comment] = '';
+            result_map[employee_num][result_row_name.employee_id] = employee_num;
+
         }
         target_row = result_map[employee_num];
         _add_up_cells_of_row(target_row, res);
@@ -190,13 +188,18 @@ exports.calculate = function(json_data, options, callback) {
         var target_row = result_map[k];
 
         // Calculate weekend workover days' count
-        var total_wo_count = target_row[result_row_name.extra_work_tms];
-        var weekend_wo_count = target_row[result_row_name.regular_weekend_extra_work_hrs] / 8;
-        total_wo_count += weekend_wo_count;
-        target_row[result_row_name.extra_work_tms] = total_wo_count.toFixed(number_fixed);
-        target_row[result_row_name.regular_weekend_extra_work_hrs] = target_row[result_row_name.regular_weekend_extra_work_hrs].toFixed(number_fixed);
+        var total_wo_hrs = target_row[result_row_name.present_hrs];
+        var should_w_hrs = min_weekday_hrs * total_work_dys;
+        target_row[result_row_name.average_valid_work_hrs] = (total_wo_hrs / total_work_dys).toFixed(number_fixed);
 
-//        console.log('wocount: ' + total_wo_count);
+        if (total_wo_hrs > should_w_hrs) {
+            target_row[result_row_name.extra_work_hrs] = (total_wo_hrs - should_w_hrs).toFixed(number_fixed);
+        }
+        else {
+            target_row[result_row_name.leave_hrs] = (should_w_hrs - total_wo_hrs).toFixed(number_fixed);
+        }
+
+//        console.log('wocount: ' + total_wo_hrs);
 //        console.log('wocount: ' + target_row[result_row_name.extra_work_tms]);
 //        console.log('target_row: ');
 //        console.log(target_row);
@@ -234,25 +237,19 @@ exports.calculate = function(json_data, options, callback) {
         if(typeof result_sheet[employee_num] == 'undefined') {
 
             rest_map[employee_num] = {};
-            for (var i = 0; i < result_row_name.length; i++) {
-                var key = result_row_name[i];
-                if (key == '姓名') {
-                    rest_map[employee_num][key] = name;
-                }
-                //else if (i == 1 || i == 2 || i == 3 || i == 4 || i == 5 || i == 6 || i == 7 || i == 8 || i == 9 || i == 10) {
-                else if (i >= 1 && i <=10) {
-                    rest_map[employee_num][key] = 0;
-                }
-                else if (i == 11) {
+            rest_map[employee_num][result_row_name.name] = name;
+            rest_map[employee_num][result_row_name.present_hrs] = 0;
+            rest_map[employee_num][result_row_name.late_early_tms] = 0;
+            rest_map[employee_num][result_row_name.leave_hrs] = 0;
+            rest_map[employee_num][result_row_name.business_trip_hrs] = 0;
+            rest_map[employee_num][result_row_name.extra_work_hrs] = 0;
+            rest_map[employee_num][result_row_name.force_extra_work_hrs] = 0;
+            rest_map[employee_num][result_row_name.average_valid_work_hrs] = 0;
+            rest_map[employee_num][result_row_name.extra_work_rate] = 0;
+            rest_map[employee_num][result_row_name.subsidy] = 0;
+            rest_map[employee_num][result_row_name.comment] = '';
+            rest_map[employee_num][result_row_name.employee_id] = employee_num;
 
-                }
-                else if (key == '员工编号') {
-                    rest_map[employee_num][key] = employee_num;
-                }
-                else {
-                    rest_map[employee_num][key] = '';
-                }
-            }
             target_row = rest_map[employee_num];
 
             // add to sheet
@@ -288,9 +285,7 @@ var _merge_rows_of_same_day = function(row1, row2) {
 
     row_merged[noonperiod_coln] = noon_up + 'to' + noon_down;
 
-    var week_day = moment(row1[date_coln]).isoWeekday();
-//    console.log(week_day);
-    if ( week_day == 6 || week_day == 7) {
+    if (_is_weekend(moment(row1[date_coln]))) {
         row_merged[afternoonperiod_coln] = 'N/A' + 'to' + 'N/A';
     } else {
         row_merged[afternoonperiod_coln] = after_up + 'to' + after_down;
@@ -300,13 +295,12 @@ var _merge_rows_of_same_day = function(row1, row2) {
 }
 
 var _add_up_cells_of_row = function(target_row, row) {
-    target_row[result_row_name.present_dys] += row[result_row_name.present_dys];
+    target_row[result_row_name.present_hrs] += row[result_row_name.present_hrs];
     target_row[result_row_name.late_early_tms] += row[result_row_name.late_early_tms];
-    target_row[result_row_name.leave_days] += row[result_row_name.leave_days];
-    target_row[result_row_name.extra_work_tms] += row[result_row_name.extra_work_tms];
-    target_row[result_row_name.regular_extra_work_tms] += row[result_row_name.regular_extra_work_tms];
-    target_row[result_row_name.regular_weekend_extra_work_hrs] += row[result_row_name.regular_weekend_extra_work_hrs];
-
+    //target_row[result_row_name.leave_hrs] += row[result_row_name.leave_hrs];
+    //target_row[result_row_name.business_trip_hrs] += row[result_row_name.business_trip_hrs];
+    //target_row[result_row_name.extra_work_hrs] += row[result_row_name.extra_work_hrs];
+    //target_row[result_row_name.force_extra_work_hrs] += row[result_row_name.force_extra_work_hrs];
 //    console.log('work over hours: ' + target_row[result_row_name.regular_weekend_extra_work_hrs]);
 }
 
@@ -397,7 +391,7 @@ var _calculate_absence_count = function(start, end) {
     var total = (end - start) / 3600000;
     console.log('total work hours: ' + total);
 //    console.log((moment(end).hours() + moment(end).minutes() / 60.0) + ' : ' + (moment(start).hours() + moment(start).minutes() / 60.0));
-    if (total >= min_half_weekday_hours && total < min_weekday_hours) {
+    if (total >= min_half_weekday_hours && total < min_weekday_hrs) {
         return 0.5;
     }
     else if (total < min_half_weekday_hours) {
@@ -413,7 +407,7 @@ function _judge_strategy (row) {
     var result = {};
     result[result_row_name.present_dys] = 0.0;
     result[result_row_name.late_early_tms] = 0;
-    result[result_row_name.leave_days] = 0.0;
+    result[result_row_name.leave_dys] = 0.0;
     result[result_row_name.extra_work_tms] = 0.0;
     result[result_row_name.regular_extra_work_tms] = 0;
     result[result_row_name.regular_weekend_extra_work_hrs] = 0;
@@ -463,7 +457,7 @@ function _judge_strategy (row) {
             }
         }
         else if (absence_count !== 0) {
-            result[result_row_name.leave_days] = absence_count;
+            result[result_row_name.leave_dys] = absence_count;
             result[result_row_name.present_dys] = 1 - absence_count;
             console.log('Absence: ' + absence_count);
         }
@@ -491,13 +485,8 @@ function _judge_strategy (row) {
 function _judge_strategy_new (row) {
 
     var result = {};
-    result[result_row_name.present_dys] = 0.0;
+    result[result_row_name.present_hrs] = 0.0;
     result[result_row_name.late_early_tms] = 0;
-    result[result_row_name.leave_days] = 0.0;
-    result[result_row_name.extra_work_tms] = 0.0;
-    result[result_row_name.regular_extra_work_tms] = 0;
-    result[result_row_name.regular_weekend_extra_work_hrs] = 0;
-    result[result_row_name.leave_hrs] = 0.0;
 
     var time_array = _get_time_array(row);
     var endpoints_array = _get_endpoints(time_array);
@@ -512,58 +501,58 @@ function _judge_strategy_new (row) {
     console.log('end: ' + start);
     console.log('end - start: ' + moment(end-start).valueOf() / 60000 + ' minutes');
 
-    if (holidays.indexOf(row[date_coln]) != -1) {
-        console.log(row[date_coln] + ": holiday.");
-        if (start !== 0 && end !== 0) {
-            var duration = (end - start) / 1000.0
-            var wo_hours = duration / 3600.0;
-            result[result_row_name.regular_weekend_extra_work_hrs]   = wo_hours;
-//            result[result_row_name.extra_work_tms]   = 1;
-        }
+    var week_day = curr_date.isoWeekday();
+
+    if (start == 0 || end == 0) {
+        return result;
     }
 
-    else {
-        var week_day = curr_date.isoWeekday();
-        //console.log('2week_day: ' + week_day);
+    var wo_hours = _get_duration_hours(start, end);
 
-        // Check if it is weekend
-        if (week_day == 6 || week_day == 7) {
-            if (start !== 0 && end !== 0) {
-                var duration = (end - start) / 1000.0
-                var wo_hours = duration / 3600.0;
-                result[result_row_name.regular_weekend_extra_work_hrs]   = wo_hours;
-                //console.log('work over: ' + wo_hours + ' hours');
-                //result[result_row_name.extra_work_tms]   = 1;
-            }
-        }
-        else if (absence_count !== 0) {
-            result[result_row_name.leave_days] = absence_count;
-            result[result_row_name.present_dys] = 1 - absence_count;
-            console.log('Absence: ' + absence_count);
+    if (_is_holiday(row[date_coln]) ) {
+        result[result_row_name.present_hrs]   = wo_hours;
+    }
+    else {
+        if (_is_weekend(curr_date)) {
+            result[result_row_name.present_hrs]   = wo_hours;
         }
         else {
+            total_work_dys += 1;
             if (start.isAfter(moment(weekday_begin)) || end.isBefore(moment(weekday_end))) {
-//                console.log('start: ' + moment(start).format() + ' end: ' + moment(end).format());
                 result[result_row_name.late_early_tms] = 1;
                 console.log('Late/Early: 1');
             }
-            else {
-                if (end.isAfter(moment(weekday_workover))) {
-                    result[result_row_name.regular_extra_work_tms] = 1;
-                    result[result_row_name.extra_work_tms] = 1;
-                    console.log('Normal work over: 1');
-                }
+
+            if (end.isAfter(moment(time_point_2))) {
+                result[result_row_name.present_hrs] = wo_hours - lunch_hours - diner_hours;
             }
-            result[result_row_name.present_dys]   = 1;
+            else if (end.isAbsolute(moment(time_point_1))) {
+                result[result_row_name.present_hrs] = _get_duration_hours(start, moment(time_point_1)) - lunch_hours;
+            }
+            else {
+                result[result_row_name.present_hrs] = wo_hours - lunch_hours;
+            }
         }
-//        result[result_row_name.present_dys] += 1 - absence_count;
     }
 
     return result;
+}
+
+function _get_duration_hours (start, end) {
+    return (end - start) / 3600000.0;
 }
 
 function _judge (row) {
     return _judge_strategy_new(row);
 }
 
+function _is_holiday (date_str) {
+    return holidays.indexOf(date_str) !== -1;
+}
+
+// day moment
+function _is_weekend (day) {
+    var num = day.isoWeekday();
+    return num == 6 || num == 7;
+}
 
