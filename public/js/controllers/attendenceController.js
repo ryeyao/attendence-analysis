@@ -81,7 +81,7 @@ function AttendenceController() {
             });
             ws[i] = sheet_obj;
         });
-//        console.log(JSON.stringify(ws));
+        console.log(JSON.stringify(ws));
 
         return file;
     }
