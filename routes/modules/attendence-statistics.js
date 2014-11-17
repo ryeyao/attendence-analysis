@@ -526,7 +526,7 @@ function _judge_strategy_new (row) {
             if (end.isAfter(moment(time_point_2))) {
                 result[result_row_name.present_hrs] = wo_hours - lunch_hours - diner_hours;
             }
-            else if (end.isAbsolute(moment(time_point_1))) {
+            else if (end.isAfter(moment(time_point_1))) {
                 result[result_row_name.present_hrs] = _get_duration_hours(start, moment(time_point_1)) - lunch_hours;
             }
             else {
