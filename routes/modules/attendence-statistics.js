@@ -7,7 +7,7 @@
 
 var moment = require('moment');
 var fs = require('fs');
-var prop = require('utils/properties.js');
+var prop = require('./utils/properties.js');
 
 exports.calculate = function(json_data, options, callback) {
     if (typeof callback == 'undefined') {
