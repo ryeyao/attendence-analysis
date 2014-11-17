@@ -91,13 +91,14 @@ function _grouping (result_map, result_workbook, result_sheet) {
 
         if (total_present_hrs > should_w_hrs) {
             target_row[result_row_name.extra_work_hrs] = _to_fixed(total_present_hrs - should_w_hrs);
+            target_row[result_row_name.regular_extra_work_hrs] = _to_fixed(total_present_hrs - should_w_hrs);
         }
         else {
             target_row[result_row_name.leave_hrs] = _to_fixed(should_w_hrs - total_present_hrs);
         }
 
         if (is_first) {
-            target_row[result_row_name.subsidy] = '=F4*15+I4*40+(J4/8)*100+(G4*40+(H4/8)*100)*K4+E4*100-D4*80-C4*40'
+            target_row[result_row_name.subsidy] = params.subsidy_formula;
             is_first = false;
         }
 
@@ -158,6 +159,7 @@ function _prepare_options (options) {
     // Float Precision
     params.number_fixed            = prop.get_property(options['number_fixed']             , 2           );
 
+    params.subsidy_formula        = '=H4*4+(I4+G4-F4+J4*L4)/7*(M4/22)-E4*40';
     // read groupinfo from file groupinfo.json
     params.members     =  {};
 
@@ -195,12 +197,14 @@ function _prepare_options (options) {
         //extra_work_tms                  : '总加班（次）', //5
         extra_work_hrs                  : '总加班（小时）',
         force_extra_work_hrs            : '总强制加班时长（小时）',
+        regular_extra_work_hrs          : '总一般加班时长（小时）',
         average_valid_work_hrs          : '日均有效工作（小时）',
         //regular_extra_work_tms          : '一般晚上加班（次）', //6
         //regular_weekend_extra_work_hrs  : '一般周末加班（小时）', //7
         //force_extra_work_tms            : '强制晚加班（次）', //8
         //force_weekend_extra_work_hrs    : '强制周末加班（小时）', //9
         extra_work_rate                 : '加班效果评价', //10
+        base_salary                     : '基本工资',
         subsidy                         : '补贴计算', //11
         comment                         : '备注说明', //12
         employee_id                     : '员工编号' //13
@@ -279,8 +283,10 @@ function _create_new_row () {
     row[result_row_name.business_trip_hrs] = 0.0;
     row[result_row_name.extra_work_hrs] = 0.0;
     row[result_row_name.force_extra_work_hrs] = 0.0;
+    row[result_row_name.regular_extra_work_hrs] = 0.0;
     row[result_row_name.average_valid_work_hrs] = 0.0;
     row[result_row_name.extra_work_rate] = 0.0;
+    row[result_row_name.base_salary] = 0;
     row[result_row_name.subsidy] = 0;
     row[result_row_name.comment] = '';
     row[result_row_name.employee_id] = '';
