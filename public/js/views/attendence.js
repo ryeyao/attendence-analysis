@@ -52,14 +52,15 @@ $(document).ready(function() {
             var header_row = $('<tr></tr>').append($('<td></td>').append($('<input>', {value : sheet_header_text})));
             var foot_rows = [
                 $('<tr></tr>'),
-                $('<tr></tr>').append($('<td></td>').append($('<input>', {value : '加班次数从上月16日到本月15日'}))),
+                $('<tr></tr>').append($('<td></td>').append($('<input>', {value : '1、实验室成员被要求强制加班时，超出月最低工作时间（35小时）的部分可选择将强制加班时间用于调休或获取货币津贴。'}))),
                 $('<tr></tr>').append($('<td></td>').append($('<input>', {value : '绩效计算公式：总加班*15元餐补+强制晚加班*40元补贴+（强制周末加班时间/8小时）*100+（一般晚加班*40+（一般周末加班时间/8小时）*100）*效果评价+出差*100-事假*80-迟到*40'}))),
-                $('<tr></tr>').append($('<td></td>').append($('<input>', {value : '说明：'}))),
-                $('<tr></tr>').append($('<td></td>').append($('<input>', {value : ' i.              加班效果评价按照百分比计算=加班百分比*加班效果，假设加班百分比为20%，加班效果是30%，那么加班效果评价就是6%'}))),
-                $('<tr></tr>').append($('<td></td>').append($('<input>', {value : ' ii.              加班百分比是指人在加班时间里有多少时间是用于工作，多少时间用于学习和娱乐。这个参数不好衡量，所以现在基本上通过组长来给一个综合评价效果。'}))),
-                $('<tr></tr>').append($('<td></td>').append($('<input>', {value : ' iii.              通常事假是指由于个人因素的请假，到北大办理各种手续通常不计算在内。'}))),
-                $('<tr></tr>').append($('<td></td>').append($('<input>', {value : ' iv.              出差是指北京以外的因公外出，时间的回来日期-出发日期（头尾算一天）。如果当天来回算1天。'}))),
-                $('<tr></tr>').append($('<td></td>').append($('<input>', {value : ' v.              孙老师新增加的一条规定是：去新疆出差，每天的补助增加100元，也就是在公式中“*200”。'})))
+                $('<tr></tr>').append($('<td></td>').append($('<input>', {value : '2、对于货币津贴的兑现公式如下：（加班时长)*每时餐补+(强制加班时长+出差-事假+一般加班*效果评价)/7*（基本工资/22天）- 迟到*40'}))),
+                $('<tr></tr>').append($('<td></td>').append($('<input>', {value : ' a) 每时餐补为4元/时；'}))),
+                $('<tr></tr>').append($('<td></td>').append($('<input>', {value : '	b) 学生基本工资标准：本科1500元，硕士1800元，博士2800元；'}))),
+                $('<tr></tr>').append($('<td></td>').append($('<input>', {value : ' c) 职工基本工资标准：定级工资和绩效。'}))),
+                $('<tr></tr>').append($('<td></td>').append($('<input>', {value : '3、调休在年内有效，由考勤管理员负责统计记录。'}))),
+                $('<tr></tr>').append($('<td></td>').append($('<input>', {value : '4、实验室外聘职工和学生奖励或处罚在当月绩效中予以体现；实验室员工奖励或处罚在年底发放年终奖中予以体现。'}))),
+                $('<tr></tr>').append($('<td></td>').append($('<input>', {value : '注：每天有效工作时间按照7小时计算。'})))
             ];
 
             var curr_table = $('<table class=\'table table-striped table-bordered table-responsive table-hover table-condensed\'></table>');
