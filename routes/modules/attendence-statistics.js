@@ -385,19 +385,19 @@ var _parse_time = function(time_str) {
 //    console.log(time_str);
     if (params.pattern_start.test(time_str_only)) {
 //        start = moment(time_str, params.date_format + ' HH:mm:sstoN/A');
-        start = moment(time_str, 'HH:mm:sstoN/A');
+        start = moment(time_str, params.time_format);
     }
     else if (params.pattern_end.test(time_str_only)) {
 //        end = moment(time_str, 'N/Ato' + params.date_format + ' HH:mm:ss');
-        end = moment(time_str, 'N/AtoHH:mm:ss');
+        end = moment(time_str, params.time_format);
     }
     else if (params.pattern_period.test(time_str_only)) {
         var time_array  = time_str_only.split('to');
 
 //        start   = moment(time_array[0], params.date_format + ' HH:mm:ss');
 //        end     = moment(time_array[1], params.date_format + ' HH:mm:ss');
-        start   = moment(time_array[0], 'HH:mm:ss');
-        end     = moment(time_array[1], 'HH:mm:ss');
+        start   = moment(time_array[0], params.time_format);
+        end     = moment(time_array[1], params.time_format);
     }
     return [start, end];
 }
@@ -411,7 +411,7 @@ var _calculate_absence_count = function(start, end) {
     }
 
 //    var total = (moment(end).hours() + moment(end).minutes() / 60.0) - (moment(start).hours() + moment(start).minutes() / 60.0);
-    var total = (end - start) / 3600000;
+    var total = _get_duration_hours(start, end);
     console.log('total work hours: ' + total);
 //    console.log((moment(end).hours() + moment(end).minutes() / 60.0) + ' : ' + (moment(start).hours() + moment(start).minutes() / 60.0));
     if (total >= params.min_half_weekday_hours && total < params.min_weekday_hrs) {
@@ -571,6 +571,10 @@ function _judge_strategy_new (row) {
 }
 
 function _get_duration_hours (start, end) {
+    if (end < start) {
+        console.log('end < start');
+        return 0;
+    }
     return (end - start) / 3600000.0;
 }
 
